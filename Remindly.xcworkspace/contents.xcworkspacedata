@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:Preview.playground">
+   </FileRef>
+   <FileRef
+      location = "group:Remindly/Remindly.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Application/Application.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Domain/Domain.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Infrastructure/Infrastructure.xcodeproj">
+   </FileRef>
+</Workspace>
