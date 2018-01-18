@@ -10,22 +10,21 @@ import Foundation
 
 public struct Reminder {
     public let identifier: String
-    public let title: String
+    public let label: String
     public let notes: String?
     public let timestamp: Date
     public let isAchieved: Bool
     public let priority: Priority
     
-    
     public init(identifier: String,
-                title: String,
+                label: String,
                 notes: String?,
                 timestamp: Date,
                 isAchieved: Bool,
                 priority: Priority) {
         
         self.identifier = identifier
-        self.title = title
+        self.label = label
         self.notes = notes
         self.timestamp = timestamp
         self.isAchieved = isAchieved
@@ -37,7 +36,7 @@ extension Reminder: Equatable {
     
     public static func == (lhs: Reminder, rhs: Reminder) -> Bool {
         return lhs.identifier == rhs.identifier
-            && lhs.title == rhs.title
+            && lhs.label == rhs.label
             && lhs.notes == rhs.notes
             && lhs.timestamp == rhs.timestamp
             && lhs.isAchieved == rhs.isAchieved

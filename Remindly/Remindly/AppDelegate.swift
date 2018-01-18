@@ -7,21 +7,38 @@
 //
 
 import UIKit
+import Reminders
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    var flow: ListChecklistFlow?
+    
     var window: UIWindow?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        let viewController = viewController()
+        
+        let navigationController = UINavigationController()
         
         window = UIWindow()
-        window?.rootViewController = viewController
+        window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
+        
+        let items: [Checklist] = [
+            Checklist(identifier: "1", name: "Checklist 1", timestamp: Date(), reminders: []),
+            Checklist(identifier: "2", name: "Checklist 2", timestamp: Date(), reminders: []),
+            Checklist(identifier: "3", name: "Checklist 3", timestamp: Date(), reminders: []),
+            Checklist(identifier: "4", name: "Checklist 4", timestamp: Date(), reminders: []),
+            Checklist(identifier: "5", name: "Checklist 5", timestamp: Date(), reminders: []),
+            Checklist(identifier: "6", name: "Checklist 6", timestamp: Date(), reminders: []),
+            Checklist(identifier: "7", name: "Checklist 7", timestamp: Date(), reminders: [])
+        ]
+        
+        self.flow = ListChecklistFlow(navigation: navigationController, items: items)
+        self.flow?.present()
         
         return true
     }

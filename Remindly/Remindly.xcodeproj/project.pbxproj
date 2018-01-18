@@ -7,8 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C4CCF872011062500AB2F3B /* Reminders.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C4CCF882011062500AB2F3B /* Reminders.framework */; };
+		2C4CCF8B2011065200AB2F3B /* Gears.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C4CCF862011061E00AB2F3B /* Gears.framework */; };
+		2C4CCF8C2011065200AB2F3B /* Gears.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2C4CCF862011061E00AB2F3B /* Gears.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2C4CCF8F2011066300AB2F3B /* Reminders.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2C4CCF882011062500AB2F3B /* Reminders.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2C4CCF902011066C00AB2F3B /* ChecklistsFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C4CCF8A2011062800AB2F3B /* ChecklistsFeature.framework */; };
+		2C4CCF912011066C00AB2F3B /* ChecklistsFeature.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2C4CCF8A2011062800AB2F3B /* ChecklistsFeature.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2C4CCF98201108B800AB2F3B /* ListChecklistFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4CCF97201108B800AB2F3B /* ListChecklistFlow.swift */; };
+		2C4CCF9A2011097700AB2F3B /* ListChecklistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4CCF992011097700AB2F3B /* ListChecklistViewController.swift */; };
+		2C4CCF9C20110C0900AB2F3B /* CreateChecklistFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4CCF9B20110C0900AB2F3B /* CreateChecklistFlow.swift */; };
+		2C4CCF9E20110C1600AB2F3B /* CreateChecklistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4CCF9D20110C1600AB2F3B /* CreateChecklistViewController.swift */; };
 		2C77338D20108F8C000026B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C77338C20108F8C000026B0 /* AppDelegate.swift */; };
-		2C77338F20108F8C000026B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C77338E20108F8C000026B0 /* ViewController.swift */; };
 		2C77339420108F8C000026B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C77339320108F8C000026B0 /* Assets.xcassets */; };
 		2C77339720108F8C000026B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C77339520108F8C000026B0 /* LaunchScreen.storyboard */; };
 		2C7733A220108F8C000026B0 /* RemindlyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7733A120108F8C000026B0 /* RemindlyTests.swift */; };
@@ -32,10 +41,32 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		2C4CCF8D2011065300AB2F3B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2C4CCF8F2011066300AB2F3B /* Reminders.framework in Embed Frameworks */,
+				2C4CCF912011066C00AB2F3B /* ChecklistsFeature.framework in Embed Frameworks */,
+				2C4CCF8C2011065200AB2F3B /* Gears.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		2C4CCF862011061E00AB2F3B /* Gears.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Gears.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C4CCF882011062500AB2F3B /* Reminders.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Reminders.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C4CCF8A2011062800AB2F3B /* ChecklistsFeature.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ChecklistsFeature.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C4CCF97201108B800AB2F3B /* ListChecklistFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListChecklistFlow.swift; sourceTree = "<group>"; };
+		2C4CCF992011097700AB2F3B /* ListChecklistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListChecklistViewController.swift; sourceTree = "<group>"; };
+		2C4CCF9B20110C0900AB2F3B /* CreateChecklistFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateChecklistFlow.swift; sourceTree = "<group>"; };
+		2C4CCF9D20110C1600AB2F3B /* CreateChecklistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateChecklistViewController.swift; sourceTree = "<group>"; };
 		2C77338920108F8C000026B0 /* Remindly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Remindly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C77338C20108F8C000026B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2C77338E20108F8C000026B0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2C77339320108F8C000026B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C77339620108F8C000026B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C77339820108F8C000026B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -52,6 +83,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C4CCF902011066C00AB2F3B /* ChecklistsFeature.framework in Frameworks */,
+				2C4CCF8B2011065200AB2F3B /* Gears.framework in Frameworks */,
+				2C4CCF872011062500AB2F3B /* Reminders.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +106,59 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C4CCF802011058200AB2F3B /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				2C4CCF812011058A00AB2F3B /* Checklist */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		2C4CCF812011058A00AB2F3B /* Checklist */ = {
+			isa = PBXGroup;
+			children = (
+				2C4CCF832011059800AB2F3B /* Create */,
+				2C4CCF822011059200AB2F3B /* List */,
+			);
+			path = Checklist;
+			sourceTree = "<group>";
+		};
+		2C4CCF822011059200AB2F3B /* List */ = {
+			isa = PBXGroup;
+			children = (
+				2C4CCF97201108B800AB2F3B /* ListChecklistFlow.swift */,
+				2C4CCF992011097700AB2F3B /* ListChecklistViewController.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		2C4CCF832011059800AB2F3B /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				2C4CCF9F20110E1100AB2F3B /* Views */,
+				2C4CCF9B20110C0900AB2F3B /* CreateChecklistFlow.swift */,
+				2C4CCF9D20110C1600AB2F3B /* CreateChecklistViewController.swift */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		2C4CCF842011061E00AB2F3B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C4CCF8A2011062800AB2F3B /* ChecklistsFeature.framework */,
+				2C4CCF882011062500AB2F3B /* Reminders.framework */,
+				2C4CCF862011061E00AB2F3B /* Gears.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2C4CCF9F20110E1100AB2F3B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		2C77338020108F8C000026B0 = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +166,7 @@
 				2C7733A020108F8C000026B0 /* RemindlyTests */,
 				2C7733AB20108F8C000026B0 /* RemindlyUITests */,
 				2C77338A20108F8C000026B0 /* Products */,
+				2C4CCF842011061E00AB2F3B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,8 +183,8 @@
 		2C77338B20108F8C000026B0 /* Remindly */ = {
 			isa = PBXGroup;
 			children = (
+				2C4CCF802011058200AB2F3B /* Features */,
 				2C77338C20108F8C000026B0 /* AppDelegate.swift */,
-				2C77338E20108F8C000026B0 /* ViewController.swift */,
 				2C77339320108F8C000026B0 /* Assets.xcassets */,
 				2C77339520108F8C000026B0 /* LaunchScreen.storyboard */,
 				2C77339820108F8C000026B0 /* Info.plist */,
@@ -132,6 +220,7 @@
 				2C77338520108F8C000026B0 /* Sources */,
 				2C77338620108F8C000026B0 /* Frameworks */,
 				2C77338720108F8C000026B0 /* Resources */,
+				2C4CCF8D2011065300AB2F3B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -255,8 +344,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C77338F20108F8C000026B0 /* ViewController.swift in Sources */,
+				2C4CCF98201108B800AB2F3B /* ListChecklistFlow.swift in Sources */,
+				2C4CCF9E20110C1600AB2F3B /* CreateChecklistViewController.swift in Sources */,
 				2C77338D20108F8C000026B0 /* AppDelegate.swift in Sources */,
+				2C4CCF9C20110C0900AB2F3B /* CreateChecklistFlow.swift in Sources */,
+				2C4CCF9A2011097700AB2F3B /* ListChecklistViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
