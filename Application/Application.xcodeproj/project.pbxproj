@@ -11,6 +11,12 @@
 		2C4CCF7F201102CF00AB2F3B /* InputNameChecklistPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4CCF7E201102CF00AB2F3B /* InputNameChecklistPresenter.swift */; };
 		2C4CCF942011069200AB2F3B /* ChecklistComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4CCF932011069200AB2F3B /* ChecklistComponent.swift */; };
 		2C4CCF962011069B00AB2F3B /* ChecklistPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4CCF952011069B00AB2F3B /* ChecklistPresenter.swift */; };
+		2C4CCFA120110E9B00AB2F3B /* ListChecklistScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4CCFA020110E9B00AB2F3B /* ListChecklistScreen.swift */; };
+		2C4CCFA620110FE800AB2F3B /* ListChecklistBarComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4CCFA520110FE800AB2F3B /* ListChecklistBarComponent.swift */; };
+		2C4CCFA820110FF700AB2F3B /* ListChecklistBarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4CCFA720110FF700AB2F3B /* ListChecklistBarPresenter.swift */; };
+		2C4CCFAB20111A8600AB2F3B /* CreateChecklistBarComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4CCFAA20111A8600AB2F3B /* CreateChecklistBarComponent.swift */; };
+		2C4CCFAD20111A9700AB2F3B /* CreateChecklistBarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4CCFAC20111A9700AB2F3B /* CreateChecklistBarPresenter.swift */; };
+		2C4CCFAF20111C7500AB2F3B /* CreateChecklistScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4CCFAE20111C7500AB2F3B /* CreateChecklistScreen.swift */; };
 		2C7734B32010E07C000026B0 /* ChecklistsFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C7734AA2010E07C000026B0 /* ChecklistsFeature.framework */; };
 		2C7734B82010E07C000026B0 /* ChecklistsFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7734B72010E07C000026B0 /* ChecklistsFeatureTests.swift */; };
 		2C7734BA2010E07C000026B0 /* ChecklistsFeature.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C7734AC2010E07C000026B0 /* ChecklistsFeature.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -37,6 +43,12 @@
 		2C4CCF7E201102CF00AB2F3B /* InputNameChecklistPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputNameChecklistPresenter.swift; sourceTree = "<group>"; };
 		2C4CCF932011069200AB2F3B /* ChecklistComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistComponent.swift; sourceTree = "<group>"; };
 		2C4CCF952011069B00AB2F3B /* ChecklistPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistPresenter.swift; sourceTree = "<group>"; };
+		2C4CCFA020110E9B00AB2F3B /* ListChecklistScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListChecklistScreen.swift; sourceTree = "<group>"; };
+		2C4CCFA520110FE800AB2F3B /* ListChecklistBarComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListChecklistBarComponent.swift; sourceTree = "<group>"; };
+		2C4CCFA720110FF700AB2F3B /* ListChecklistBarPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListChecklistBarPresenter.swift; sourceTree = "<group>"; };
+		2C4CCFAA20111A8600AB2F3B /* CreateChecklistBarComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateChecklistBarComponent.swift; sourceTree = "<group>"; };
+		2C4CCFAC20111A9700AB2F3B /* CreateChecklistBarPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateChecklistBarPresenter.swift; sourceTree = "<group>"; };
+		2C4CCFAE20111C7500AB2F3B /* CreateChecklistScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateChecklistScreen.swift; sourceTree = "<group>"; };
 		2C7734AA2010E07C000026B0 /* ChecklistsFeature.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ChecklistsFeature.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C7734AC2010E07C000026B0 /* ChecklistsFeature.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChecklistsFeature.h; sourceTree = "<group>"; };
 		2C7734AD2010E07C000026B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -81,6 +93,24 @@
 			path = Items;
 			sourceTree = "<group>";
 		};
+		2C4CCFA220110FBB00AB2F3B /* Bars */ = {
+			isa = PBXGroup;
+			children = (
+				2C4CCFA520110FE800AB2F3B /* ListChecklistBarComponent.swift */,
+				2C4CCFA720110FF700AB2F3B /* ListChecklistBarPresenter.swift */,
+			);
+			path = Bars;
+			sourceTree = "<group>";
+		};
+		2C4CCFA920111A7000AB2F3B /* Bars */ = {
+			isa = PBXGroup;
+			children = (
+				2C4CCFAA20111A8600AB2F3B /* CreateChecklistBarComponent.swift */,
+				2C4CCFAC20111A9700AB2F3B /* CreateChecklistBarPresenter.swift */,
+			);
+			path = Bars;
+			sourceTree = "<group>";
+		};
 		2C7733BA20108FCC000026B0 = {
 			isa = PBXGroup;
 			children = (
@@ -123,9 +153,11 @@
 		2C7734C12010E085000026B0 /* Create */ = {
 			isa = PBXGroup;
 			children = (
+				2C4CCFA920111A7000AB2F3B /* Bars */,
 				2C7734D820110000000026B0 /* Fields */,
 				2C7734D22010EC76000026B0 /* CreateChecklistComponent.swift */,
 				2C7734D62010FE81000026B0 /* CreateChecklistPresenter.swift */,
+				2C4CCFAE20111C7500AB2F3B /* CreateChecklistScreen.swift */,
 			);
 			path = Create;
 			sourceTree = "<group>";
@@ -133,9 +165,11 @@
 		2C7734C22010E08A000026B0 /* List */ = {
 			isa = PBXGroup;
 			children = (
+				2C4CCFA220110FBB00AB2F3B /* Bars */,
 				2C4CCF922011068200AB2F3B /* Items */,
 				2C7734D02010EC69000026B0 /* ListChecklistComponent.swift */,
 				2C7734D42010EC9E000026B0 /* ListChecklistPresenter.swift */,
+				2C4CCFA020110E9B00AB2F3B /* ListChecklistScreen.swift */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -273,9 +307,15 @@
 				2C7734D32010EC76000026B0 /* CreateChecklistComponent.swift in Sources */,
 				2C7734D12010EC69000026B0 /* ListChecklistComponent.swift in Sources */,
 				2C7734D52010EC9E000026B0 /* ListChecklistPresenter.swift in Sources */,
+				2C4CCFAF20111C7500AB2F3B /* CreateChecklistScreen.swift in Sources */,
 				2C4CCF942011069200AB2F3B /* ChecklistComponent.swift in Sources */,
+				2C4CCFAD20111A9700AB2F3B /* CreateChecklistBarPresenter.swift in Sources */,
+				2C4CCFA120110E9B00AB2F3B /* ListChecklistScreen.swift in Sources */,
+				2C4CCFAB20111A8600AB2F3B /* CreateChecklistBarComponent.swift in Sources */,
 				2C4CCF962011069B00AB2F3B /* ChecklistPresenter.swift in Sources */,
 				2C4CCF7F201102CF00AB2F3B /* InputNameChecklistPresenter.swift in Sources */,
+				2C4CCFA820110FF700AB2F3B /* ListChecklistBarPresenter.swift in Sources */,
+				2C4CCFA620110FE800AB2F3B /* ListChecklistBarComponent.swift in Sources */,
 				2C7734D72010FE81000026B0 /* CreateChecklistPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

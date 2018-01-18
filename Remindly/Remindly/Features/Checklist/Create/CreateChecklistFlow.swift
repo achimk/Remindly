@@ -12,28 +12,42 @@ import Reminders
 import Gears
 
 struct CreateChecklistFlow {
-    let navigation: UINavigationController
-    let component: Component<CreateChecklistViewable>
+    let rootViewController: UIViewController
+    let screen: CreateChecklistScreen
     
-    init(navigation: UINavigationController) {
-        self.navigation = navigation
-        self.component = CreateChecklistComponent()
+    init(rootViewController: UIViewController) {
+        
+        let navigationBarComponent = CreateChecklistBarComponent(
+        onSelectCancel: {
+            print("-> on cancel...")
+        }, onSelectSave: {
+            print("-> on save...")
+        })
+        let formComponent = CreateChecklistComponent()
+        
+        self.screen = CreateChecklistScreen(
+            navigationBarComponent: navigationBarComponent,
+            formComponent: formComponent
+        )
+        
+        self.rootViewController = rootViewController
     }
     
     func present() {
+        let navigationController = UINavigationController()
         let viewController = CreateChecklistViewController()
-        component.attach(viewController)
+        navigationController.viewControllers = [viewController]
         
-        navigation.pushViewController(viewController, animated: isAnimated())
+        screen.navigationBarComponent.attach(viewController.navigationBar)
+        screen.formComponent.attach(viewController)
+        
+        rootViewController.present(navigationController, animated: true, completion: nil)
     }
     
     func dismiss() {
-        component.detach()
+        screen.navigationBarComponent.detach()
+        screen.formComponent.detach()
         
-        navigation.popViewController(animated: isAnimated())
-    }
-    
-    private func isAnimated() -> Bool {
-        return navigation.viewControllers.count > 1
+        rootViewController.dismiss(animated: true, completion: nil)
     }
 }

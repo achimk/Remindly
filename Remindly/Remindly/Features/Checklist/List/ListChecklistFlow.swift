@@ -13,22 +13,36 @@ import Gears
 
 struct ListChecklistFlow {
     let navigation: UINavigationController
-    let component: Component<ListChecklistViewable>
+    let screen: ListChecklistScreen
     
     init(navigation: UINavigationController, items: [Checklist]) {
+        
+        let navigationBarComponent = ListChecklistBarComponent {
+            let flow = CreateChecklistFlow(rootViewController: navigation)
+            flow.present()
+        }
+        
+        let listComponent = ListChecklistComponent(items: items)
+        
+        self.screen = ListChecklistScreen(
+            navigationBarComponent: navigationBarComponent,
+            listComponent: listComponent
+        )
+        
         self.navigation = navigation
-        self.component = ListChecklistComponent(items: items)
     }
     
     func present() {
         let viewController = ListChecklistViewController()
-        component.attach(viewController)
+        screen.navigationBarComponent.attach(viewController.navigationBar)
+        screen.listComponent.attach(viewController)
         
         navigation.pushViewController(viewController, animated: isAnimated())
     }
     
     func dismiss() {
-        component.detach()
+        screen.navigationBarComponent.detach()
+        screen.listComponent.detach()
         
         navigation.popViewController(animated: isAnimated())
     }
