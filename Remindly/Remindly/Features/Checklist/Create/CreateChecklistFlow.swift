@@ -11,18 +11,16 @@ import ChecklistsFeature
 import Reminders
 import Gears
 
-struct CreateChecklistFlow {
-    let rootViewController: UIViewController
+final class CreateChecklistFlow: FlowPresenter {
     let screen: CreateChecklistScreen
+    let presenter = ProxyPresenter<UIViewController>()
     
-    init(rootViewController: UIViewController) {
-        
+    override init() {
+        let handler = Handler()
         let navigationBarComponent = CreateChecklistBarComponent(
-        onSelectCancel: {
-            print("-> on cancel...")
-        }, onSelectSave: {
-            print("-> on save...")
-        })
+            onSelectCancel: { handler.onCancel?() },
+            onSelectSave: { handler.onSave?() }
+        )
         let formComponent = CreateChecklistComponent()
         
         self.screen = CreateChecklistScreen(
@@ -30,24 +28,33 @@ struct CreateChecklistFlow {
             formComponent: formComponent
         )
         
-        self.rootViewController = rootViewController
+        super.init()
+        
+        handler.onCancel = { [weak self] in self?.dismiss() }
+        handler.onSave = { [weak self] in self?.dismiss() }
     }
     
-    func present() {
-        let navigationController = UINavigationController()
+    override func present(_ content: ViewControllerPresenter) {
         let viewController = CreateChecklistViewController()
-        navigationController.viewControllers = [viewController]
         
         screen.navigationBarComponent.attach(viewController.navigationBar)
         screen.formComponent.attach(viewController)
         
-        rootViewController.present(navigationController, animated: true, completion: nil)
+        presenter.source = content
+        presenter.present(viewController)
     }
     
-    func dismiss() {
+    override func dismiss() {
         screen.navigationBarComponent.detach()
         screen.formComponent.detach()
         
-        rootViewController.dismiss(animated: true, completion: nil)
+        presenter.dismiss()
+    }
+}
+
+extension CreateChecklistFlow {
+    private final class Handler {
+        var onCancel: (() -> Void)?
+        var onSave: (() -> Void)?
     }
 }

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C2DA9DF201237EF00F11F59 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2DA9DE201237EF00F11F59 /* Presenter.swift */; };
+		2C2DA9E120123A6800F11F59 /* StackPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2DA9E020123A6800F11F59 /* StackPresenter.swift */; };
+		2C2DA9E320123A7100F11F59 /* ModalPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2DA9E220123A7100F11F59 /* ModalPresenter.swift */; };
 		2C4CCF872011062500AB2F3B /* Reminders.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C4CCF882011062500AB2F3B /* Reminders.framework */; };
 		2C4CCF8B2011065200AB2F3B /* Gears.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C4CCF862011061E00AB2F3B /* Gears.framework */; };
 		2C4CCF8C2011065200AB2F3B /* Gears.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2C4CCF862011061E00AB2F3B /* Gears.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -22,6 +25,15 @@
 		2C77339720108F8C000026B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C77339520108F8C000026B0 /* LaunchScreen.storyboard */; };
 		2C7733A220108F8C000026B0 /* RemindlyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7733A120108F8C000026B0 /* RemindlyTests.swift */; };
 		2C7733AD20108F8C000026B0 /* RemindlyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7733AC20108F8C000026B0 /* RemindlyUITests.swift */; };
+		2C9C8AF920123CFD00231B40 /* CustomPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9C8AF820123CFD00231B40 /* CustomPresenter.swift */; };
+		2C9C8AFB20123E1800231B40 /* ProxyPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9C8AFA20123E1800231B40 /* ProxyPresenter.swift */; };
+		2CD8B3E32012244C00381D17 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD8B3E22012244C00381D17 /* Navigator.swift */; };
+		2CD8B3E72012247F00381D17 /* ListChecklistRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD8B3E62012247F00381D17 /* ListChecklistRoute.swift */; };
+		2CD8B3E92012248800381D17 /* CreateChecklistRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD8B3E82012248800381D17 /* CreateChecklistRoute.swift */; };
+		2CD8B3EB2012249400381D17 /* NavigatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD8B3EA2012249400381D17 /* NavigatorType.swift */; };
+		2CD8B3ED201224A900381D17 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD8B3EC201224A900381D17 /* Location.swift */; };
+		2CD8B3EF2012252600381D17 /* NavigatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD8B3EE2012252600381D17 /* NavigatorFactory.swift */; };
+		2CD8B3F22012263500381D17 /* Routable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD8B3F12012263500381D17 /* Routable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +70,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2C2DA9DE201237EF00F11F59 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		2C2DA9E020123A6800F11F59 /* StackPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackPresenter.swift; sourceTree = "<group>"; };
+		2C2DA9E220123A7100F11F59 /* ModalPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalPresenter.swift; sourceTree = "<group>"; };
 		2C4CCF862011061E00AB2F3B /* Gears.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Gears.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C4CCF882011062500AB2F3B /* Reminders.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Reminders.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C4CCF8A2011062800AB2F3B /* ChecklistsFeature.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ChecklistsFeature.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,6 +91,15 @@
 		2C7733A820108F8C000026B0 /* RemindlyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RemindlyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C7733AC20108F8C000026B0 /* RemindlyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindlyUITests.swift; sourceTree = "<group>"; };
 		2C7733AE20108F8C000026B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C9C8AF820123CFD00231B40 /* CustomPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPresenter.swift; sourceTree = "<group>"; };
+		2C9C8AFA20123E1800231B40 /* ProxyPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyPresenter.swift; sourceTree = "<group>"; };
+		2CD8B3E22012244C00381D17 /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
+		2CD8B3E62012247F00381D17 /* ListChecklistRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListChecklistRoute.swift; sourceTree = "<group>"; };
+		2CD8B3E82012248800381D17 /* CreateChecklistRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateChecklistRoute.swift; sourceTree = "<group>"; };
+		2CD8B3EA2012249400381D17 /* NavigatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigatorType.swift; sourceTree = "<group>"; };
+		2CD8B3EC201224A900381D17 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		2CD8B3EE2012252600381D17 /* NavigatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigatorFactory.swift; sourceTree = "<group>"; };
+		2CD8B3F12012263500381D17 /* Routable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +130,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C2DA9DD201237DC00F11F59 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				2C2DA9DE201237EF00F11F59 /* Presenter.swift */,
+				2C2DA9E020123A6800F11F59 /* StackPresenter.swift */,
+				2C2DA9E220123A7100F11F59 /* ModalPresenter.swift */,
+				2C9C8AF820123CFD00231B40 /* CustomPresenter.swift */,
+				2C9C8AFA20123E1800231B40 /* ProxyPresenter.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
 		2C4CCF802011058200AB2F3B /* Features */ = {
 			isa = PBXGroup;
 			children = (
@@ -184,6 +220,8 @@
 			isa = PBXGroup;
 			children = (
 				2C4CCF802011058200AB2F3B /* Features */,
+				2C2DA9DD201237DC00F11F59 /* Presenters */,
+				2CD8B3E12012243300381D17 /* Navigation */,
 				2C77338C20108F8C000026B0 /* AppDelegate.swift */,
 				2C77339320108F8C000026B0 /* Assets.xcassets */,
 				2C77339520108F8C000026B0 /* LaunchScreen.storyboard */,
@@ -208,6 +246,36 @@
 				2C7733AE20108F8C000026B0 /* Info.plist */,
 			);
 			path = RemindlyUITests;
+			sourceTree = "<group>";
+		};
+		2CD8B3E12012243300381D17 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				2CD8B3E52012246900381D17 /* Navigator */,
+				2CD8B3E42012245F00381D17 /* Routes */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		2CD8B3E42012245F00381D17 /* Routes */ = {
+			isa = PBXGroup;
+			children = (
+				2CD8B3F12012263500381D17 /* Routable.swift */,
+				2CD8B3E62012247F00381D17 /* ListChecklistRoute.swift */,
+				2CD8B3E82012248800381D17 /* CreateChecklistRoute.swift */,
+			);
+			path = Routes;
+			sourceTree = "<group>";
+		};
+		2CD8B3E52012246900381D17 /* Navigator */ = {
+			isa = PBXGroup;
+			children = (
+				2CD8B3EC201224A900381D17 /* Location.swift */,
+				2CD8B3EA2012249400381D17 /* NavigatorType.swift */,
+				2CD8B3E22012244C00381D17 /* Navigator.swift */,
+				2CD8B3EE2012252600381D17 /* NavigatorFactory.swift */,
+			);
+			path = Navigator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -344,11 +412,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CD8B3EF2012252600381D17 /* NavigatorFactory.swift in Sources */,
 				2C4CCF98201108B800AB2F3B /* ListChecklistFlow.swift in Sources */,
 				2C4CCF9E20110C1600AB2F3B /* CreateChecklistViewController.swift in Sources */,
+				2C9C8AF920123CFD00231B40 /* CustomPresenter.swift in Sources */,
+				2C2DA9E320123A7100F11F59 /* ModalPresenter.swift in Sources */,
+				2C2DA9E120123A6800F11F59 /* StackPresenter.swift in Sources */,
+				2CD8B3ED201224A900381D17 /* Location.swift in Sources */,
+				2CD8B3E92012248800381D17 /* CreateChecklistRoute.swift in Sources */,
 				2C77338D20108F8C000026B0 /* AppDelegate.swift in Sources */,
 				2C4CCF9C20110C0900AB2F3B /* CreateChecklistFlow.swift in Sources */,
+				2CD8B3F22012263500381D17 /* Routable.swift in Sources */,
+				2CD8B3EB2012249400381D17 /* NavigatorType.swift in Sources */,
+				2CD8B3E72012247F00381D17 /* ListChecklistRoute.swift in Sources */,
+				2C2DA9DF201237EF00F11F59 /* Presenter.swift in Sources */,
 				2C4CCF9A2011097700AB2F3B /* ListChecklistViewController.swift in Sources */,
+				2CD8B3E32012244C00381D17 /* Navigator.swift in Sources */,
+				2C9C8AFB20123E1800231B40 /* ProxyPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

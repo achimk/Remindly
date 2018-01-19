@@ -11,15 +11,14 @@ import ChecklistsFeature
 import Reminders
 import Gears
 
-struct ListChecklistFlow {
-    let navigation: UINavigationController
+final class ListChecklistFlow: FlowPresenter {
     let screen: ListChecklistScreen
+    let presenter = ProxyPresenter<UIViewController>()
     
-    init(navigation: UINavigationController, items: [Checklist]) {
+    init(navigator: NavigatorType, items: [Checklist]) {
         
         let navigationBarComponent = ListChecklistBarComponent {
-            let flow = CreateChecklistFlow(rootViewController: navigation)
-            flow.present()
+            navigator.open(.createChecklist)
         }
         
         let listComponent = ListChecklistComponent(items: items)
@@ -29,25 +28,22 @@ struct ListChecklistFlow {
             listComponent: listComponent
         )
         
-        self.navigation = navigation
+        super.init()
     }
     
-    func present() {
+    override func present(_ content: ViewControllerPresenter) {
         let viewController = ListChecklistViewController()
         screen.navigationBarComponent.attach(viewController.navigationBar)
         screen.listComponent.attach(viewController)
         
-        navigation.pushViewController(viewController, animated: isAnimated())
+        presenter.source = content
+        presenter.present(viewController)
     }
     
-    func dismiss() {
+    override func dismiss() {
         screen.navigationBarComponent.detach()
         screen.listComponent.detach()
         
-        navigation.popViewController(animated: isAnimated())
-    }
-    
-    private func isAnimated() -> Bool {
-        return navigation.viewControllers.count > 1
+        presenter.dismiss()
     }
 }
