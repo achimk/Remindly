@@ -11,17 +11,12 @@ import Reminders
 
 final class ListChecklistRoute: Routable {
     let navigator: NavigatorType
-    let navigationController: UINavigationController
     
-    
-    init(navigator: NavigatorType,
-         navigationController: UINavigationController) {
-        
+    init(navigator: NavigatorType) {
         self.navigator = navigator
-        self.navigationController = navigationController
     }
     
-    func navigate(to location: Location) throws {
+    func navigate(to location: Location, using screen: ScreenPresenter) throws {
         guard case Location.listChecklist = location else { return }
         
         let items: [Checklist] = [
@@ -34,8 +29,7 @@ final class ListChecklistRoute: Routable {
             Checklist(identifier: "7", name: "Checklist 7", timestamp: Date(), reminders: [])
         ]
         
-        let stack = StackPresenter(navigationController: navigationController)
         let flow = ListChecklistFlow(navigator: navigator, items: items)
-        flow.present(stack)
+        screen.present(flow)
     }
 }

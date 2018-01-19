@@ -17,14 +17,18 @@ struct NavigatorFactory {
     
     func makeNavigator() -> NavigatorType {
         let proxy = Proxy()
-        let listChecklistRoute = ListChecklistRoute(navigator: proxy, navigationController: navigationController)
-        let createChecklistRoute = CreateChecklistRoute(navigator: proxy, navigationController: navigationController)
+        
+        let listChecklistRoute = ListChecklistRoute(navigator: proxy)
+        
+        let createChecklistRoute = CreateChecklistRoute(navigator: proxy)
+        
         let routes: [Routable] = [
             listChecklistRoute,
             createChecklistRoute
         ]
         
-        let navigator = Navigator(routes: routes)
+        let stack = StackPresenter(navigationController: navigationController)
+        let navigator = Navigator(routes: routes, presenter: stack)
         proxy.source = navigator
         
         return proxy
@@ -35,8 +39,8 @@ extension NavigatorFactory {
     private final class Proxy: NavigatorType {
         var source: NavigatorType?
         
-        func open(_ location: Location) {
-            source?.open(location)
+        func open(location: Location, using presenter: ViewPresenter?) {
+            source?.open(location: location, using: presenter)
         }
     }
 }

@@ -34,6 +34,7 @@
 		2CD8B3ED201224A900381D17 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD8B3EC201224A900381D17 /* Location.swift */; };
 		2CD8B3EF2012252600381D17 /* NavigatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD8B3EE2012252600381D17 /* NavigatorFactory.swift */; };
 		2CD8B3F22012263500381D17 /* Routable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD8B3F12012263500381D17 /* Routable.swift */; };
+		2CE7FD8D201272030027418A /* PresenterTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE7FD8C201272030027418A /* PresenterTypes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +101,7 @@
 		2CD8B3EC201224A900381D17 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		2CD8B3EE2012252600381D17 /* NavigatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigatorFactory.swift; sourceTree = "<group>"; };
 		2CD8B3F12012263500381D17 /* Routable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routable.swift; sourceTree = "<group>"; };
+		2CE7FD8C201272030027418A /* PresenterTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterTypes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,11 +135,12 @@
 		2C2DA9DD201237DC00F11F59 /* Presenters */ = {
 			isa = PBXGroup;
 			children = (
+				2CE7FD8C201272030027418A /* PresenterTypes.swift */,
 				2C2DA9DE201237EF00F11F59 /* Presenter.swift */,
-				2C2DA9E020123A6800F11F59 /* StackPresenter.swift */,
-				2C2DA9E220123A7100F11F59 /* ModalPresenter.swift */,
 				2C9C8AF820123CFD00231B40 /* CustomPresenter.swift */,
 				2C9C8AFA20123E1800231B40 /* ProxyPresenter.swift */,
+				2C2DA9E020123A6800F11F59 /* StackPresenter.swift */,
+				2C2DA9E220123A7100F11F59 /* ModalPresenter.swift */,
 			);
 			path = Presenters;
 			sourceTree = "<group>";
@@ -412,6 +415,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CE7FD8D201272030027418A /* PresenterTypes.swift in Sources */,
 				2CD8B3EF2012252600381D17 /* NavigatorFactory.swift in Sources */,
 				2C4CCF98201108B800AB2F3B /* ListChecklistFlow.swift in Sources */,
 				2C4CCF9E20110C1600AB2F3B /* CreateChecklistViewController.swift in Sources */,

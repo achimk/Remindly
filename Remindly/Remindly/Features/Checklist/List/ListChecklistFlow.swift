@@ -31,7 +31,7 @@ final class ListChecklistFlow: FlowPresenter {
         super.init()
     }
     
-    override func present(_ content: ViewControllerPresenter) {
+    override func present(_ content: ViewPresenter) {
         let viewController = ListChecklistViewController()
         screen.navigationBarComponent.attach(viewController.navigationBar)
         screen.listComponent.attach(viewController)

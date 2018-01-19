@@ -34,7 +34,7 @@ final class CreateChecklistFlow: FlowPresenter {
         handler.onSave = { [weak self] in self?.dismiss() }
     }
     
-    override func present(_ content: ViewControllerPresenter) {
+    override func present(_ content: ViewPresenter) {
         let viewController = CreateChecklistViewController()
         
         screen.navigationBarComponent.attach(viewController.navigationBar)

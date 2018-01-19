@@ -10,20 +10,15 @@ import UIKit
 
 final class CreateChecklistRoute: Routable {
     let navigator: NavigatorType
-    let navigationController: UINavigationController
     
-    init(navigator: NavigatorType,
-         navigationController: UINavigationController) {
-        
+    init(navigator: NavigatorType) {
         self.navigator = navigator
-        self.navigationController = navigationController
     }
     
-    func navigate(to location: Location) throws {
+    func navigate(to location: Location, using screen: ScreenPresenter) throws {
         guard case Location.createChecklist = location else { return }
         
-        let stack = StackPresenter(navigationController: navigationController)
         let flow = CreateChecklistFlow()
-        flow.present(stack)
+        screen.present(flow)
     }
 }

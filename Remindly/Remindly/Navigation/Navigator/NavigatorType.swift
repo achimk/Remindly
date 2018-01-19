@@ -9,5 +9,11 @@
 import Foundation
 
 protocol NavigatorType {
-    func open(_ location: Location)
+    func open(location: Location, using presenter: ViewPresenter?)
+}
+
+extension NavigatorType {
+    func open(_ location: Location) {
+        open(location: location, using: nil)
+    }
 }

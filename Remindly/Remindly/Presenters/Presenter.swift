@@ -6,7 +6,7 @@
 //  Copyright © 2018 JK. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
 protocol Presenting {
     associatedtype ContentType
@@ -27,5 +27,3 @@ class Presenter<T>: Presenting, Dismissing {
     func dismiss() { }
 }
 
-typealias ViewControllerPresenter = Presenter<UIViewController>
-typealias FlowPresenter = Presenter<ViewControllerPresenter>

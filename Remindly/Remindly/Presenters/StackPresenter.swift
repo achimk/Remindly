@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class StackPresenter: ViewControllerPresenter {
+final class StackPresenter: ViewPresenter {
     let navigationController: UINavigationController
     let isAnimated: Bool
     

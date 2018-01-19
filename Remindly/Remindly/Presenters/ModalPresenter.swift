@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class ModalPresenter: ViewControllerPresenter {
+final class ModalPresenter: ViewPresenter {
     let rootViewController: UIViewController
     let isAnimated: Bool
     

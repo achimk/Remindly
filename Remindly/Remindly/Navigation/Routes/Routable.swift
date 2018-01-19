@@ -9,5 +9,5 @@
 import Foundation
 
 protocol Routable {
-    func navigate(to location: Location) throws
+    func navigate(to location: Location, using screen: ScreenPresenter) throws
 }
