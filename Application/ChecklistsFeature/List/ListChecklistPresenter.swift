@@ -22,6 +22,7 @@ final class ListChecklistPresenter: ListChecklistEventListening {
     }
     
     func didLoadView() {
-        view?.show(checklists: items)
+        let components = items.map { ChecklistComponent(item: $0) }
+        view?.show(checklists: components)
     }
 }

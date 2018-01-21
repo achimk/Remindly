@@ -41,15 +41,47 @@ final class CreateChecklistNavigationBar: CreateChecklistBarViewable {
     }
 }
 
+final class CreateChecklistDataSource: NSObject, UITableViewDelegate, UITableViewDataSource, CreateChecklistViewable {
+    let tableView: UITableView
+    
+    init(tableView: UITableView) {
+        self.tableView = tableView
+        super.init()
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.register(InputNameChecklistTableViewCell.self, forCellReuseIdentifier: "cell")
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 0
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        
+    }
+    
+    func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        return cell
+    }
+}
+
 final class CreateChecklistViewController: UITableViewController {
     
     lazy var navigationBar: CreateChecklistNavigationBar = {
         return CreateChecklistNavigationBar(navigationItem: self.navigationItem)
     }()
     
+    lazy var dataSource: CreateChecklistDataSource = {
+        return CreateChecklistDataSource(tableView: self.tableView)
+    }()
 }
 
-extension CreateChecklistViewController: CreateChecklistViewable {
-    
-    
-}

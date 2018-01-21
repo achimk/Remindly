@@ -9,14 +9,21 @@
 import Foundation
 
 protocol InputNameChecklistEventListening {
-    func didChange(name: String)
+    func didLoadView()
+    func didChange(name: String?)
 }
 
 final class InputNameChecklistPresenter: InputNameChecklistEventListening {
-
+    let placeholder = "Name"
+    var value: String?
+    
     weak var view: InputNameChecklistViewable?
     
-    func didChange(name: String) {
-        
+    func didLoadView() {
+        view?.setup(with: placeholder, value: value)
+    }
+    
+    func didChange(name: String?) {
+        value = name
     }
 }

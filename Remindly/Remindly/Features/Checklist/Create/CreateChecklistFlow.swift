@@ -38,7 +38,7 @@ final class CreateChecklistFlow: FlowPresenter {
         let viewController = CreateChecklistViewController()
         
         screen.navigationBarComponent.attach(viewController.navigationBar)
-        screen.formComponent.attach(viewController)
+        screen.formComponent.attach(viewController.dataSource)
         
         presenter.source = content
         presenter.present(viewController)

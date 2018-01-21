@@ -9,10 +9,13 @@
 import Foundation
 
 protocol CreateChecklistEventListening {
-
+    func viewDidLoad()
 }
 
 final class CreateChecklistPresenter: CreateChecklistEventListening {
     weak var view: CreateChecklistViewable?
     
+    func viewDidLoad() {
+        
+    }
 }

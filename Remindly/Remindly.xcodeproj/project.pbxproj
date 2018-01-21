@@ -35,6 +35,8 @@
 		2CD8B3EF2012252600381D17 /* NavigatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD8B3EE2012252600381D17 /* NavigatorFactory.swift */; };
 		2CD8B3F22012263500381D17 /* Routable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD8B3F12012263500381D17 /* Routable.swift */; };
 		2CE7FD8D201272030027418A /* PresenterTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE7FD8C201272030027418A /* PresenterTypes.swift */; };
+		2CF079462014C67700BFD532 /* ChecklistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF079452014C67700BFD532 /* ChecklistTableViewCell.swift */; };
+		2CF079482014CDC200BFD532 /* InputNameChecklistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF079472014CDC200BFD532 /* InputNameChecklistTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +104,8 @@
 		2CD8B3EE2012252600381D17 /* NavigatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigatorFactory.swift; sourceTree = "<group>"; };
 		2CD8B3F12012263500381D17 /* Routable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routable.swift; sourceTree = "<group>"; };
 		2CE7FD8C201272030027418A /* PresenterTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterTypes.swift; sourceTree = "<group>"; };
+		2CF079452014C67700BFD532 /* ChecklistTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistTableViewCell.swift; sourceTree = "<group>"; };
+		2CF079472014CDC200BFD532 /* InputNameChecklistTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputNameChecklistTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +169,7 @@
 		2C4CCF822011059200AB2F3B /* List */ = {
 			isa = PBXGroup;
 			children = (
+				2CF079442014C65D00BFD532 /* Views */,
 				2C4CCF97201108B800AB2F3B /* ListChecklistFlow.swift */,
 				2C4CCF992011097700AB2F3B /* ListChecklistViewController.swift */,
 			);
@@ -194,6 +199,7 @@
 		2C4CCF9F20110E1100AB2F3B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				2CF079472014CDC200BFD532 /* InputNameChecklistTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -279,6 +285,14 @@
 				2CD8B3EE2012252600381D17 /* NavigatorFactory.swift */,
 			);
 			path = Navigator;
+			sourceTree = "<group>";
+		};
+		2CF079442014C65D00BFD532 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2CF079452014C67700BFD532 /* ChecklistTableViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -425,7 +439,9 @@
 				2CD8B3ED201224A900381D17 /* Location.swift in Sources */,
 				2CD8B3E92012248800381D17 /* CreateChecklistRoute.swift in Sources */,
 				2C77338D20108F8C000026B0 /* AppDelegate.swift in Sources */,
+				2CF079482014CDC200BFD532 /* InputNameChecklistTableViewCell.swift in Sources */,
 				2C4CCF9C20110C0900AB2F3B /* CreateChecklistFlow.swift in Sources */,
+				2CF079462014C67700BFD532 /* ChecklistTableViewCell.swift in Sources */,
 				2CD8B3F22012263500381D17 /* Routable.swift in Sources */,
 				2CD8B3EB2012249400381D17 /* NavigatorType.swift in Sources */,
 				2CD8B3E72012247F00381D17 /* ListChecklistRoute.swift in Sources */,

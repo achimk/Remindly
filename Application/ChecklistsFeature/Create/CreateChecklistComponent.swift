@@ -9,8 +9,12 @@
 import Foundation
 import Gears
 
+public enum CreateForm {
+    case name
+}
+
 public protocol CreateChecklistViewable: class {
-    
+//    func show(form: [CreateForm])
 }
 
 public final class CreateChecklistComponent: Component<CreateChecklistViewable> {
@@ -18,6 +22,7 @@ public final class CreateChecklistComponent: Component<CreateChecklistViewable> 
     
     public override func attach(_ content: CreateChecklistViewable) {
         presenter.view = content
+        presenter.viewDidLoad()
     }
     
     public override func detach() {

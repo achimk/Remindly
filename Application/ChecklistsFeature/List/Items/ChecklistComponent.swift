@@ -11,7 +11,7 @@ import Reminders
 import Gears
 
 public protocol ChecklistViewable: class {
-    func showSelected(checklist: Checklist)
+    func setup(with checklist: Checklist)
 }
 
 public final class ChecklistComponent: Component<ChecklistViewable> {
@@ -23,6 +23,7 @@ public final class ChecklistComponent: Component<ChecklistViewable> {
     
     public override func attach(_ content: ChecklistViewable) {
         presenter.view = content
+        presenter.didLoadView()
     }
     
     public override func detach() {

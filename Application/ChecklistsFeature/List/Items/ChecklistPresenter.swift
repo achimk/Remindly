@@ -10,7 +10,7 @@ import Foundation
 import Reminders
 
 public protocol ChecklistEventListening {
-    func didSelect()
+    func didLoadView()
 }
 
 final class ChecklistPresenter: ChecklistEventListening {
@@ -21,7 +21,7 @@ final class ChecklistPresenter: ChecklistEventListening {
         self.item = item
     }
     
-    func didSelect() {
-        view?.showSelected(checklist: item)
+    func didLoadView() {
+        view?.setup(with: item)
     }
 }

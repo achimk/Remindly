@@ -9,6 +9,7 @@
 import UIKit
 import ChecklistsFeature
 import Reminders
+import Gears
 
 final class ListChecklistNavigationBar: ListChecklistBarViewable {
     var eventListener: ListChecklistBarEventListening?
@@ -32,31 +33,57 @@ final class ListChecklistNavigationBar: ListChecklistBarViewable {
     }
 }
 
+final class ListChecklistDataSource: NSObject, UITableViewDataSource, UITableViewDelegate, ListChecklistViewable {
+    let tableView: UITableView
+    private var components: [Component<ChecklistViewable>] = []
+    
+    init(tableView: UITableView) {
+        self.tableView = tableView
+        super.init()
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.register(ChecklistTableViewCell.self, forCellReuseIdentifier: "cell")
+    }
+
+    func show(checklists components: [Component<ChecklistViewable>]) {
+        self.components = components
+        tableView.reloadData()
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return components.count
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        guard let cell = cell as? ChecklistTableViewCell else { return }
+        let component = components[indexPath.row]
+        component.attach(cell)
+    }
+    
+    func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        guard let _ = cell as? ChecklistTableViewCell else { return }
+        let component = components[indexPath.row]
+        component.detach()
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        return cell
+    }
+}
+
 final class ListChecklistViewController: UITableViewController {
     
     lazy var navigationBar: ListChecklistNavigationBar = {
         return ListChecklistNavigationBar(navigationItem: self.navigationItem)
     }()
     
-    private var items: [Checklist] = []
-    
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return items.count
-    }
-    
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .default, reuseIdentifier: "checklist")
-        
-        cell.textLabel?.text = items[indexPath.row].name
-        
-        return cell
-    }
-}
+    lazy var dataSource: ListChecklistDataSource = {
+        return ListChecklistDataSource(tableView: tableView)
+    }()
 
-extension ListChecklistViewController: ListChecklistViewable {
-    
-    func show(checklists items: [Checklist]) {
-        self.items = items
-        tableView.reloadData()
-    }
 }

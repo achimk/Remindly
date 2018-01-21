@@ -11,7 +11,7 @@ import Gears
 import Reminders
 
 public protocol ListChecklistViewable: class {
-    func show(checklists items: [Checklist])
+    func show(checklists components: [Component<ChecklistViewable>])
 }
 
 public final class ListChecklistComponent: Component<ListChecklistViewable> {
