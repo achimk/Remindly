@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C418DD020162CD7003CCFF1 /* FormChecklistComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C418DCF20162CD7003CCFF1 /* FormChecklistComponent.swift */; };
 		2C4CCF7D201102C600AB2F3B /* InputNameChecklistComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4CCF7C201102C600AB2F3B /* InputNameChecklistComponent.swift */; };
 		2C4CCF7F201102CF00AB2F3B /* InputNameChecklistPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4CCF7E201102CF00AB2F3B /* InputNameChecklistPresenter.swift */; };
 		2C4CCF942011069200AB2F3B /* ChecklistComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4CCF932011069200AB2F3B /* ChecklistComponent.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C418DCF20162CD7003CCFF1 /* FormChecklistComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormChecklistComponent.swift; sourceTree = "<group>"; };
 		2C4CCF7C201102C600AB2F3B /* InputNameChecklistComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputNameChecklistComponent.swift; sourceTree = "<group>"; };
 		2C4CCF7E201102CF00AB2F3B /* InputNameChecklistPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputNameChecklistPresenter.swift; sourceTree = "<group>"; };
 		2C4CCF932011069200AB2F3B /* ChecklistComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistComponent.swift; sourceTree = "<group>"; };
@@ -84,6 +86,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C418DCE20162CBC003CCFF1 /* Form */ = {
+			isa = PBXGroup;
+			children = (
+				2C418DCF20162CD7003CCFF1 /* FormChecklistComponent.swift */,
+			);
+			path = Form;
+			sourceTree = "<group>";
+		};
 		2C4CCF922011068200AB2F3B /* Items */ = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +143,7 @@
 		2C7734AB2010E07C000026B0 /* ChecklistsFeature */ = {
 			isa = PBXGroup;
 			children = (
+				2C418DCE20162CBC003CCFF1 /* Form */,
 				2C7734C12010E085000026B0 /* Create */,
 				2C7734C22010E08A000026B0 /* List */,
 				2C7734AC2010E07C000026B0 /* ChecklistsFeature.h */,
@@ -312,6 +323,7 @@
 				2C4CCFAD20111A9700AB2F3B /* CreateChecklistBarPresenter.swift in Sources */,
 				2C4CCFA120110E9B00AB2F3B /* ListChecklistScreen.swift in Sources */,
 				2C4CCFAB20111A8600AB2F3B /* CreateChecklistBarComponent.swift in Sources */,
+				2C418DD020162CD7003CCFF1 /* FormChecklistComponent.swift in Sources */,
 				2C4CCF962011069B00AB2F3B /* ChecklistPresenter.swift in Sources */,
 				2C4CCF7F201102CF00AB2F3B /* InputNameChecklistPresenter.swift in Sources */,
 				2C4CCFA820110FF700AB2F3B /* ListChecklistBarPresenter.swift in Sources */,
