@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C418DD320162F01003CCFF1 /* PresenterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C418DD220162F01003CCFF1 /* PresenterType.swift */; };
+		2C418DD520162F8C003CCFF1 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C418DD420162F8C003CCFF1 /* Presenter.swift */; };
+		2C418DD720162FCB003CCFF1 /* CustomPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C418DD620162FCB003CCFF1 /* CustomPresenter.swift */; };
+		2C418DD920162FEB003CCFF1 /* ProxyPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C418DD820162FEB003CCFF1 /* ProxyPresenter.swift */; };
 		2C77345A2010B832000026B0 /* Gears.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C7734512010B831000026B0 /* Gears.framework */; };
 		2C77345F2010B832000026B0 /* GearsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C77345E2010B832000026B0 /* GearsTests.swift */; };
 		2C7734612010B832000026B0 /* Gears.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C7734532010B831000026B0 /* Gears.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -45,6 +49,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C418DD220162F01003CCFF1 /* PresenterType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterType.swift; sourceTree = "<group>"; };
+		2C418DD420162F8C003CCFF1 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		2C418DD620162FCB003CCFF1 /* CustomPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPresenter.swift; sourceTree = "<group>"; };
+		2C418DD820162FEB003CCFF1 /* ProxyPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyPresenter.swift; sourceTree = "<group>"; };
 		2C7734512010B831000026B0 /* Gears.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Gears.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C7734532010B831000026B0 /* Gears.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Gears.h; sourceTree = "<group>"; };
 		2C7734542010B832000026B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -105,6 +113,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C418DD120162EDF003CCFF1 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				2C418DD220162F01003CCFF1 /* PresenterType.swift */,
+				2C418DD420162F8C003CCFF1 /* Presenter.swift */,
+				2C418DD620162FCB003CCFF1 /* CustomPresenter.swift */,
+				2C418DD820162FEB003CCFF1 /* ProxyPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		2C7734022010901B000026B0 = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +151,7 @@
 			children = (
 				2C7734682010BB81000026B0 /* Box */,
 				2C77346F2010BB95000026B0 /* Component */,
+				2C418DD120162EDF003CCFF1 /* Presenter */,
 				2C7734782010BBB2000026B0 /* Gears.swift */,
 				2C7734532010B831000026B0 /* Gears.h */,
 				2C7734542010B832000026B0 /* Info.plist */,
@@ -379,12 +399,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C7734792010BBB2000026B0 /* Gears.swift in Sources */,
+				2C418DD920162FEB003CCFF1 /* ProxyPresenter.swift in Sources */,
 				2C7734742010BB95000026B0 /* Attachable.swift in Sources */,
 				2C7734772010BB95000026B0 /* Detachable.swift in Sources */,
 				2C77346C2010BB82000026B0 /* Box.swift in Sources */,
+				2C418DD520162F8C003CCFF1 /* Presenter.swift in Sources */,
 				2C77346D2010BB82000026B0 /* BoxType.swift in Sources */,
+				2C418DD720162FCB003CCFF1 /* CustomPresenter.swift in Sources */,
 				2C7734762010BB95000026B0 /* ComponentType.swift in Sources */,
 				2C77346E2010BB82000026B0 /* MutableBox.swift in Sources */,
+				2C418DD320162F01003CCFF1 /* PresenterType.swift in Sources */,
 				2C7734752010BB95000026B0 /* Component.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
