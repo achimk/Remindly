@@ -13,7 +13,7 @@ protocol CreateChecklistEventListening {
 }
 
 final class CreateChecklistPresenter: CreateChecklistEventListening {
-    weak var view: CreateChecklistViewable?
+    weak var view: CreateChecklistDisplaying?
     
     func viewDidLoad() {
         

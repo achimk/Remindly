@@ -10,18 +10,18 @@ import Foundation
 import Gears
 import Reminders
 
-public protocol ListChecklistViewable: class {
-    func show(checklists components: [Component<ChecklistViewable>])
+public protocol ListChecklistDisplaying: class {
+    func show(checklists components: [Component<ChecklistDisplaying>])
 }
 
-public final class ListChecklistComponent: Component<ListChecklistViewable> {
+public final class ListChecklistComponent: Component<ListChecklistDisplaying> {
     let presenter: ListChecklistPresenter
     
     public init(items: [Checklist]) {
         presenter = ListChecklistPresenter(items: items)
     }
     
-    public override func attach(_ content: ListChecklistViewable) {
+    public override func attach(_ content: ListChecklistDisplaying) {
         presenter.view = content
         presenter.didLoadView()
     }

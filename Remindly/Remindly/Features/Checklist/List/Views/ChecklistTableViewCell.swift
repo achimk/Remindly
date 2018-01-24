@@ -10,7 +10,7 @@ import UIKit
 import ChecklistsFeature
 import Reminders
 
-final class ChecklistTableViewCell: UITableViewCell, ChecklistViewable {
+final class ChecklistTableViewCell: UITableViewCell, ChecklistDisplaying {
     
     func setup(with checklist: Checklist) {
         textLabel?.text = checklist.name

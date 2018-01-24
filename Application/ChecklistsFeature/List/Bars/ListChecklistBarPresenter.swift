@@ -15,7 +15,7 @@ public protocol ListChecklistBarEventListening {
 
 final class ListChecklistBarPresenter: ListChecklistBarEventListening {
     let onSelectCreateChecklist: (() -> Void)?
-    weak var view: ListChecklistBarViewable?
+    weak var view: ListChecklistBarDisplaying?
     
     init(_ onSelectCreateChecklist: (() -> Void)?) {
         self.onSelectCreateChecklist = onSelectCreateChecklist

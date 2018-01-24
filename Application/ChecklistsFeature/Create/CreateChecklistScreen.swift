@@ -10,11 +10,11 @@ import Foundation
 import Gears
 
 public final class CreateChecklistScreen {
-    public let navigationBarComponent: Component<CreateChecklistBarViewable>
-    public let formComponent: Component<CreateChecklistViewable>
+    public let navigationBarComponent: Component<CreateChecklistBarDisplaying>
+    public let formComponent: Component<CreateChecklistDisplaying>
     
-    public init(navigationBarComponent: Component<CreateChecklistBarViewable>,
-                formComponent: Component<CreateChecklistViewable>) {
+    public init(navigationBarComponent: Component<CreateChecklistBarDisplaying>,
+                formComponent: Component<CreateChecklistDisplaying>) {
         
         self.navigationBarComponent = navigationBarComponent
         self.formComponent = formComponent

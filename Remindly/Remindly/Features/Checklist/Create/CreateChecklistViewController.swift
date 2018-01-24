@@ -9,7 +9,7 @@
 import UIKit
 import ChecklistsFeature
 
-final class CreateChecklistNavigationBar: CreateChecklistBarViewable {
+final class CreateChecklistNavigationBar: CreateChecklistBarDisplaying {
     var eventListener: CreateChecklistBarEventListening?
     let navigationItem: UINavigationItem
     
@@ -41,7 +41,7 @@ final class CreateChecklistNavigationBar: CreateChecklistBarViewable {
     }
 }
 
-final class CreateChecklistDataSource: NSObject, UITableViewDelegate, UITableViewDataSource, CreateChecklistViewable {
+final class CreateChecklistDataSource: NSObject, UITableViewDelegate, UITableViewDataSource, CreateChecklistDisplaying {
     let tableView: UITableView
     
     init(tableView: UITableView) {

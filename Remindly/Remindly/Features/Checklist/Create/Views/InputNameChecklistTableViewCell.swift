@@ -9,7 +9,7 @@
 import Foundation
 import ChecklistsFeature
 
-final class InputNameChecklistTableViewCell: UITableViewCell, InputNameChecklistViewable {
+final class InputNameChecklistTableViewCell: UITableViewCell, InputNameChecklistDisplaying {
     let textField = UITextField()
     
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {

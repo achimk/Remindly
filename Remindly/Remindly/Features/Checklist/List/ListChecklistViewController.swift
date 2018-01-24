@@ -9,9 +9,10 @@
 import UIKit
 import ChecklistsFeature
 import Reminders
+import DataSource
 import Gears
 
-final class ListChecklistNavigationBar: ListChecklistBarViewable {
+final class ListChecklistNavigationBar: ListChecklistBarDisplaying {
     var eventListener: ListChecklistBarEventListening?
     let navigationItem: UINavigationItem
     
@@ -33,46 +34,36 @@ final class ListChecklistNavigationBar: ListChecklistBarViewable {
     }
 }
 
-final class ListChecklistDataSource: NSObject, UITableViewDataSource, UITableViewDelegate, ListChecklistViewable {
+final class ListChecklistDataSource: ListChecklistDisplaying {
     let tableView: UITableView
-    private var components: [Component<ChecklistViewable>] = []
+    let adapter = TableViewDataSourceAdapter()
+    private var components: [Component<ChecklistDisplaying>] = []
     
     init(tableView: UITableView) {
         self.tableView = tableView
-        super.init()
-        tableView.delegate = self
-        tableView.dataSource = self
+        tableView.delegate = adapter
+        tableView.dataSource = adapter
         tableView.register(ChecklistTableViewCell.self, forCellReuseIdentifier: "cell")
     }
 
-    func show(checklists components: [Component<ChecklistViewable>]) {
+    func show(checklists components: [Component<ChecklistDisplaying>]) {
         self.components = components
+        
+        let dataSource = DataSource.of(components).map { (component) -> TableViewCellHandlerType in
+            let handler = TableViewCellHandler { (tableView, indexPath) -> UITableViewCell in
+                let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ChecklistTableViewCell
+                component.attach(cell)
+                return cell
+            }
+            
+            handler.onDidEndDisplayCell = { (_, _) in component.detach() }
+            handler.onSelectCell = { (_, _) in print("-> selected component!") }
+            
+            return handler
+        }
+        
+        adapter.dataSource = dataSource
         tableView.reloadData()
-    }
-    
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return components.count
-    }
-    
-    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        guard let cell = cell as? ChecklistTableViewCell else { return }
-        let component = components[indexPath.row]
-        component.attach(cell)
-    }
-    
-    func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        guard let _ = cell as? ChecklistTableViewCell else { return }
-        let component = components[indexPath.row]
-        component.detach()
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        return cell
     }
 }
 
@@ -85,5 +76,4 @@ final class ListChecklistViewController: UITableViewController {
     lazy var dataSource: ListChecklistDataSource = {
         return ListChecklistDataSource(tableView: tableView)
     }()
-
 }

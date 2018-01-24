@@ -17,7 +17,7 @@ final class InputNameChecklistPresenter: InputNameChecklistEventListening {
     let placeholder = "Name"
     var value: String?
     
-    weak var view: InputNameChecklistViewable?
+    weak var view: InputNameChecklistDisplaying?
     
     func didLoadView() {
         view?.setup(with: placeholder, value: value)

@@ -24,6 +24,9 @@
 		2C77339720108F8C000026B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C77339520108F8C000026B0 /* LaunchScreen.storyboard */; };
 		2C7733A220108F8C000026B0 /* RemindlyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7733A120108F8C000026B0 /* RemindlyTests.swift */; };
 		2C7733AD20108F8C000026B0 /* RemindlyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7733AC20108F8C000026B0 /* RemindlyUITests.swift */; };
+		2C9A82F92018D61A004B2709 /* TableViewDataSourceAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9A82F82018D61A004B2709 /* TableViewDataSourceAdapter.swift */; };
+		2C9A82FA2018D666004B2709 /* DataSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C9A82FB2018D666004B2709 /* DataSource.framework */; };
+		2C9A82FC2018D673004B2709 /* DataSource.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2C9A82FB2018D666004B2709 /* DataSource.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2CD8B3E32012244C00381D17 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD8B3E22012244C00381D17 /* Navigator.swift */; };
 		2CD8B3E72012247F00381D17 /* ListChecklistRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD8B3E62012247F00381D17 /* ListChecklistRoute.swift */; };
 		2CD8B3E92012248800381D17 /* CreateChecklistRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD8B3E82012248800381D17 /* CreateChecklistRoute.swift */; };
@@ -60,6 +63,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				2C9A82FC2018D673004B2709 /* DataSource.framework in Embed Frameworks */,
 				2C4CCF8F2011066300AB2F3B /* Reminders.framework in Embed Frameworks */,
 				2C4CCF912011066C00AB2F3B /* ChecklistsFeature.framework in Embed Frameworks */,
 				2C4CCF8C2011065200AB2F3B /* Gears.framework in Embed Frameworks */,
@@ -90,6 +94,8 @@
 		2C7733A820108F8C000026B0 /* RemindlyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RemindlyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C7733AC20108F8C000026B0 /* RemindlyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindlyUITests.swift; sourceTree = "<group>"; };
 		2C7733AE20108F8C000026B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C9A82F82018D61A004B2709 /* TableViewDataSourceAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSourceAdapter.swift; sourceTree = "<group>"; };
+		2C9A82FB2018D666004B2709 /* DataSource.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DataSource.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CD8B3E22012244C00381D17 /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
 		2CD8B3E62012247F00381D17 /* ListChecklistRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListChecklistRoute.swift; sourceTree = "<group>"; };
 		2CD8B3E82012248800381D17 /* CreateChecklistRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateChecklistRoute.swift; sourceTree = "<group>"; };
@@ -107,6 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C9A82FA2018D666004B2709 /* DataSource.framework in Frameworks */,
 				2C4CCF902011066C00AB2F3B /* ChecklistsFeature.framework in Frameworks */,
 				2C4CCF8B2011065200AB2F3B /* Gears.framework in Frameworks */,
 				2C4CCF872011062500AB2F3B /* Reminders.framework in Frameworks */,
@@ -180,6 +187,7 @@
 		2C4CCF842011061E00AB2F3B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2C9A82FB2018D666004B2709 /* DataSource.framework */,
 				2C4CCF8A2011062800AB2F3B /* ChecklistsFeature.framework */,
 				2C4CCF882011062500AB2F3B /* Reminders.framework */,
 				2C4CCF862011061E00AB2F3B /* Gears.framework */,
@@ -193,6 +201,21 @@
 				2CF079472014CDC200BFD532 /* InputNameChecklistTableViewCell.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		2C6DB1CD2019041900C87507 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2C6DB1CE2019041F00C87507 /* Adapters */ = {
+			isa = PBXGroup;
+			children = (
+				2C9A82F82018D61A004B2709 /* TableViewDataSourceAdapter.swift */,
+			);
+			path = Adapters;
 			sourceTree = "<group>";
 		};
 		2C77338020108F8C000026B0 = {
@@ -222,6 +245,7 @@
 				2C4CCF802011058200AB2F3B /* Features */,
 				2C2DA9DD201237DC00F11F59 /* Presenters */,
 				2CD8B3E12012243300381D17 /* Navigation */,
+				2C9A82F72018D603004B2709 /* Reusables */,
 				2C77338C20108F8C000026B0 /* AppDelegate.swift */,
 				2C77339320108F8C000026B0 /* Assets.xcassets */,
 				2C77339520108F8C000026B0 /* LaunchScreen.storyboard */,
@@ -246,6 +270,15 @@
 				2C7733AE20108F8C000026B0 /* Info.plist */,
 			);
 			path = RemindlyUITests;
+			sourceTree = "<group>";
+		};
+		2C9A82F72018D603004B2709 /* Reusables */ = {
+			isa = PBXGroup;
+			children = (
+				2C6DB1CE2019041F00C87507 /* Adapters */,
+				2C6DB1CD2019041900C87507 /* Views */,
+			);
+			path = Reusables;
 			sourceTree = "<group>";
 		};
 		2CD8B3E12012243300381D17 /* Navigation */ = {
@@ -424,6 +457,7 @@
 				2CD8B3EF2012252600381D17 /* NavigatorFactory.swift in Sources */,
 				2C4CCF98201108B800AB2F3B /* ListChecklistFlow.swift in Sources */,
 				2C4CCF9E20110C1600AB2F3B /* CreateChecklistViewController.swift in Sources */,
+				2C9A82F92018D61A004B2709 /* TableViewDataSourceAdapter.swift in Sources */,
 				2C2DA9E320123A7100F11F59 /* ModalPresenter.swift in Sources */,
 				2C2DA9E120123A6800F11F59 /* StackPresenter.swift in Sources */,
 				2CD8B3ED201224A900381D17 /* Location.swift in Sources */,

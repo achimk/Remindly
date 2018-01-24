@@ -13,14 +13,14 @@ public enum CreateForm {
     case name
 }
 
-public protocol CreateChecklistViewable: class {
+public protocol CreateChecklistDisplaying: class {
 //    func show(form: [CreateForm])
 }
 
-public final class CreateChecklistComponent: Component<CreateChecklistViewable> {
+public final class CreateChecklistComponent: Component<CreateChecklistDisplaying> {
     let presenter = CreateChecklistPresenter()
     
-    public override func attach(_ content: CreateChecklistViewable) {
+    public override func attach(_ content: CreateChecklistDisplaying) {
         presenter.view = content
         presenter.viewDidLoad()
     }

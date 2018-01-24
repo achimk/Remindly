@@ -9,14 +9,14 @@
 import Foundation
 import Gears
 
-public protocol InputNameChecklistViewable: class {
+public protocol InputNameChecklistDisplaying: class {
     func setup(with placeholder: String, value: String?)
 }
 
-public final class InputNameChecklistComponent: Component<InputNameChecklistViewable> {
+public final class InputNameChecklistComponent: Component<InputNameChecklistDisplaying> {
     let presenter = InputNameChecklistPresenter()
     
-    public override func attach(_ content: InputNameChecklistViewable) {
+    public override func attach(_ content: InputNameChecklistDisplaying) {
         presenter.view = content
         presenter.didLoadView()
     }

@@ -15,7 +15,7 @@ public protocol ChecklistEventListening {
 
 final class ChecklistPresenter: ChecklistEventListening {
     let item: Checklist
-    weak var view: ChecklistViewable?
+    weak var view: ChecklistDisplaying?
     
     init(item: Checklist) {
         self.item = item

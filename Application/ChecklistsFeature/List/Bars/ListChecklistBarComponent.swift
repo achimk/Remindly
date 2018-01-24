@@ -9,19 +9,19 @@
 import Foundation
 import Gears
 
-public protocol ListChecklistBarViewable: class {
+public protocol ListChecklistBarDisplaying: class {
     var eventListener: ListChecklistBarEventListening? { get set }
     func show(title: String)
 }
 
-public final class ListChecklistBarComponent: Component<ListChecklistBarViewable> {
+public final class ListChecklistBarComponent: Component<ListChecklistBarDisplaying> {
     let presenter: ListChecklistBarPresenter
     
     public init(_ onSelectCreateChecklist: (() -> Void)?) {
         self.presenter = ListChecklistBarPresenter(onSelectCreateChecklist)
     }
     
-    public override func attach(_ content: ListChecklistBarViewable) {
+    public override func attach(_ content: ListChecklistBarDisplaying) {
         content.eventListener = presenter
         presenter.view = content
         presenter.didLoadView()

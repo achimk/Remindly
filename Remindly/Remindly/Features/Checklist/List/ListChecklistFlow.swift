@@ -32,7 +32,7 @@ final class ListChecklistFlow: FlowPresenter {
     }
     
     override func present(_ content: ViewPresenter) {
-        let viewController = ListChecklistViewController()
+        let viewController = ListChecklistViewController(style: .grouped)
         screen.navigationBarComponent.attach(viewController.navigationBar)
         screen.listComponent.attach(viewController.dataSource)
         
