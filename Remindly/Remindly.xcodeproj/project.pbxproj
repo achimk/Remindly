@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2C2DA9E120123A6800F11F59 /* StackPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2DA9E020123A6800F11F59 /* StackPresenter.swift */; };
 		2C2DA9E320123A7100F11F59 /* ModalPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2DA9E220123A7100F11F59 /* ModalPresenter.swift */; };
+		2C4BA89720190B7E003C210F /* TableViewCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4BA89620190B7E003C210F /* TableViewCells.swift */; };
 		2C4CCF872011062500AB2F3B /* Reminders.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C4CCF882011062500AB2F3B /* Reminders.framework */; };
 		2C4CCF8B2011065200AB2F3B /* Gears.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C4CCF862011061E00AB2F3B /* Gears.framework */; };
 		2C4CCF8C2011065200AB2F3B /* Gears.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2C4CCF862011061E00AB2F3B /* Gears.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -19,12 +20,18 @@
 		2C4CCF9A2011097700AB2F3B /* ListChecklistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4CCF992011097700AB2F3B /* ListChecklistViewController.swift */; };
 		2C4CCF9C20110C0900AB2F3B /* CreateChecklistFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4CCF9B20110C0900AB2F3B /* CreateChecklistFlow.swift */; };
 		2C4CCF9E20110C1600AB2F3B /* CreateChecklistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4CCF9D20110C1600AB2F3B /* CreateChecklistViewController.swift */; };
+		2C6B92B7201909D8007E5C20 /* ReusableViews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C6B92AE201909D8007E5C20 /* ReusableViews.framework */; };
+		2C6B92BE201909D8007E5C20 /* ReusableViewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6B92BD201909D8007E5C20 /* ReusableViewsTests.swift */; };
+		2C6B92C0201909D8007E5C20 /* ReusableViews.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C6B92B0201909D8007E5C20 /* ReusableViews.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C6B92C3201909D8007E5C20 /* ReusableViews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C6B92AE201909D8007E5C20 /* ReusableViews.framework */; };
+		2C6B92C4201909D8007E5C20 /* ReusableViews.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2C6B92AE201909D8007E5C20 /* ReusableViews.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2C6B92CE20190A03007E5C20 /* TableViewDataSourceAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6B92CD20190A03007E5C20 /* TableViewDataSourceAdapter.swift */; };
+		2C6B92CF20190A6D007E5C20 /* DataSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C6B92D020190A6D007E5C20 /* DataSource.framework */; };
 		2C77338D20108F8C000026B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C77338C20108F8C000026B0 /* AppDelegate.swift */; };
 		2C77339420108F8C000026B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C77339320108F8C000026B0 /* Assets.xcassets */; };
 		2C77339720108F8C000026B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C77339520108F8C000026B0 /* LaunchScreen.storyboard */; };
 		2C7733A220108F8C000026B0 /* RemindlyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7733A120108F8C000026B0 /* RemindlyTests.swift */; };
 		2C7733AD20108F8C000026B0 /* RemindlyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7733AC20108F8C000026B0 /* RemindlyUITests.swift */; };
-		2C9A82F92018D61A004B2709 /* TableViewDataSourceAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9A82F82018D61A004B2709 /* TableViewDataSourceAdapter.swift */; };
 		2C9A82FA2018D666004B2709 /* DataSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C9A82FB2018D666004B2709 /* DataSource.framework */; };
 		2C9A82FC2018D673004B2709 /* DataSource.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2C9A82FB2018D666004B2709 /* DataSource.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2CD8B3E32012244C00381D17 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD8B3E22012244C00381D17 /* Navigator.swift */; };
@@ -40,6 +47,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		2C6B92B8201909D8007E5C20 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C77338120108F8C000026B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C6B92AD201909D8007E5C20;
+			remoteInfo = ReusableViews;
+		};
+		2C6B92BA201909D8007E5C20 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C77338120108F8C000026B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C77338820108F8C000026B0;
+			remoteInfo = Remindly;
+		};
+		2C6B92C1201909D8007E5C20 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C77338120108F8C000026B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C6B92AD201909D8007E5C20;
+			remoteInfo = ReusableViews;
+		};
 		2C77339E20108F8C000026B0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2C77338120108F8C000026B0 /* Project object */;
@@ -66,6 +94,7 @@
 				2C9A82FC2018D673004B2709 /* DataSource.framework in Embed Frameworks */,
 				2C4CCF8F2011066300AB2F3B /* Reminders.framework in Embed Frameworks */,
 				2C4CCF912011066C00AB2F3B /* ChecklistsFeature.framework in Embed Frameworks */,
+				2C6B92C4201909D8007E5C20 /* ReusableViews.framework in Embed Frameworks */,
 				2C4CCF8C2011065200AB2F3B /* Gears.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -76,6 +105,7 @@
 /* Begin PBXFileReference section */
 		2C2DA9E020123A6800F11F59 /* StackPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackPresenter.swift; sourceTree = "<group>"; };
 		2C2DA9E220123A7100F11F59 /* ModalPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalPresenter.swift; sourceTree = "<group>"; };
+		2C4BA89620190B7E003C210F /* TableViewCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCells.swift; sourceTree = "<group>"; };
 		2C4CCF862011061E00AB2F3B /* Gears.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Gears.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C4CCF882011062500AB2F3B /* Reminders.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Reminders.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C4CCF8A2011062800AB2F3B /* ChecklistsFeature.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ChecklistsFeature.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,6 +113,15 @@
 		2C4CCF992011097700AB2F3B /* ListChecklistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListChecklistViewController.swift; sourceTree = "<group>"; };
 		2C4CCF9B20110C0900AB2F3B /* CreateChecklistFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateChecklistFlow.swift; sourceTree = "<group>"; };
 		2C4CCF9D20110C1600AB2F3B /* CreateChecklistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateChecklistViewController.swift; sourceTree = "<group>"; };
+		2C6B92A820190676007E5C20 /* Preview.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Preview.playground; sourceTree = "<group>"; };
+		2C6B92AE201909D8007E5C20 /* ReusableViews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReusableViews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C6B92B0201909D8007E5C20 /* ReusableViews.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReusableViews.h; sourceTree = "<group>"; };
+		2C6B92B1201909D8007E5C20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C6B92B6201909D8007E5C20 /* ReusableViewsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReusableViewsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C6B92BD201909D8007E5C20 /* ReusableViewsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableViewsTests.swift; sourceTree = "<group>"; };
+		2C6B92BF201909D8007E5C20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C6B92CD20190A03007E5C20 /* TableViewDataSourceAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSourceAdapter.swift; sourceTree = "<group>"; };
+		2C6B92D020190A6D007E5C20 /* DataSource.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DataSource.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C77338920108F8C000026B0 /* Remindly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Remindly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C77338C20108F8C000026B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C77339320108F8C000026B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -94,7 +133,6 @@
 		2C7733A820108F8C000026B0 /* RemindlyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RemindlyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C7733AC20108F8C000026B0 /* RemindlyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindlyUITests.swift; sourceTree = "<group>"; };
 		2C7733AE20108F8C000026B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2C9A82F82018D61A004B2709 /* TableViewDataSourceAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSourceAdapter.swift; sourceTree = "<group>"; };
 		2C9A82FB2018D666004B2709 /* DataSource.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DataSource.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CD8B3E22012244C00381D17 /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
 		2CD8B3E62012247F00381D17 /* ListChecklistRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListChecklistRoute.swift; sourceTree = "<group>"; };
@@ -109,6 +147,22 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2C6B92AA201909D8007E5C20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C6B92CF20190A6D007E5C20 /* DataSource.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C6B92B3201909D8007E5C20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C6B92B7201909D8007E5C20 /* ReusableViews.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2C77338620108F8C000026B0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -116,6 +170,7 @@
 				2C9A82FA2018D666004B2709 /* DataSource.framework in Frameworks */,
 				2C4CCF902011066C00AB2F3B /* ChecklistsFeature.framework in Frameworks */,
 				2C4CCF8B2011065200AB2F3B /* Gears.framework in Frameworks */,
+				2C6B92C3201909D8007E5C20 /* ReusableViews.framework in Frameworks */,
 				2C4CCF872011062500AB2F3B /* Reminders.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -145,6 +200,14 @@
 				2C2DA9E220123A7100F11F59 /* ModalPresenter.swift */,
 			);
 			path = Presenters;
+			sourceTree = "<group>";
+		};
+		2C4BA89520190B62003C210F /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				2C4BA89620190B7E003C210F /* TableViewCells.swift */,
+			);
+			path = TableViewCells;
 			sourceTree = "<group>";
 		};
 		2C4CCF802011058200AB2F3B /* Features */ = {
@@ -187,6 +250,7 @@
 		2C4CCF842011061E00AB2F3B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2C6B92D020190A6D007E5C20 /* DataSource.framework */,
 				2C9A82FB2018D666004B2709 /* DataSource.framework */,
 				2C4CCF8A2011062800AB2F3B /* ChecklistsFeature.framework */,
 				2C4CCF882011062500AB2F3B /* Reminders.framework */,
@@ -203,17 +267,38 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		2C6DB1CD2019041900C87507 /* Views */ = {
+		2C6B92AF201909D8007E5C20 /* ReusableViews */ = {
 			isa = PBXGroup;
 			children = (
+				2C6B92CC201909EC007E5C20 /* Adapters */,
+				2C6B92CB201909E4007E5C20 /* Views */,
+				2C6B92B0201909D8007E5C20 /* ReusableViews.h */,
+				2C6B92B1201909D8007E5C20 /* Info.plist */,
+			);
+			path = ReusableViews;
+			sourceTree = "<group>";
+		};
+		2C6B92BC201909D8007E5C20 /* ReusableViewsTests */ = {
+			isa = PBXGroup;
+			children = (
+				2C6B92BD201909D8007E5C20 /* ReusableViewsTests.swift */,
+				2C6B92BF201909D8007E5C20 /* Info.plist */,
+			);
+			path = ReusableViewsTests;
+			sourceTree = "<group>";
+		};
+		2C6B92CB201909E4007E5C20 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2C4BA89520190B62003C210F /* TableViewCells */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		2C6DB1CE2019041F00C87507 /* Adapters */ = {
+		2C6B92CC201909EC007E5C20 /* Adapters */ = {
 			isa = PBXGroup;
 			children = (
-				2C9A82F82018D61A004B2709 /* TableViewDataSourceAdapter.swift */,
+				2C6B92CD20190A03007E5C20 /* TableViewDataSourceAdapter.swift */,
 			);
 			path = Adapters;
 			sourceTree = "<group>";
@@ -221,9 +306,12 @@
 		2C77338020108F8C000026B0 = {
 			isa = PBXGroup;
 			children = (
+				2C6B92A820190676007E5C20 /* Preview.playground */,
 				2C77338B20108F8C000026B0 /* Remindly */,
 				2C7733A020108F8C000026B0 /* RemindlyTests */,
 				2C7733AB20108F8C000026B0 /* RemindlyUITests */,
+				2C6B92AF201909D8007E5C20 /* ReusableViews */,
+				2C6B92BC201909D8007E5C20 /* ReusableViewsTests */,
 				2C77338A20108F8C000026B0 /* Products */,
 				2C4CCF842011061E00AB2F3B /* Frameworks */,
 			);
@@ -235,6 +323,8 @@
 				2C77338920108F8C000026B0 /* Remindly.app */,
 				2C77339D20108F8C000026B0 /* RemindlyTests.xctest */,
 				2C7733A820108F8C000026B0 /* RemindlyUITests.xctest */,
+				2C6B92AE201909D8007E5C20 /* ReusableViews.framework */,
+				2C6B92B6201909D8007E5C20 /* ReusableViewsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -245,7 +335,6 @@
 				2C4CCF802011058200AB2F3B /* Features */,
 				2C2DA9DD201237DC00F11F59 /* Presenters */,
 				2CD8B3E12012243300381D17 /* Navigation */,
-				2C9A82F72018D603004B2709 /* Reusables */,
 				2C77338C20108F8C000026B0 /* AppDelegate.swift */,
 				2C77339320108F8C000026B0 /* Assets.xcassets */,
 				2C77339520108F8C000026B0 /* LaunchScreen.storyboard */,
@@ -270,15 +359,6 @@
 				2C7733AE20108F8C000026B0 /* Info.plist */,
 			);
 			path = RemindlyUITests;
-			sourceTree = "<group>";
-		};
-		2C9A82F72018D603004B2709 /* Reusables */ = {
-			isa = PBXGroup;
-			children = (
-				2C6DB1CE2019041F00C87507 /* Adapters */,
-				2C6DB1CD2019041900C87507 /* Views */,
-			);
-			path = Reusables;
 			sourceTree = "<group>";
 		};
 		2CD8B3E12012243300381D17 /* Navigation */ = {
@@ -321,7 +401,55 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		2C6B92AB201909D8007E5C20 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C6B92C0201909D8007E5C20 /* ReusableViews.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		2C6B92AD201909D8007E5C20 /* ReusableViews */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C6B92C5201909D8007E5C20 /* Build configuration list for PBXNativeTarget "ReusableViews" */;
+			buildPhases = (
+				2C6B92A9201909D8007E5C20 /* Sources */,
+				2C6B92AA201909D8007E5C20 /* Frameworks */,
+				2C6B92AB201909D8007E5C20 /* Headers */,
+				2C6B92AC201909D8007E5C20 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReusableViews;
+			productName = ReusableViews;
+			productReference = 2C6B92AE201909D8007E5C20 /* ReusableViews.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2C6B92B5201909D8007E5C20 /* ReusableViewsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C6B92C8201909D8007E5C20 /* Build configuration list for PBXNativeTarget "ReusableViewsTests" */;
+			buildPhases = (
+				2C6B92B2201909D8007E5C20 /* Sources */,
+				2C6B92B3201909D8007E5C20 /* Frameworks */,
+				2C6B92B4201909D8007E5C20 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C6B92B9201909D8007E5C20 /* PBXTargetDependency */,
+				2C6B92BB201909D8007E5C20 /* PBXTargetDependency */,
+			);
+			name = ReusableViewsTests;
+			productName = ReusableViewsTests;
+			productReference = 2C6B92B6201909D8007E5C20 /* ReusableViewsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		2C77338820108F8C000026B0 /* Remindly */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C7733B120108F8C000026B0 /* Build configuration list for PBXNativeTarget "Remindly" */;
@@ -334,6 +462,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				2C6B92C2201909D8007E5C20 /* PBXTargetDependency */,
 			);
 			name = Remindly;
 			productName = Remindly;
@@ -386,6 +515,16 @@
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = JK;
 				TargetAttributes = {
+					2C6B92AD201909D8007E5C20 = {
+						CreatedOnToolsVersion = 9.0.1;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+					};
+					2C6B92B5201909D8007E5C20 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2C77338820108F8C000026B0;
+					};
 					2C77338820108F8C000026B0 = {
 						CreatedOnToolsVersion = 9.0.1;
 						ProvisioningStyle = Automatic;
@@ -418,11 +557,27 @@
 				2C77338820108F8C000026B0 /* Remindly */,
 				2C77339C20108F8C000026B0 /* RemindlyTests */,
 				2C7733A720108F8C000026B0 /* RemindlyUITests */,
+				2C6B92AD201909D8007E5C20 /* ReusableViews */,
+				2C6B92B5201909D8007E5C20 /* ReusableViewsTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2C6B92AC201909D8007E5C20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C6B92B4201909D8007E5C20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2C77338720108F8C000026B0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -449,6 +604,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2C6B92A9201909D8007E5C20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C6B92CE20190A03007E5C20 /* TableViewDataSourceAdapter.swift in Sources */,
+				2C4BA89720190B7E003C210F /* TableViewCells.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C6B92B2201909D8007E5C20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C6B92BE201909D8007E5C20 /* ReusableViewsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2C77338520108F8C000026B0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -457,7 +629,6 @@
 				2CD8B3EF2012252600381D17 /* NavigatorFactory.swift in Sources */,
 				2C4CCF98201108B800AB2F3B /* ListChecklistFlow.swift in Sources */,
 				2C4CCF9E20110C1600AB2F3B /* CreateChecklistViewController.swift in Sources */,
-				2C9A82F92018D61A004B2709 /* TableViewDataSourceAdapter.swift in Sources */,
 				2C2DA9E320123A7100F11F59 /* ModalPresenter.swift in Sources */,
 				2C2DA9E120123A6800F11F59 /* StackPresenter.swift in Sources */,
 				2CD8B3ED201224A900381D17 /* Location.swift in Sources */,
@@ -493,6 +664,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		2C6B92B9201909D8007E5C20 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C6B92AD201909D8007E5C20 /* ReusableViews */;
+			targetProxy = 2C6B92B8201909D8007E5C20 /* PBXContainerItemProxy */;
+		};
+		2C6B92BB201909D8007E5C20 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C77338820108F8C000026B0 /* Remindly */;
+			targetProxy = 2C6B92BA201909D8007E5C20 /* PBXContainerItemProxy */;
+		};
+		2C6B92C2201909D8007E5C20 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C6B92AD201909D8007E5C20 /* ReusableViews */;
+			targetProxy = 2C6B92C1201909D8007E5C20 /* PBXContainerItemProxy */;
+		};
 		2C77339F20108F8C000026B0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 2C77338820108F8C000026B0 /* Remindly */;
@@ -517,6 +703,85 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		2C6B92C6201909D8007E5C20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ReusableViews/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JK.ReusableViews;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2C6B92C7201909D8007E5C20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ReusableViews/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JK.ReusableViews;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2C6B92C9201909D8007E5C20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ReusableViewsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JK.ReusableViewsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Remindly.app/Remindly";
+			};
+			name = Debug;
+		};
+		2C6B92CA201909D8007E5C20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ReusableViewsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JK.ReusableViewsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Remindly.app/Remindly";
+			};
+			name = Release;
+		};
 		2C7733AF20108F8C000026B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -627,6 +892,7 @@
 		2C7733B220108F8C000026B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Remindly/Info.plist;
@@ -641,6 +907,7 @@
 		2C7733B320108F8C000026B0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Remindly/Info.plist;
@@ -717,6 +984,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2C6B92C5201909D8007E5C20 /* Build configuration list for PBXNativeTarget "ReusableViews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C6B92C6201909D8007E5C20 /* Debug */,
+				2C6B92C7201909D8007E5C20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C6B92C8201909D8007E5C20 /* Build configuration list for PBXNativeTarget "ReusableViewsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C6B92C9201909D8007E5C20 /* Debug */,
+				2C6B92CA201909D8007E5C20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2C77338420108F8C000026B0 /* Build configuration list for PBXProject "Remindly" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

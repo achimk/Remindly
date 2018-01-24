@@ -9,6 +9,7 @@
 import UIKit
 import ChecklistsFeature
 import Reminders
+import ReusableViews
 import DataSource
 import Gears
 
