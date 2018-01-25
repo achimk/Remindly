@@ -44,6 +44,8 @@
 		2CE7FD8D201272030027418A /* PresenterTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE7FD8C201272030027418A /* PresenterTypes.swift */; };
 		2CF079462014C67700BFD532 /* ChecklistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF079452014C67700BFD532 /* ChecklistTableViewCell.swift */; };
 		2CF079482014CDC200BFD532 /* InputNameChecklistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF079472014CDC200BFD532 /* InputNameChecklistTableViewCell.swift */; };
+		2CF432442019DA2F00F30C6B /* Functional.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CF432452019DA2F00F30C6B /* Functional.framework */; };
+		2CF432462019DA3600F30C6B /* Functional.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2CF432452019DA2F00F30C6B /* Functional.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +93,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				2CF432462019DA3600F30C6B /* Functional.framework in Embed Frameworks */,
 				2C9A82FC2018D673004B2709 /* DataSource.framework in Embed Frameworks */,
 				2C4CCF8F2011066300AB2F3B /* Reminders.framework in Embed Frameworks */,
 				2C4CCF912011066C00AB2F3B /* ChecklistsFeature.framework in Embed Frameworks */,
@@ -144,6 +147,7 @@
 		2CE7FD8C201272030027418A /* PresenterTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterTypes.swift; sourceTree = "<group>"; };
 		2CF079452014C67700BFD532 /* ChecklistTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistTableViewCell.swift; sourceTree = "<group>"; };
 		2CF079472014CDC200BFD532 /* InputNameChecklistTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputNameChecklistTableViewCell.swift; sourceTree = "<group>"; };
+		2CF432452019DA2F00F30C6B /* Functional.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Functional.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +171,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CF432442019DA2F00F30C6B /* Functional.framework in Frameworks */,
 				2C9A82FA2018D666004B2709 /* DataSource.framework in Frameworks */,
 				2C4CCF902011066C00AB2F3B /* ChecklistsFeature.framework in Frameworks */,
 				2C4CCF8B2011065200AB2F3B /* Gears.framework in Frameworks */,
@@ -250,6 +255,7 @@
 		2C4CCF842011061E00AB2F3B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2CF432452019DA2F00F30C6B /* Functional.framework */,
 				2C6B92D020190A6D007E5C20 /* DataSource.framework */,
 				2C9A82FB2018D666004B2709 /* DataSource.framework */,
 				2C4CCF8A2011062800AB2F3B /* ChecklistsFeature.framework */,

@@ -36,6 +36,43 @@
 		2C9A82F22018D47A004B2709 /* PlainDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9A82F12018D47A004B2709 /* PlainDataSource.swift */; };
 		2C9A82F42018D49E004B2709 /* CombinedDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9A82F32018D49E004B2709 /* CombinedDataSource.swift */; };
 		2C9A82F62018D4BC004B2709 /* SectionedDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9A82F52018D4BC004B2709 /* SectionedDataSource.swift */; };
+		2CF431F62019D91200F30C6B /* Functional.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CF431ED2019D91200F30C6B /* Functional.framework */; };
+		2CF431FD2019D91200F30C6B /* Functional.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CF431EF2019D91200F30C6B /* Functional.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2CF432052019D96600F30C6B /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF432042019D96600F30C6B /* Types.swift */; };
+		2CF4322A2019D97A00F30C6B /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF432072019D97900F30C6B /* Result.swift */; };
+		2CF4322B2019D97A00F30C6B /* ResultType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF432082019D97900F30C6B /* ResultType.swift */; };
+		2CF4322C2019D97A00F30C6B /* Coproduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF4320A2019D97900F30C6B /* Coproduct.swift */; };
+		2CF4322D2019D97A00F30C6B /* CoproductType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF4320B2019D97900F30C6B /* CoproductType.swift */; };
+		2CF4322E2019D97A00F30C6B /* AnyMonoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF4320D2019D97900F30C6B /* AnyMonoid.swift */; };
+		2CF4322F2019D97A00F30C6B /* Monoid+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF4320E2019D97900F30C6B /* Monoid+Extensions.swift */; };
+		2CF432302019D97A00F30C6B /* Monoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF4320F2019D97900F30C6B /* Monoid.swift */; };
+		2CF432312019D97A00F30C6B /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF432112019D97900F30C6B /* State.swift */; };
+		2CF432322019D97A00F30C6B /* StateType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF432122019D97900F30C6B /* StateType.swift */; };
+		2CF432332019D97A00F30C6B /* Choice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF432142019D97A00F30C6B /* Choice.swift */; };
+		2CF432342019D97A00F30C6B /* Combinations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF432152019D97A00F30C6B /* Combinations.swift */; };
+		2CF432352019D97A00F30C6B /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF432162019D97A00F30C6B /* Constant.swift */; };
+		2CF432362019D97A00F30C6B /* Curry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF432172019D97A00F30C6B /* Curry.swift */; };
+		2CF432372019D97A00F30C6B /* Identity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF432182019D97A00F30C6B /* Identity.swift */; };
+		2CF432382019D97A00F30C6B /* Ignore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF432192019D97A00F30C6B /* Ignore.swift */; };
+		2CF432392019D97A00F30C6B /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF4321A2019D97A00F30C6B /* Operators.swift */; };
+		2CF4323A2019D97A00F30C6B /* Writer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF4321C2019D97A00F30C6B /* Writer.swift */; };
+		2CF4323B2019D97A00F30C6B /* WriterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF4321D2019D97A00F30C6B /* WriterType.swift */; };
+		2CF4323C2019D97A00F30C6B /* Reader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF4321F2019D97A00F30C6B /* Reader.swift */; };
+		2CF4323D2019D97A00F30C6B /* ReaderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF432202019D97A00F30C6B /* ReaderType.swift */; };
+		2CF4323E2019D97A00F30C6B /* Future.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF432222019D97A00F30C6B /* Future.swift */; };
+		2CF4323F2019D97A00F30C6B /* FutureType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF432232019D97A00F30C6B /* FutureType.swift */; };
+		2CF432402019D97A00F30C6B /* PureConstructible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF432252019D97A00F30C6B /* PureConstructible.swift */; };
+		2CF432412019D97A00F30C6B /* TypeConstuctor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF432262019D97A00F30C6B /* TypeConstuctor.swift */; };
+		2CF432422019D97A00F30C6B /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF432282019D97A00F30C6B /* Product.swift */; };
+		2CF432432019D97A00F30C6B /* ProductType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF432292019D97A00F30C6B /* ProductType.swift */; };
+		2CF432572019DA5A00F30C6B /* CoproductTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF432482019DA5900F30C6B /* CoproductTests.swift */; };
+		2CF432582019DA5A00F30C6B /* WriterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF4324A2019DA5900F30C6B /* WriterTests.swift */; };
+		2CF432592019DA5A00F30C6B /* ProductTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF4324C2019DA5900F30C6B /* ProductTests.swift */; };
+		2CF4325A2019DA5A00F30C6B /* FutureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF4324E2019DA5900F30C6B /* FutureTests.swift */; };
+		2CF4325B2019DA5A00F30C6B /* ResultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF432502019DA5900F30C6B /* ResultTests.swift */; };
+		2CF4325C2019DA5A00F30C6B /* StateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF432522019DA5900F30C6B /* StateTests.swift */; };
+		2CF4325D2019DA5A00F30C6B /* ReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF432542019DA5900F30C6B /* ReaderTests.swift */; };
+		2CF4325E2019DA5A00F30C6B /* XCTestCase+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF432562019DA5A00F30C6B /* XCTestCase+Additions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +89,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 2C77348B2010DB70000026B0;
 			remoteInfo = DataSource;
+		};
+		2CF431F72019D91200F30C6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C7734032010901B000026B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2CF431EC2019D91200F30C6B;
+			remoteInfo = Functional;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -91,6 +135,46 @@
 		2C9A82F12018D47A004B2709 /* PlainDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlainDataSource.swift; sourceTree = "<group>"; };
 		2C9A82F32018D49E004B2709 /* CombinedDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinedDataSource.swift; sourceTree = "<group>"; };
 		2C9A82F52018D4BC004B2709 /* SectionedDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionedDataSource.swift; sourceTree = "<group>"; };
+		2CF431ED2019D91200F30C6B /* Functional.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Functional.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CF431EF2019D91200F30C6B /* Functional.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Functional.h; sourceTree = "<group>"; };
+		2CF431F02019D91200F30C6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CF431F52019D91200F30C6B /* FunctionalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FunctionalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CF431FC2019D91200F30C6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CF432042019D96600F30C6B /* Types.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
+		2CF432072019D97900F30C6B /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		2CF432082019D97900F30C6B /* ResultType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultType.swift; sourceTree = "<group>"; };
+		2CF4320A2019D97900F30C6B /* Coproduct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coproduct.swift; sourceTree = "<group>"; };
+		2CF4320B2019D97900F30C6B /* CoproductType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoproductType.swift; sourceTree = "<group>"; };
+		2CF4320D2019D97900F30C6B /* AnyMonoid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyMonoid.swift; sourceTree = "<group>"; };
+		2CF4320E2019D97900F30C6B /* Monoid+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Monoid+Extensions.swift"; sourceTree = "<group>"; };
+		2CF4320F2019D97900F30C6B /* Monoid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Monoid.swift; sourceTree = "<group>"; };
+		2CF432112019D97900F30C6B /* State.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		2CF432122019D97900F30C6B /* StateType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateType.swift; sourceTree = "<group>"; };
+		2CF432142019D97A00F30C6B /* Choice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Choice.swift; sourceTree = "<group>"; };
+		2CF432152019D97A00F30C6B /* Combinations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Combinations.swift; sourceTree = "<group>"; };
+		2CF432162019D97A00F30C6B /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		2CF432172019D97A00F30C6B /* Curry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Curry.swift; sourceTree = "<group>"; };
+		2CF432182019D97A00F30C6B /* Identity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Identity.swift; sourceTree = "<group>"; };
+		2CF432192019D97A00F30C6B /* Ignore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ignore.swift; sourceTree = "<group>"; };
+		2CF4321A2019D97A00F30C6B /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
+		2CF4321C2019D97A00F30C6B /* Writer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Writer.swift; sourceTree = "<group>"; };
+		2CF4321D2019D97A00F30C6B /* WriterType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriterType.swift; sourceTree = "<group>"; };
+		2CF4321F2019D97A00F30C6B /* Reader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reader.swift; sourceTree = "<group>"; };
+		2CF432202019D97A00F30C6B /* ReaderType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReaderType.swift; sourceTree = "<group>"; };
+		2CF432222019D97A00F30C6B /* Future.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Future.swift; sourceTree = "<group>"; };
+		2CF432232019D97A00F30C6B /* FutureType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FutureType.swift; sourceTree = "<group>"; };
+		2CF432252019D97A00F30C6B /* PureConstructible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PureConstructible.swift; sourceTree = "<group>"; };
+		2CF432262019D97A00F30C6B /* TypeConstuctor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeConstuctor.swift; sourceTree = "<group>"; };
+		2CF432282019D97A00F30C6B /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		2CF432292019D97A00F30C6B /* ProductType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductType.swift; sourceTree = "<group>"; };
+		2CF432482019DA5900F30C6B /* CoproductTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoproductTests.swift; sourceTree = "<group>"; };
+		2CF4324A2019DA5900F30C6B /* WriterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriterTests.swift; sourceTree = "<group>"; };
+		2CF4324C2019DA5900F30C6B /* ProductTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductTests.swift; sourceTree = "<group>"; };
+		2CF4324E2019DA5900F30C6B /* FutureTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FutureTests.swift; sourceTree = "<group>"; };
+		2CF432502019DA5900F30C6B /* ResultTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultTests.swift; sourceTree = "<group>"; };
+		2CF432522019DA5900F30C6B /* StateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateTests.swift; sourceTree = "<group>"; };
+		2CF432542019DA5900F30C6B /* ReaderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReaderTests.swift; sourceTree = "<group>"; };
+		2CF432562019DA5A00F30C6B /* XCTestCase+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Additions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +208,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2CF431E92019D91200F30C6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CF431F22019D91200F30C6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CF431F62019D91200F30C6B /* Functional.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -145,6 +244,8 @@
 				2C77345D2010B832000026B0 /* GearsTests */,
 				2C77348D2010DB70000026B0 /* DataSource */,
 				2C7734982010DB70000026B0 /* DataSourceTests */,
+				2CF431EE2019D91200F30C6B /* Functional */,
+				2CF431F92019D91200F30C6B /* FunctionalTests */,
 				2C77340D2010901B000026B0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -156,6 +257,8 @@
 				2C7734592010B832000026B0 /* GearsTests.xctest */,
 				2C77348C2010DB70000026B0 /* DataSource.framework */,
 				2C7734942010DB70000026B0 /* DataSourceTests.xctest */,
+				2CF431ED2019D91200F30C6B /* Functional.framework */,
+				2CF431F52019D91200F30C6B /* FunctionalTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -248,6 +351,202 @@
 			path = Core;
 			sourceTree = "<group>";
 		};
+		2CF431EE2019D91200F30C6B /* Functional */ = {
+			isa = PBXGroup;
+			children = (
+				2CF432242019D97A00F30C6B /* Constructor */,
+				2CF432092019D97900F30C6B /* Coproduct */,
+				2CF432212019D97A00F30C6B /* Future */,
+				2CF4320C2019D97900F30C6B /* Monoid */,
+				2CF432132019D97A00F30C6B /* Operations */,
+				2CF432272019D97A00F30C6B /* Product */,
+				2CF4321E2019D97A00F30C6B /* Reader */,
+				2CF432062019D97900F30C6B /* Result */,
+				2CF432102019D97900F30C6B /* State */,
+				2CF4321B2019D97A00F30C6B /* Writer */,
+				2CF432042019D96600F30C6B /* Types.swift */,
+				2CF431EF2019D91200F30C6B /* Functional.h */,
+				2CF431F02019D91200F30C6B /* Info.plist */,
+			);
+			path = Functional;
+			sourceTree = "<group>";
+		};
+		2CF431F92019D91200F30C6B /* FunctionalTests */ = {
+			isa = PBXGroup;
+			children = (
+				2CF432552019DA5A00F30C6B /* Additions */,
+				2CF432472019DA5900F30C6B /* Coproduct */,
+				2CF4324D2019DA5900F30C6B /* Future */,
+				2CF4324B2019DA5900F30C6B /* Product */,
+				2CF432532019DA5900F30C6B /* Reader */,
+				2CF4324F2019DA5900F30C6B /* Result */,
+				2CF432512019DA5900F30C6B /* State */,
+				2CF432492019DA5900F30C6B /* Writer */,
+				2CF431FC2019D91200F30C6B /* Info.plist */,
+			);
+			path = FunctionalTests;
+			sourceTree = "<group>";
+		};
+		2CF432062019D97900F30C6B /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				2CF432072019D97900F30C6B /* Result.swift */,
+				2CF432082019D97900F30C6B /* ResultType.swift */,
+			);
+			path = Result;
+			sourceTree = "<group>";
+		};
+		2CF432092019D97900F30C6B /* Coproduct */ = {
+			isa = PBXGroup;
+			children = (
+				2CF4320A2019D97900F30C6B /* Coproduct.swift */,
+				2CF4320B2019D97900F30C6B /* CoproductType.swift */,
+			);
+			path = Coproduct;
+			sourceTree = "<group>";
+		};
+		2CF4320C2019D97900F30C6B /* Monoid */ = {
+			isa = PBXGroup;
+			children = (
+				2CF4320D2019D97900F30C6B /* AnyMonoid.swift */,
+				2CF4320E2019D97900F30C6B /* Monoid+Extensions.swift */,
+				2CF4320F2019D97900F30C6B /* Monoid.swift */,
+			);
+			path = Monoid;
+			sourceTree = "<group>";
+		};
+		2CF432102019D97900F30C6B /* State */ = {
+			isa = PBXGroup;
+			children = (
+				2CF432112019D97900F30C6B /* State.swift */,
+				2CF432122019D97900F30C6B /* StateType.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		2CF432132019D97A00F30C6B /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				2CF432142019D97A00F30C6B /* Choice.swift */,
+				2CF432152019D97A00F30C6B /* Combinations.swift */,
+				2CF432162019D97A00F30C6B /* Constant.swift */,
+				2CF432172019D97A00F30C6B /* Curry.swift */,
+				2CF432182019D97A00F30C6B /* Identity.swift */,
+				2CF432192019D97A00F30C6B /* Ignore.swift */,
+				2CF4321A2019D97A00F30C6B /* Operators.swift */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
+		2CF4321B2019D97A00F30C6B /* Writer */ = {
+			isa = PBXGroup;
+			children = (
+				2CF4321C2019D97A00F30C6B /* Writer.swift */,
+				2CF4321D2019D97A00F30C6B /* WriterType.swift */,
+			);
+			path = Writer;
+			sourceTree = "<group>";
+		};
+		2CF4321E2019D97A00F30C6B /* Reader */ = {
+			isa = PBXGroup;
+			children = (
+				2CF4321F2019D97A00F30C6B /* Reader.swift */,
+				2CF432202019D97A00F30C6B /* ReaderType.swift */,
+			);
+			path = Reader;
+			sourceTree = "<group>";
+		};
+		2CF432212019D97A00F30C6B /* Future */ = {
+			isa = PBXGroup;
+			children = (
+				2CF432222019D97A00F30C6B /* Future.swift */,
+				2CF432232019D97A00F30C6B /* FutureType.swift */,
+			);
+			path = Future;
+			sourceTree = "<group>";
+		};
+		2CF432242019D97A00F30C6B /* Constructor */ = {
+			isa = PBXGroup;
+			children = (
+				2CF432252019D97A00F30C6B /* PureConstructible.swift */,
+				2CF432262019D97A00F30C6B /* TypeConstuctor.swift */,
+			);
+			path = Constructor;
+			sourceTree = "<group>";
+		};
+		2CF432272019D97A00F30C6B /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				2CF432282019D97A00F30C6B /* Product.swift */,
+				2CF432292019D97A00F30C6B /* ProductType.swift */,
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
+		2CF432472019DA5900F30C6B /* Coproduct */ = {
+			isa = PBXGroup;
+			children = (
+				2CF432482019DA5900F30C6B /* CoproductTests.swift */,
+			);
+			path = Coproduct;
+			sourceTree = "<group>";
+		};
+		2CF432492019DA5900F30C6B /* Writer */ = {
+			isa = PBXGroup;
+			children = (
+				2CF4324A2019DA5900F30C6B /* WriterTests.swift */,
+			);
+			path = Writer;
+			sourceTree = "<group>";
+		};
+		2CF4324B2019DA5900F30C6B /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				2CF4324C2019DA5900F30C6B /* ProductTests.swift */,
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
+		2CF4324D2019DA5900F30C6B /* Future */ = {
+			isa = PBXGroup;
+			children = (
+				2CF4324E2019DA5900F30C6B /* FutureTests.swift */,
+			);
+			path = Future;
+			sourceTree = "<group>";
+		};
+		2CF4324F2019DA5900F30C6B /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				2CF432502019DA5900F30C6B /* ResultTests.swift */,
+			);
+			path = Result;
+			sourceTree = "<group>";
+		};
+		2CF432512019DA5900F30C6B /* State */ = {
+			isa = PBXGroup;
+			children = (
+				2CF432522019DA5900F30C6B /* StateTests.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		2CF432532019DA5900F30C6B /* Reader */ = {
+			isa = PBXGroup;
+			children = (
+				2CF432542019DA5900F30C6B /* ReaderTests.swift */,
+			);
+			path = Reader;
+			sourceTree = "<group>";
+		};
+		2CF432552019DA5A00F30C6B /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				2CF432562019DA5A00F30C6B /* XCTestCase+Additions.swift */,
+			);
+			path = Additions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -264,6 +563,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C77349C2010DB70000026B0 /* DataSource.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CF431EA2019D91200F30C6B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CF431FD2019D91200F30C6B /* Functional.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +649,42 @@
 			productReference = 2C7734942010DB70000026B0 /* DataSourceTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		2CF431EC2019D91200F30C6B /* Functional */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CF432022019D91200F30C6B /* Build configuration list for PBXNativeTarget "Functional" */;
+			buildPhases = (
+				2CF431E82019D91200F30C6B /* Sources */,
+				2CF431E92019D91200F30C6B /* Frameworks */,
+				2CF431EA2019D91200F30C6B /* Headers */,
+				2CF431EB2019D91200F30C6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Functional;
+			productName = Functional;
+			productReference = 2CF431ED2019D91200F30C6B /* Functional.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2CF431F42019D91200F30C6B /* FunctionalTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CF432032019D91200F30C6B /* Build configuration list for PBXNativeTarget "FunctionalTests" */;
+			buildPhases = (
+				2CF431F12019D91200F30C6B /* Sources */,
+				2CF431F22019D91200F30C6B /* Frameworks */,
+				2CF431F32019D91200F30C6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2CF431F82019D91200F30C6B /* PBXTargetDependency */,
+			);
+			name = FunctionalTests;
+			productName = FunctionalTests;
+			productReference = 2CF431F52019D91200F30C6B /* FunctionalTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -369,6 +712,15 @@
 						CreatedOnToolsVersion = 9.0.1;
 						ProvisioningStyle = Automatic;
 					};
+					2CF431EC2019D91200F30C6B = {
+						CreatedOnToolsVersion = 9.0.1;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+					};
+					2CF431F42019D91200F30C6B = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 2C7734062010901B000026B0 /* Build configuration list for PBXProject "Infrastructure" */;
@@ -387,6 +739,8 @@
 				2C7734582010B832000026B0 /* GearsTests */,
 				2C77348B2010DB70000026B0 /* DataSource */,
 				2C7734932010DB70000026B0 /* DataSourceTests */,
+				2CF431EC2019D91200F30C6B /* Functional */,
+				2CF431F42019D91200F30C6B /* FunctionalTests */,
 			);
 		};
 /* End PBXProject section */
@@ -414,6 +768,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		2C7734922010DB70000026B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CF431EB2019D91200F30C6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CF431F32019D91200F30C6B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -476,6 +844,55 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2CF431E82019D91200F30C6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CF4322A2019D97A00F30C6B /* Result.swift in Sources */,
+				2CF4323F2019D97A00F30C6B /* FutureType.swift in Sources */,
+				2CF432432019D97A00F30C6B /* ProductType.swift in Sources */,
+				2CF4322C2019D97A00F30C6B /* Coproduct.swift in Sources */,
+				2CF4323C2019D97A00F30C6B /* Reader.swift in Sources */,
+				2CF432332019D97A00F30C6B /* Choice.swift in Sources */,
+				2CF4322E2019D97A00F30C6B /* AnyMonoid.swift in Sources */,
+				2CF432322019D97A00F30C6B /* StateType.swift in Sources */,
+				2CF4322D2019D97A00F30C6B /* CoproductType.swift in Sources */,
+				2CF4322F2019D97A00F30C6B /* Monoid+Extensions.swift in Sources */,
+				2CF4323E2019D97A00F30C6B /* Future.swift in Sources */,
+				2CF432372019D97A00F30C6B /* Identity.swift in Sources */,
+				2CF432312019D97A00F30C6B /* State.swift in Sources */,
+				2CF432412019D97A00F30C6B /* TypeConstuctor.swift in Sources */,
+				2CF432302019D97A00F30C6B /* Monoid.swift in Sources */,
+				2CF432352019D97A00F30C6B /* Constant.swift in Sources */,
+				2CF432382019D97A00F30C6B /* Ignore.swift in Sources */,
+				2CF4323A2019D97A00F30C6B /* Writer.swift in Sources */,
+				2CF432392019D97A00F30C6B /* Operators.swift in Sources */,
+				2CF4322B2019D97A00F30C6B /* ResultType.swift in Sources */,
+				2CF432362019D97A00F30C6B /* Curry.swift in Sources */,
+				2CF4323D2019D97A00F30C6B /* ReaderType.swift in Sources */,
+				2CF432052019D96600F30C6B /* Types.swift in Sources */,
+				2CF4323B2019D97A00F30C6B /* WriterType.swift in Sources */,
+				2CF432342019D97A00F30C6B /* Combinations.swift in Sources */,
+				2CF432402019D97A00F30C6B /* PureConstructible.swift in Sources */,
+				2CF432422019D97A00F30C6B /* Product.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CF431F12019D91200F30C6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CF4325B2019DA5A00F30C6B /* ResultTests.swift in Sources */,
+				2CF4325E2019DA5A00F30C6B /* XCTestCase+Additions.swift in Sources */,
+				2CF4325C2019DA5A00F30C6B /* StateTests.swift in Sources */,
+				2CF4325D2019DA5A00F30C6B /* ReaderTests.swift in Sources */,
+				2CF4325A2019DA5A00F30C6B /* FutureTests.swift in Sources */,
+				2CF432582019DA5A00F30C6B /* WriterTests.swift in Sources */,
+				2CF432592019DA5A00F30C6B /* ProductTests.swift in Sources */,
+				2CF432572019DA5A00F30C6B /* CoproductTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -488,6 +905,11 @@
 			isa = PBXTargetDependency;
 			target = 2C77348B2010DB70000026B0 /* DataSource */;
 			targetProxy = 2C7734962010DB70000026B0 /* PBXContainerItemProxy */;
+		};
+		2CF431F82019D91200F30C6B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2CF431EC2019D91200F30C6B /* Functional */;
+			targetProxy = 2CF431F72019D91200F30C6B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -744,6 +1166,77 @@
 			};
 			name = Release;
 		};
+		2CF431FE2019D91200F30C6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Functional/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JK.Functional;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2CF431FF2019D91200F30C6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Functional/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JK.Functional;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2CF432002019D91200F30C6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FunctionalTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JK.FunctionalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2CF432012019D91200F30C6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FunctionalTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JK.FunctionalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -788,6 +1281,24 @@
 			buildConfigurations = (
 				2C7734A12010DB70000026B0 /* Debug */,
 				2C7734A22010DB70000026B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2CF432022019D91200F30C6B /* Build configuration list for PBXNativeTarget "Functional" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CF431FE2019D91200F30C6B /* Debug */,
+				2CF431FF2019D91200F30C6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2CF432032019D91200F30C6B /* Build configuration list for PBXNativeTarget "FunctionalTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CF432002019D91200F30C6B /* Debug */,
+				2CF432012019D91200F30C6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
