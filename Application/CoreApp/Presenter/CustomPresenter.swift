@@ -12,6 +12,11 @@ public final class CustomPresenter<T>: Presenter<T> {
     public var onPresent: ((ContentType) -> Void)?
     public var onDismiss: (() -> Void)?
     
+    public init(onPresent: ((ContentType) -> Void)? = nil, onDismiss: (() -> Void)? = nil) {
+        self.onPresent = onPresent
+        self.onDismiss = onDismiss
+    }
+    
     public override func present(_ content: ContentType) {
         onPresent?(content)
     }

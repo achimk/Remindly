@@ -9,9 +9,11 @@
 import UIKit
 
 final class CreateChecklistRoute: Routable {
+    let coordinator: FlowCoordinatorType
     let router: RouterType
     
-    init(router: RouterType) {
+    init(coordinator: FlowCoordinatorType, router: RouterType) {
+        self.coordinator = coordinator
         self.router = router
     }
     
@@ -19,6 +21,6 @@ final class CreateChecklistRoute: Routable {
         guard case Location.createChecklist = location else { return }
         
         let flow = CreateChecklistFlow()
-        screen.present(flow)
+        coordinator.open(flow)
     }
 }

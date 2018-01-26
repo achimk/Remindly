@@ -16,18 +16,19 @@ struct RouterFactory {
     }
     
     func makeRouter() -> RouterType {
+        let stack = StackPresenter(navigationController: navigationController)
+        let coordinator = FlowCoordinator(stack)
         let proxy = Proxy()
         
-        let listChecklistRoute = ListChecklistRoute(router: proxy)
+        let listChecklistRoute = ListChecklistRoute(coordinator: coordinator, router: proxy)
         
-        let createChecklistRoute = CreateChecklistRoute(router: proxy)
+        let createChecklistRoute = CreateChecklistRoute(coordinator: coordinator, router: proxy)
         
         let routes: [Routable] = [
             listChecklistRoute,
             createChecklistRoute
         ]
         
-        let stack = StackPresenter(navigationController: navigationController)
         let navigator = Router(routes: routes, presenter: stack)
         proxy.source = navigator
         

@@ -10,9 +10,11 @@ import Foundation
 import Reminders
 
 final class ListChecklistRoute: Routable {
+    let coordinator: FlowCoordinatorType
     let router: RouterType
     
-    init(router: RouterType) {
+    init(coordinator: FlowCoordinatorType, router: RouterType) {
+        self.coordinator = coordinator
         self.router = router
     }
     
@@ -30,6 +32,6 @@ final class ListChecklistRoute: Routable {
         ]
         
         let flow = ListChecklistFlow(router: router, items: items)
-        screen.present(flow)
+        coordinator.open(flow)
     }
 }
