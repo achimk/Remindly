@@ -1,5 +1,5 @@
 //
-//  NavigatorFactory.swift
+//  RouterFactory.swift
 //  Remindly
 //
 //  Created by Joachim Kret on 19.01.2018.
@@ -8,19 +8,19 @@
 
 import UIKit
 
-struct NavigatorFactory {
+struct RouterFactory {
     let navigationController: UINavigationController
     
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
     }
     
-    func makeNavigator() -> NavigatorType {
+    func makeRouter() -> RouterType {
         let proxy = Proxy()
         
-        let listChecklistRoute = ListChecklistRoute(navigator: proxy)
+        let listChecklistRoute = ListChecklistRoute(router: proxy)
         
-        let createChecklistRoute = CreateChecklistRoute(navigator: proxy)
+        let createChecklistRoute = CreateChecklistRoute(router: proxy)
         
         let routes: [Routable] = [
             listChecklistRoute,
@@ -28,16 +28,16 @@ struct NavigatorFactory {
         ]
         
         let stack = StackPresenter(navigationController: navigationController)
-        let navigator = Navigator(routes: routes, presenter: stack)
+        let navigator = Router(routes: routes, presenter: stack)
         proxy.source = navigator
         
         return proxy
     }
 }
 
-extension NavigatorFactory {
-    private final class Proxy: NavigatorType {
-        var source: NavigatorType?
+extension RouterFactory {
+    private final class Proxy: RouterType {
+        var source: RouterType?
         
         func open(location: Location, using presenter: ViewPresenter?) {
             source?.open(location: location, using: presenter)

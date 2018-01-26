@@ -1,5 +1,5 @@
 //
-//  NavigatorType.swift
+//  RouterType.swift
 //  Remindly
 //
 //  Created by Joachim Kret on 19.01.2018.
@@ -8,11 +8,11 @@
 
 import Foundation
 
-protocol NavigatorType {
+protocol RouterType {
     func open(location: Location, using presenter: ViewPresenter?)
 }
 
-extension NavigatorType {
+extension RouterType {
     func open(_ location: Location) {
         open(location: location, using: nil)
     }

@@ -36,12 +36,12 @@
 		2CBD8EEC201B0F02009956E6 /* TableViewCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4BA89620190B7E003C210F /* TableViewCells.swift */; };
 		2CBD8EED201B0F07009956E6 /* TableViewDataSourceAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6B92CD20190A03007E5C20 /* TableViewDataSourceAdapter.swift */; };
 		2CBD8EEE201B0F5B009956E6 /* DataSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CBD8EEF201B0F5B009956E6 /* DataSource.framework */; };
-		2CD8B3E32012244C00381D17 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD8B3E22012244C00381D17 /* Navigator.swift */; };
+		2CD8B3E32012244C00381D17 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD8B3E22012244C00381D17 /* Router.swift */; };
 		2CD8B3E72012247F00381D17 /* ListChecklistRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD8B3E62012247F00381D17 /* ListChecklistRoute.swift */; };
 		2CD8B3E92012248800381D17 /* CreateChecklistRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD8B3E82012248800381D17 /* CreateChecklistRoute.swift */; };
-		2CD8B3EB2012249400381D17 /* NavigatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD8B3EA2012249400381D17 /* NavigatorType.swift */; };
+		2CD8B3EB2012249400381D17 /* RouterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD8B3EA2012249400381D17 /* RouterType.swift */; };
 		2CD8B3ED201224A900381D17 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD8B3EC201224A900381D17 /* Location.swift */; };
-		2CD8B3EF2012252600381D17 /* NavigatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD8B3EE2012252600381D17 /* NavigatorFactory.swift */; };
+		2CD8B3EF2012252600381D17 /* RouterFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD8B3EE2012252600381D17 /* RouterFactory.swift */; };
 		2CD8B3F22012263500381D17 /* Routable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD8B3F12012263500381D17 /* Routable.swift */; };
 		2CE7FD8D201272030027418A /* PresenterTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE7FD8C201272030027418A /* PresenterTypes.swift */; };
 		2CF079462014C67700BFD532 /* ChecklistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF079452014C67700BFD532 /* ChecklistTableViewCell.swift */; };
@@ -143,12 +143,12 @@
 		2CBD8EDE201B0EE2009956E6 /* ReusableUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableUITests.swift; sourceTree = "<group>"; };
 		2CBD8EE0201B0EE2009956E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CBD8EEF201B0F5B009956E6 /* DataSource.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DataSource.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2CD8B3E22012244C00381D17 /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
+		2CD8B3E22012244C00381D17 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		2CD8B3E62012247F00381D17 /* ListChecklistRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListChecklistRoute.swift; sourceTree = "<group>"; };
 		2CD8B3E82012248800381D17 /* CreateChecklistRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateChecklistRoute.swift; sourceTree = "<group>"; };
-		2CD8B3EA2012249400381D17 /* NavigatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigatorType.swift; sourceTree = "<group>"; };
+		2CD8B3EA2012249400381D17 /* RouterType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterType.swift; sourceTree = "<group>"; };
 		2CD8B3EC201224A900381D17 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
-		2CD8B3EE2012252600381D17 /* NavigatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigatorFactory.swift; sourceTree = "<group>"; };
+		2CD8B3EE2012252600381D17 /* RouterFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterFactory.swift; sourceTree = "<group>"; };
 		2CD8B3F12012263500381D17 /* Routable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routable.swift; sourceTree = "<group>"; };
 		2CE7FD8C201272030027418A /* PresenterTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterTypes.swift; sourceTree = "<group>"; };
 		2CF079452014C67700BFD532 /* ChecklistTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistTableViewCell.swift; sourceTree = "<group>"; };
@@ -380,7 +380,7 @@
 		2CD8B3E12012243300381D17 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
-				2CD8B3E52012246900381D17 /* Navigator */,
+				2CD8B3E52012246900381D17 /* Router */,
 				2CD8B3E42012245F00381D17 /* Routes */,
 			);
 			path = Navigation;
@@ -396,15 +396,15 @@
 			path = Routes;
 			sourceTree = "<group>";
 		};
-		2CD8B3E52012246900381D17 /* Navigator */ = {
+		2CD8B3E52012246900381D17 /* Router */ = {
 			isa = PBXGroup;
 			children = (
 				2CD8B3EC201224A900381D17 /* Location.swift */,
-				2CD8B3EA2012249400381D17 /* NavigatorType.swift */,
-				2CD8B3E22012244C00381D17 /* Navigator.swift */,
-				2CD8B3EE2012252600381D17 /* NavigatorFactory.swift */,
+				2CD8B3EA2012249400381D17 /* RouterType.swift */,
+				2CD8B3E22012244C00381D17 /* Router.swift */,
+				2CD8B3EE2012252600381D17 /* RouterFactory.swift */,
 			);
-			path = Navigator;
+			path = Router;
 			sourceTree = "<group>";
 		};
 		2CF079442014C65D00BFD532 /* Views */ = {
@@ -624,7 +624,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CE7FD8D201272030027418A /* PresenterTypes.swift in Sources */,
-				2CD8B3EF2012252600381D17 /* NavigatorFactory.swift in Sources */,
+				2CD8B3EF2012252600381D17 /* RouterFactory.swift in Sources */,
 				2C4CCF98201108B800AB2F3B /* ListChecklistFlow.swift in Sources */,
 				2C4CCF9E20110C1600AB2F3B /* CreateChecklistViewController.swift in Sources */,
 				2C2DA9E320123A7100F11F59 /* ModalPresenter.swift in Sources */,
@@ -636,10 +636,10 @@
 				2C4CCF9C20110C0900AB2F3B /* CreateChecklistFlow.swift in Sources */,
 				2CF079462014C67700BFD532 /* ChecklistTableViewCell.swift in Sources */,
 				2CD8B3F22012263500381D17 /* Routable.swift in Sources */,
-				2CD8B3EB2012249400381D17 /* NavigatorType.swift in Sources */,
+				2CD8B3EB2012249400381D17 /* RouterType.swift in Sources */,
 				2CD8B3E72012247F00381D17 /* ListChecklistRoute.swift in Sources */,
 				2C4CCF9A2011097700AB2F3B /* ListChecklistViewController.swift in Sources */,
-				2CD8B3E32012244C00381D17 /* Navigator.swift in Sources */,
+				2CD8B3E32012244C00381D17 /* Router.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

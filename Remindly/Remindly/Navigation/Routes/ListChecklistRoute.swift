@@ -10,10 +10,10 @@ import Foundation
 import Reminders
 
 final class ListChecklistRoute: Routable {
-    let navigator: NavigatorType
+    let router: RouterType
     
-    init(navigator: NavigatorType) {
-        self.navigator = navigator
+    init(router: RouterType) {
+        self.router = router
     }
     
     func navigate(to location: Location, using screen: ScreenPresenter) throws {
@@ -29,7 +29,7 @@ final class ListChecklistRoute: Routable {
             Checklist(identifier: "7", name: "Checklist 7", timestamp: Date(), reminders: [])
         ]
         
-        let flow = ListChecklistFlow(navigator: navigator, items: items)
+        let flow = ListChecklistFlow(router: router, items: items)
         screen.present(flow)
     }
 }

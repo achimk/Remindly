@@ -1,5 +1,5 @@
 //
-//  Navigator.swift
+//  Router.swift
 //  Remindly
 //
 //  Created by Joachim Kret on 19.01.2018.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-final class Navigator: NavigatorType {
+final class Router: RouterType {
     private var screens: [ScreenPresenter] = []
     private let routes: [Routable]
     private let presenter: ViewPresenter

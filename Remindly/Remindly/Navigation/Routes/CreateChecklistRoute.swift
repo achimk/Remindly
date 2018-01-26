@@ -9,10 +9,10 @@
 import UIKit
 
 final class CreateChecklistRoute: Routable {
-    let navigator: NavigatorType
+    let router: RouterType
     
-    init(navigator: NavigatorType) {
-        self.navigator = navigator
+    init(router: RouterType) {
+        self.router = router
     }
     
     func navigate(to location: Location, using screen: ScreenPresenter) throws {

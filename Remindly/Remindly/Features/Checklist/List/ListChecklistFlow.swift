@@ -15,10 +15,10 @@ final class ListChecklistFlow: FlowPresenter {
     let screen: ListChecklistScreen
     let presenter = ProxyPresenter<UIViewController>()
     
-    init(navigator: NavigatorType, items: [Checklist]) {
+    init(router: RouterType, items: [Checklist]) {
         
         let navigationBarComponent = ListChecklistBarComponent {
-            navigator.open(.createChecklist)
+            router.open(.createChecklist)
         }
         
         let listComponent = ListChecklistComponent(items: items)
