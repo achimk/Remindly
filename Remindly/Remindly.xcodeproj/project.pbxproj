@@ -28,6 +28,11 @@
 		2C7733A220108F8C000026B0 /* RemindlyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7733A120108F8C000026B0 /* RemindlyTests.swift */; };
 		2C7733AD20108F8C000026B0 /* RemindlyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7733AC20108F8C000026B0 /* RemindlyUITests.swift */; };
 		2C7CBAF2201B84AF002B3ADA /* FlowCoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7CBAF1201B84AF002B3ADA /* FlowCoordinatorType.swift */; };
+		2C7CBAF5201B875B002B3ADA /* NavigatingByLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7CBAF4201B875B002B3ADA /* NavigatingByLocation.swift */; };
+		2C7CBAF7201B87EF002B3ADA /* RouteType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7CBAF6201B87EF002B3ADA /* RouteType.swift */; };
+		2C7CBAF9201B8842002B3ADA /* PresentingByLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7CBAF8201B8842002B3ADA /* PresentingByLocation.swift */; };
+		2C7CBAFB201B8AB3002B3ADA /* PresenterConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7CBAFA201B8AB3002B3ADA /* PresenterConfigurable.swift */; };
+		2C7CBAFD201B9004002B3ADA /* NavigationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7CBAFC201B9004002B3ADA /* NavigationFactory.swift */; };
 		2C9A82FA2018D666004B2709 /* DataSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C9A82FB2018D666004B2709 /* DataSource.framework */; };
 		2C9A82FC2018D673004B2709 /* DataSource.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2C9A82FB2018D666004B2709 /* DataSource.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2CBD8ED8201B0EE2009956E6 /* ReusableUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CBD8ECF201B0EE2009956E6 /* ReusableUI.framework */; };
@@ -43,8 +48,6 @@
 		2CD8B3E92012248800381D17 /* CreateChecklistRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD8B3E82012248800381D17 /* CreateChecklistRoute.swift */; };
 		2CD8B3EB2012249400381D17 /* RouterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD8B3EA2012249400381D17 /* RouterType.swift */; };
 		2CD8B3ED201224A900381D17 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD8B3EC201224A900381D17 /* Location.swift */; };
-		2CD8B3EF2012252600381D17 /* RouterFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD8B3EE2012252600381D17 /* RouterFactory.swift */; };
-		2CD8B3F22012263500381D17 /* Routable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD8B3F12012263500381D17 /* Routable.swift */; };
 		2CE7FD8D201272030027418A /* PresenterTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE7FD8C201272030027418A /* PresenterTypes.swift */; };
 		2CF079462014C67700BFD532 /* ChecklistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF079452014C67700BFD532 /* ChecklistTableViewCell.swift */; };
 		2CF079482014CDC200BFD532 /* InputNameChecklistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF079472014CDC200BFD532 /* InputNameChecklistTableViewCell.swift */; };
@@ -139,6 +142,11 @@
 		2C7733AC20108F8C000026B0 /* RemindlyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindlyUITests.swift; sourceTree = "<group>"; };
 		2C7733AE20108F8C000026B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C7CBAF1201B84AF002B3ADA /* FlowCoordinatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowCoordinatorType.swift; sourceTree = "<group>"; };
+		2C7CBAF4201B875B002B3ADA /* NavigatingByLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigatingByLocation.swift; sourceTree = "<group>"; };
+		2C7CBAF6201B87EF002B3ADA /* RouteType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteType.swift; sourceTree = "<group>"; };
+		2C7CBAF8201B8842002B3ADA /* PresentingByLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentingByLocation.swift; sourceTree = "<group>"; };
+		2C7CBAFA201B8AB3002B3ADA /* PresenterConfigurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterConfigurable.swift; sourceTree = "<group>"; };
+		2C7CBAFC201B9004002B3ADA /* NavigationFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationFactory.swift; sourceTree = "<group>"; };
 		2C9A82FB2018D666004B2709 /* DataSource.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DataSource.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CBD8ECF201B0EE2009956E6 /* ReusableUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReusableUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CBD8ED1201B0EE2009956E6 /* ReusableUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReusableUI.h; sourceTree = "<group>"; };
@@ -152,8 +160,6 @@
 		2CD8B3E82012248800381D17 /* CreateChecklistRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateChecklistRoute.swift; sourceTree = "<group>"; };
 		2CD8B3EA2012249400381D17 /* RouterType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterType.swift; sourceTree = "<group>"; };
 		2CD8B3EC201224A900381D17 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
-		2CD8B3EE2012252600381D17 /* RouterFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterFactory.swift; sourceTree = "<group>"; };
-		2CD8B3F12012263500381D17 /* Routable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routable.swift; sourceTree = "<group>"; };
 		2CE7FD8C201272030027418A /* PresenterTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterTypes.swift; sourceTree = "<group>"; };
 		2CF079452014C67700BFD532 /* ChecklistTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistTableViewCell.swift; sourceTree = "<group>"; };
 		2CF079472014CDC200BFD532 /* InputNameChecklistTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputNameChecklistTableViewCell.swift; sourceTree = "<group>"; };
@@ -212,6 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				2CE7FD8C201272030027418A /* PresenterTypes.swift */,
+				2C7CBAFA201B8AB3002B3ADA /* PresenterConfigurable.swift */,
 				2C2DA9E020123A6800F11F59 /* StackPresenter.swift */,
 				2C2DA9E220123A7100F11F59 /* ModalPresenter.swift */,
 			);
@@ -379,6 +386,16 @@
 			path = RemindlyUITests;
 			sourceTree = "<group>";
 		};
+		2C7CBAF3201B873F002B3ADA /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				2C7CBAF8201B8842002B3ADA /* PresentingByLocation.swift */,
+				2C7CBAF4201B875B002B3ADA /* NavigatingByLocation.swift */,
+				2CD8B3EC201224A900381D17 /* Location.swift */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
 		2CBD8ED0201B0EE2009956E6 /* ReusableUI */ = {
 			isa = PBXGroup;
 			children = (
@@ -402,8 +419,10 @@
 		2CD8B3E12012243300381D17 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
+				2C7CBAF3201B873F002B3ADA /* Location */,
 				2CD8B3E52012246900381D17 /* Router */,
 				2CD8B3E42012245F00381D17 /* Routes */,
+				2C7CBAFC201B9004002B3ADA /* NavigationFactory.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -411,7 +430,7 @@
 		2CD8B3E42012245F00381D17 /* Routes */ = {
 			isa = PBXGroup;
 			children = (
-				2CD8B3F12012263500381D17 /* Routable.swift */,
+				2C7CBAF6201B87EF002B3ADA /* RouteType.swift */,
 				2CD8B3E62012247F00381D17 /* ListChecklistRoute.swift */,
 				2CD8B3E82012248800381D17 /* CreateChecklistRoute.swift */,
 			);
@@ -421,10 +440,8 @@
 		2CD8B3E52012246900381D17 /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				2CD8B3EC201224A900381D17 /* Location.swift */,
 				2CD8B3EA2012249400381D17 /* RouterType.swift */,
 				2CD8B3E22012244C00381D17 /* Router.swift */,
-				2CD8B3EE2012252600381D17 /* RouterFactory.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -646,12 +663,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CE7FD8D201272030027418A /* PresenterTypes.swift in Sources */,
-				2CD8B3EF2012252600381D17 /* RouterFactory.swift in Sources */,
+				2C7CBAF5201B875B002B3ADA /* NavigatingByLocation.swift in Sources */,
+				2C7CBAFB201B8AB3002B3ADA /* PresenterConfigurable.swift in Sources */,
 				2C4CCF98201108B800AB2F3B /* ListChecklistFlow.swift in Sources */,
 				2C4CCF9E20110C1600AB2F3B /* CreateChecklistViewController.swift in Sources */,
 				2C2DA9E320123A7100F11F59 /* ModalPresenter.swift in Sources */,
 				2C2DA9E120123A6800F11F59 /* StackPresenter.swift in Sources */,
 				2C7CBAF2201B84AF002B3ADA /* FlowCoordinatorType.swift in Sources */,
+				2C7CBAF9201B8842002B3ADA /* PresentingByLocation.swift in Sources */,
 				2CD8B3ED201224A900381D17 /* Location.swift in Sources */,
 				2C47761C201B6F3200AC728B /* FlowCoordinator.swift in Sources */,
 				2CD8B3E92012248800381D17 /* CreateChecklistRoute.swift in Sources */,
@@ -659,10 +678,11 @@
 				2CF079482014CDC200BFD532 /* InputNameChecklistTableViewCell.swift in Sources */,
 				2C4CCF9C20110C0900AB2F3B /* CreateChecklistFlow.swift in Sources */,
 				2CF079462014C67700BFD532 /* ChecklistTableViewCell.swift in Sources */,
-				2CD8B3F22012263500381D17 /* Routable.swift in Sources */,
+				2C7CBAFD201B9004002B3ADA /* NavigationFactory.swift in Sources */,
 				2CD8B3EB2012249400381D17 /* RouterType.swift in Sources */,
 				2CD8B3E72012247F00381D17 /* ListChecklistRoute.swift in Sources */,
 				2C4CCF9A2011097700AB2F3B /* ListChecklistViewController.swift in Sources */,
+				2C7CBAF7201B87EF002B3ADA /* RouteType.swift in Sources */,
 				2CD8B3E32012244C00381D17 /* Router.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

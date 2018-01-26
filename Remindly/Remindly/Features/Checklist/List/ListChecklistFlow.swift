@@ -18,7 +18,7 @@ final class ListChecklistFlow: FlowPresenter {
     init(router: RouterType, items: [Checklist]) {
         
         let navigationBarComponent = ListChecklistBarComponent {
-            router.open(.createChecklist)
+            router.navigate(to: .createChecklist)
         }
         
         let listComponent = ListChecklistComponent(items: items)

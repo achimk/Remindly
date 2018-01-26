@@ -11,7 +11,6 @@ import Reminders
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
     private var router: RouterType?
     var window: UIWindow?
 
@@ -20,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         let navigationController = UINavigationController()
-        let router = RouterFactory(navigationController: navigationController).makeRouter()
+        let router = NavigationFactory(navigationController: navigationController).makeRouter()
         self.router = router
         
         let window = UIWindow()
@@ -29,7 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = window
         
         let location = Location.listChecklist
-        router.open(location)
+        router.navigate(to: location)
         
         return true
     }

@@ -10,15 +10,18 @@ import Foundation
 import CoreApp
 
 final class FlowCoordinator: FlowCoordinatorType {
-    private var flows: [FlowType] = []
-    private let presenter: ViewPresenter
+    typealias PresenterType = ViewPresenter
     
-    init(_ presenter: ViewPresenter) {
+    private var flows: [FlowType] = []
+    private let presenter: PresenterType
+    private var wildcard: PresenterType?
+    
+    init(_ presenter: PresenterType) {
         self.presenter = presenter
     }
     
     func open(_ flow: FlowType) {
-        let current = self.presenter
+        let current = presenter
         let custom: ViewPresenter = CustomPresenter(
             onPresent: { [weak self] view in self?.append(flow); current.present(view) },
             onDismiss: { [weak self] in self?.remove(flow); current.dismiss() }

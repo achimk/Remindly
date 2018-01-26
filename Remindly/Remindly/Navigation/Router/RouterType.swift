@@ -8,12 +8,5 @@
 
 import Foundation
 
-protocol RouterType {
-    func open(location: Location, using presenter: ViewPresenter?)
-}
+protocol RouterType: NavigatingByLocation { }
 
-extension RouterType {
-    func open(_ location: Location) {
-        open(location: location, using: nil)
-    }
-}

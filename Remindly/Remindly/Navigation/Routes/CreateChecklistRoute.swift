@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class CreateChecklistRoute: Routable {
+final class CreateChecklistRoute: RouteType {
     let coordinator: FlowCoordinatorType
     let router: RouterType
     
@@ -17,7 +17,7 @@ final class CreateChecklistRoute: Routable {
         self.router = router
     }
     
-    func navigate(to location: Location, using screen: ScreenPresenter) throws {
+    func show(_ location: Location) {
         guard case Location.createChecklist = location else { return }
         
         let flow = CreateChecklistFlow()

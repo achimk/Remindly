@@ -9,7 +9,7 @@
 import Foundation
 import Reminders
 
-final class ListChecklistRoute: Routable {
+final class ListChecklistRoute: RouteType {
     let coordinator: FlowCoordinatorType
     let router: RouterType
     
@@ -18,7 +18,7 @@ final class ListChecklistRoute: Routable {
         self.router = router
     }
     
-    func navigate(to location: Location, using screen: ScreenPresenter) throws {
+    func show(_ location: Location) {
         guard case Location.listChecklist = location else { return }
         
         let items: [Checklist] = [
