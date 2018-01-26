@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import Gears
+import CoreApp
 
 public final class ListChecklistScreen {
     public let navigationBarComponent: Component<ListChecklistBarDisplaying>

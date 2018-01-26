@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C2D1C3E201B09520099F583 /* CoreApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C2D1C35201B09520099F583 /* CoreApp.framework */; };
+		2C2D1C43201B09520099F583 /* CoreAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2D1C42201B09520099F583 /* CoreAppTests.swift */; };
+		2C2D1C45201B09520099F583 /* CoreApp.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C2D1C37201B09520099F583 /* CoreApp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C2D1C7F201B0AF30099F583 /* CoreApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C2D1C35201B09520099F583 /* CoreApp.framework */; };
+		2C2D1C80201B0B2E0099F583 /* Gears.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C2D1C81201B0B2E0099F583 /* Gears.framework */; };
+		2C2D1C82201B0BC70099F583 /* Attachable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2D1C78201B0A240099F583 /* Attachable.swift */; };
+		2C2D1C83201B0BCD0099F583 /* Detachable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2D1C79201B0A240099F583 /* Detachable.swift */; };
+		2C2D1C84201B0BCD0099F583 /* ComponentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2D1C7A201B0A240099F583 /* ComponentType.swift */; };
+		2C2D1C85201B0BCD0099F583 /* Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2D1C7B201B0A240099F583 /* Component.swift */; };
+		2C2D1C86201B0BD30099F583 /* PresenterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2D1C73201B0A240099F583 /* PresenterType.swift */; };
+		2C2D1C87201B0BD30099F583 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2D1C74201B0A240099F583 /* Presenter.swift */; };
+		2C2D1C88201B0BD30099F583 /* CustomPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2D1C75201B0A240099F583 /* CustomPresenter.swift */; };
+		2C2D1C89201B0BD30099F583 /* ProxyPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2D1C76201B0A240099F583 /* ProxyPresenter.swift */; };
 		2C418DD020162CD7003CCFF1 /* FormChecklistComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C418DCF20162CD7003CCFF1 /* FormChecklistComponent.swift */; };
 		2C4CCF7D201102C600AB2F3B /* InputNameChecklistComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4CCF7C201102C600AB2F3B /* InputNameChecklistComponent.swift */; };
 		2C4CCF7F201102CF00AB2F3B /* InputNameChecklistPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4CCF7E201102CF00AB2F3B /* InputNameChecklistPresenter.swift */; };
@@ -30,6 +43,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		2C2D1C3F201B09520099F583 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C7733BB20108FCC000026B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C2D1C34201B09520099F583;
+			remoteInfo = CoreApp;
+		};
 		2C7734B42010E07C000026B0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2C7733BB20108FCC000026B0 /* Project object */;
@@ -40,6 +60,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C2D1C35201B09520099F583 /* CoreApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoreApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C2D1C37201B09520099F583 /* CoreApp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreApp.h; sourceTree = "<group>"; };
+		2C2D1C38201B09520099F583 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C2D1C3D201B09520099F583 /* CoreAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C2D1C42201B09520099F583 /* CoreAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreAppTests.swift; sourceTree = "<group>"; };
+		2C2D1C44201B09520099F583 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C2D1C73201B0A240099F583 /* PresenterType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterType.swift; sourceTree = "<group>"; };
+		2C2D1C74201B0A240099F583 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		2C2D1C75201B0A240099F583 /* CustomPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPresenter.swift; sourceTree = "<group>"; };
+		2C2D1C76201B0A240099F583 /* ProxyPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyPresenter.swift; sourceTree = "<group>"; };
+		2C2D1C78201B0A240099F583 /* Attachable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Attachable.swift; sourceTree = "<group>"; };
+		2C2D1C79201B0A240099F583 /* Detachable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Detachable.swift; sourceTree = "<group>"; };
+		2C2D1C7A201B0A240099F583 /* ComponentType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentType.swift; sourceTree = "<group>"; };
+		2C2D1C7B201B0A240099F583 /* Component.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Component.swift; sourceTree = "<group>"; };
+		2C2D1C81201B0B2E0099F583 /* Gears.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Gears.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C418DCF20162CD7003CCFF1 /* FormChecklistComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormChecklistComponent.swift; sourceTree = "<group>"; };
 		2C4CCF7C201102C600AB2F3B /* InputNameChecklistComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputNameChecklistComponent.swift; sourceTree = "<group>"; };
 		2C4CCF7E201102CF00AB2F3B /* InputNameChecklistPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputNameChecklistPresenter.swift; sourceTree = "<group>"; };
@@ -66,10 +101,27 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2C2D1C31201B09520099F583 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C2D1C80201B0B2E0099F583 /* Gears.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C2D1C3A201B09520099F583 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C2D1C3E201B09520099F583 /* CoreApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2C7734A62010E07C000026B0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C2D1C7F201B0AF30099F583 /* CoreApp.framework in Frameworks */,
 				2C7734C72010E10B000026B0 /* Reminders.framework in Frameworks */,
 				2C7734C42010E09C000026B0 /* Gears.framework in Frameworks */,
 			);
@@ -86,6 +138,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C2D1C36201B09520099F583 /* CoreApp */ = {
+			isa = PBXGroup;
+			children = (
+				2C2D1C7C201B0A240099F583 /* Component */,
+				2C2D1C77201B0A240099F583 /* Presenter */,
+				2C2D1C37201B09520099F583 /* CoreApp.h */,
+				2C2D1C38201B09520099F583 /* Info.plist */,
+			);
+			path = CoreApp;
+			sourceTree = "<group>";
+		};
+		2C2D1C41201B09520099F583 /* CoreAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				2C2D1C42201B09520099F583 /* CoreAppTests.swift */,
+				2C2D1C44201B09520099F583 /* Info.plist */,
+			);
+			path = CoreAppTests;
+			sourceTree = "<group>";
+		};
+		2C2D1C77201B0A240099F583 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				2C2D1C73201B0A240099F583 /* PresenterType.swift */,
+				2C2D1C74201B0A240099F583 /* Presenter.swift */,
+				2C2D1C75201B0A240099F583 /* CustomPresenter.swift */,
+				2C2D1C76201B0A240099F583 /* ProxyPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		2C2D1C7C201B0A240099F583 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				2C2D1C78201B0A240099F583 /* Attachable.swift */,
+				2C2D1C79201B0A240099F583 /* Detachable.swift */,
+				2C2D1C7A201B0A240099F583 /* ComponentType.swift */,
+				2C2D1C7B201B0A240099F583 /* Component.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
 		2C418DCE20162CBC003CCFF1 /* Form */ = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +220,8 @@
 			children = (
 				2C7734AB2010E07C000026B0 /* ChecklistsFeature */,
 				2C7734B62010E07C000026B0 /* ChecklistsFeatureTests */,
+				2C2D1C36201B09520099F583 /* CoreApp */,
+				2C2D1C41201B09520099F583 /* CoreAppTests */,
 				2C7733C520108FCC000026B0 /* Products */,
 				2C7734C32010E09C000026B0 /* Frameworks */,
 			);
@@ -136,6 +232,8 @@
 			children = (
 				2C7734AA2010E07C000026B0 /* ChecklistsFeature.framework */,
 				2C7734B22010E07C000026B0 /* ChecklistsFeatureTests.xctest */,
+				2C2D1C35201B09520099F583 /* CoreApp.framework */,
+				2C2D1C3D201B09520099F583 /* CoreAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -188,6 +286,7 @@
 		2C7734C32010E09C000026B0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2C2D1C81201B0B2E0099F583 /* Gears.framework */,
 				2C7734C82010E10B000026B0 /* Reminders.framework */,
 				2C7734C52010E09C000026B0 /* Gears.framework */,
 			);
@@ -206,6 +305,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		2C2D1C32201B09520099F583 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C2D1C45201B09520099F583 /* CoreApp.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2C7734A72010E07C000026B0 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -217,6 +324,42 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		2C2D1C34201B09520099F583 /* CoreApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C2D1C4A201B09520099F583 /* Build configuration list for PBXNativeTarget "CoreApp" */;
+			buildPhases = (
+				2C2D1C30201B09520099F583 /* Sources */,
+				2C2D1C31201B09520099F583 /* Frameworks */,
+				2C2D1C32201B09520099F583 /* Headers */,
+				2C2D1C33201B09520099F583 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoreApp;
+			productName = CoreApp;
+			productReference = 2C2D1C35201B09520099F583 /* CoreApp.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2C2D1C3C201B09520099F583 /* CoreAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C2D1C4B201B09520099F583 /* Build configuration list for PBXNativeTarget "CoreAppTests" */;
+			buildPhases = (
+				2C2D1C39201B09520099F583 /* Sources */,
+				2C2D1C3A201B09520099F583 /* Frameworks */,
+				2C2D1C3B201B09520099F583 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C2D1C40201B09520099F583 /* PBXTargetDependency */,
+			);
+			name = CoreAppTests;
+			productName = CoreAppTests;
+			productReference = 2C2D1C3D201B09520099F583 /* CoreAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		2C7734A92010E07C000026B0 /* ChecklistsFeature */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C7734BB2010E07C000026B0 /* Build configuration list for PBXNativeTarget "ChecklistsFeature" */;
@@ -263,6 +406,14 @@
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = JK;
 				TargetAttributes = {
+					2C2D1C34201B09520099F583 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+					};
+					2C2D1C3C201B09520099F583 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+					};
 					2C7734A92010E07C000026B0 = {
 						CreatedOnToolsVersion = 9.0.1;
 						LastSwiftMigration = 0900;
@@ -288,11 +439,27 @@
 			targets = (
 				2C7734A92010E07C000026B0 /* ChecklistsFeature */,
 				2C7734B12010E07C000026B0 /* ChecklistsFeatureTests */,
+				2C2D1C34201B09520099F583 /* CoreApp */,
+				2C2D1C3C201B09520099F583 /* CoreAppTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2C2D1C33201B09520099F583 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C2D1C3B201B09520099F583 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2C7734A82010E07C000026B0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -310,6 +477,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2C2D1C30201B09520099F583 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C2D1C88201B0BD30099F583 /* CustomPresenter.swift in Sources */,
+				2C2D1C89201B0BD30099F583 /* ProxyPresenter.swift in Sources */,
+				2C2D1C87201B0BD30099F583 /* Presenter.swift in Sources */,
+				2C2D1C86201B0BD30099F583 /* PresenterType.swift in Sources */,
+				2C2D1C84201B0BCD0099F583 /* ComponentType.swift in Sources */,
+				2C2D1C85201B0BCD0099F583 /* Component.swift in Sources */,
+				2C2D1C83201B0BCD0099F583 /* Detachable.swift in Sources */,
+				2C2D1C82201B0BC70099F583 /* Attachable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C2D1C39201B09520099F583 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C2D1C43201B09520099F583 /* CoreAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2C7734A52010E07C000026B0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -343,6 +533,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		2C2D1C40201B09520099F583 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C2D1C34201B09520099F583 /* CoreApp */;
+			targetProxy = 2C2D1C3F201B09520099F583 /* PBXContainerItemProxy */;
+		};
 		2C7734B52010E07C000026B0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 2C7734A92010E07C000026B0 /* ChecklistsFeature */;
@@ -351,6 +546,74 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		2C2D1C46201B09520099F583 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = CoreApp/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JK.CoreApp;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2C2D1C47201B09520099F583 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = CoreApp/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JK.CoreApp;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2C2D1C48201B09520099F583 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CoreAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JK.CoreAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2C2D1C49201B09520099F583 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CoreAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JK.CoreAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		2C7733D620108FCD000026B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -538,6 +801,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2C2D1C4A201B09520099F583 /* Build configuration list for PBXNativeTarget "CoreApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C2D1C46201B09520099F583 /* Debug */,
+				2C2D1C47201B09520099F583 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C2D1C4B201B09520099F583 /* Build configuration list for PBXNativeTarget "CoreAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C2D1C48201B09520099F583 /* Debug */,
+				2C2D1C49201B09520099F583 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2C7733BE20108FCC000026B0 /* Build configuration list for PBXProject "Application" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

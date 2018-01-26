@@ -9,9 +9,9 @@
 import UIKit
 import ChecklistsFeature
 import Reminders
-import ReusableViews
 import DataSource
-import Gears
+import CoreApp
+import ReusableUI
 
 final class ListChecklistNavigationBar: ListChecklistBarDisplaying {
     var eventListener: ListChecklistBarEventListening?

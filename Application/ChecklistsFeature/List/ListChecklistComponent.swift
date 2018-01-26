@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import Gears
+import CoreApp
 import Reminders
 
 public protocol ListChecklistDisplaying: class {

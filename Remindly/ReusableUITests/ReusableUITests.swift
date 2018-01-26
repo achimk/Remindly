@@ -1,15 +1,15 @@
 //
-//  ReusableViewsTests.swift
-//  ReusableViewsTests
+//  ReusableUITests.swift
+//  ReusableUITests
 //
-//  Created by Joachim Kret on 24.01.2018.
+//  Created by Joachim Kret on 26.01.2018.
 //  Copyright © 2018 JK. All rights reserved.
 //
 
 import XCTest
-@testable import ReusableViews
+@testable import ReusableUI
 
-class ReusableViewsTests: XCTestCase {
+class ReusableUITests: XCTestCase {
     
     override func setUp() {
         super.setUp()

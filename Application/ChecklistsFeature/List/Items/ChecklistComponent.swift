@@ -8,7 +8,7 @@
 
 import Foundation
 import Reminders
-import Gears
+import CoreApp
 
 public protocol ChecklistDisplaying: class {
     func setup(with checklist: Checklist)

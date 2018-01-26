@@ -9,7 +9,7 @@
 import Foundation
 import ChecklistsFeature
 import Reminders
-import Gears
+import CoreApp
 
 final class ListChecklistFlow: FlowPresenter {
     let screen: ListChecklistScreen

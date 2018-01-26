@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import Gears
+import CoreApp
 
 public protocol InputNameChecklistDisplaying: class {
     func setup(with placeholder: String, value: String?)

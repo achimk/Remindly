@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import Gears
+import CoreApp
 
 public protocol ListChecklistBarDisplaying: class {
     var eventListener: ListChecklistBarEventListening? { get set }

@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Gears
+import CoreApp
 
 typealias ViewPresenter = Presenter<UIViewController>
 typealias FlowPresenter = Presenter<ViewPresenter>

@@ -1,6 +1,6 @@
 //
 //  TableViewCells.swift
-//  ReusableViews
+//  ReusableUI
 //
 //  Created by Joachim Kret on 24.01.2018.
 //  Copyright © 2018 JK. All rights reserved.

@@ -7,20 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2C418DD320162F01003CCFF1 /* PresenterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C418DD220162F01003CCFF1 /* PresenterType.swift */; };
-		2C418DD520162F8C003CCFF1 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C418DD420162F8C003CCFF1 /* Presenter.swift */; };
-		2C418DD720162FCB003CCFF1 /* CustomPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C418DD620162FCB003CCFF1 /* CustomPresenter.swift */; };
-		2C418DD920162FEB003CCFF1 /* ProxyPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C418DD820162FEB003CCFF1 /* ProxyPresenter.swift */; };
 		2C77345A2010B832000026B0 /* Gears.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C7734512010B831000026B0 /* Gears.framework */; };
-		2C77345F2010B832000026B0 /* GearsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C77345E2010B832000026B0 /* GearsTests.swift */; };
 		2C7734612010B832000026B0 /* Gears.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C7734532010B831000026B0 /* Gears.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2C77346C2010BB82000026B0 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7734692010BB81000026B0 /* Box.swift */; };
 		2C77346D2010BB82000026B0 /* BoxType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C77346A2010BB81000026B0 /* BoxType.swift */; };
 		2C77346E2010BB82000026B0 /* MutableBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C77346B2010BB81000026B0 /* MutableBox.swift */; };
-		2C7734742010BB95000026B0 /* Attachable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7734702010BB95000026B0 /* Attachable.swift */; };
-		2C7734752010BB95000026B0 /* Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7734712010BB95000026B0 /* Component.swift */; };
-		2C7734762010BB95000026B0 /* ComponentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7734722010BB95000026B0 /* ComponentType.swift */; };
-		2C7734772010BB95000026B0 /* Detachable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7734732010BB95000026B0 /* Detachable.swift */; };
 		2C7734792010BBB2000026B0 /* Gears.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7734782010BBB2000026B0 /* Gears.swift */; };
 		2C77347E2010C22C000026B0 /* BoxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C77347B2010C22C000026B0 /* BoxTests.swift */; };
 		2C77347F2010C22C000026B0 /* BoxTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C77347C2010C22C000026B0 /* BoxTypeTests.swift */; };
@@ -100,23 +91,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2C418DD220162F01003CCFF1 /* PresenterType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterType.swift; sourceTree = "<group>"; };
-		2C418DD420162F8C003CCFF1 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
-		2C418DD620162FCB003CCFF1 /* CustomPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPresenter.swift; sourceTree = "<group>"; };
-		2C418DD820162FEB003CCFF1 /* ProxyPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyPresenter.swift; sourceTree = "<group>"; };
 		2C7734512010B831000026B0 /* Gears.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Gears.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C7734532010B831000026B0 /* Gears.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Gears.h; sourceTree = "<group>"; };
 		2C7734542010B832000026B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C7734592010B832000026B0 /* GearsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GearsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2C77345E2010B832000026B0 /* GearsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GearsTests.swift; sourceTree = "<group>"; };
 		2C7734602010B832000026B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C7734692010BB81000026B0 /* Box.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
 		2C77346A2010BB81000026B0 /* BoxType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoxType.swift; sourceTree = "<group>"; };
 		2C77346B2010BB81000026B0 /* MutableBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MutableBox.swift; sourceTree = "<group>"; };
-		2C7734702010BB95000026B0 /* Attachable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Attachable.swift; sourceTree = "<group>"; };
-		2C7734712010BB95000026B0 /* Component.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Component.swift; sourceTree = "<group>"; };
-		2C7734722010BB95000026B0 /* ComponentType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentType.swift; sourceTree = "<group>"; };
-		2C7734732010BB95000026B0 /* Detachable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Detachable.swift; sourceTree = "<group>"; };
 		2C7734782010BBB2000026B0 /* Gears.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gears.swift; sourceTree = "<group>"; };
 		2C77347B2010C22C000026B0 /* BoxTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoxTests.swift; sourceTree = "<group>"; };
 		2C77347C2010C22C000026B0 /* BoxTypeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoxTypeTests.swift; sourceTree = "<group>"; };
@@ -226,17 +208,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2C418DD120162EDF003CCFF1 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				2C418DD220162F01003CCFF1 /* PresenterType.swift */,
-				2C418DD420162F8C003CCFF1 /* Presenter.swift */,
-				2C418DD620162FCB003CCFF1 /* CustomPresenter.swift */,
-				2C418DD820162FEB003CCFF1 /* ProxyPresenter.swift */,
-			);
-			path = Presenter;
-			sourceTree = "<group>";
-		};
 		2C7734022010901B000026B0 = {
 			isa = PBXGroup;
 			children = (
@@ -267,8 +238,6 @@
 			isa = PBXGroup;
 			children = (
 				2C7734682010BB81000026B0 /* Box */,
-				2C77346F2010BB95000026B0 /* Component */,
-				2C418DD120162EDF003CCFF1 /* Presenter */,
 				2C7734782010BBB2000026B0 /* Gears.swift */,
 				2C7734532010B831000026B0 /* Gears.h */,
 				2C7734542010B832000026B0 /* Info.plist */,
@@ -280,7 +249,6 @@
 			isa = PBXGroup;
 			children = (
 				2C77347A2010C22C000026B0 /* Box */,
-				2C77345E2010B832000026B0 /* GearsTests.swift */,
 				2C7734602010B832000026B0 /* Info.plist */,
 			);
 			path = GearsTests;
@@ -294,17 +262,6 @@
 				2C77346B2010BB81000026B0 /* MutableBox.swift */,
 			);
 			path = Box;
-			sourceTree = "<group>";
-		};
-		2C77346F2010BB95000026B0 /* Component */ = {
-			isa = PBXGroup;
-			children = (
-				2C7734702010BB95000026B0 /* Attachable.swift */,
-				2C7734732010BB95000026B0 /* Detachable.swift */,
-				2C7734722010BB95000026B0 /* ComponentType.swift */,
-				2C7734712010BB95000026B0 /* Component.swift */,
-			);
-			path = Component;
 			sourceTree = "<group>";
 		};
 		2C77347A2010C22C000026B0 /* Box */ = {
@@ -796,17 +753,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C7734792010BBB2000026B0 /* Gears.swift in Sources */,
-				2C418DD920162FEB003CCFF1 /* ProxyPresenter.swift in Sources */,
-				2C7734742010BB95000026B0 /* Attachable.swift in Sources */,
-				2C7734772010BB95000026B0 /* Detachable.swift in Sources */,
 				2C77346C2010BB82000026B0 /* Box.swift in Sources */,
-				2C418DD520162F8C003CCFF1 /* Presenter.swift in Sources */,
 				2C77346D2010BB82000026B0 /* BoxType.swift in Sources */,
-				2C418DD720162FCB003CCFF1 /* CustomPresenter.swift in Sources */,
-				2C7734762010BB95000026B0 /* ComponentType.swift in Sources */,
 				2C77346E2010BB82000026B0 /* MutableBox.swift in Sources */,
-				2C418DD320162F01003CCFF1 /* PresenterType.swift in Sources */,
-				2C7734752010BB95000026B0 /* Component.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -814,7 +763,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C77345F2010B832000026B0 /* GearsTests.swift in Sources */,
 				2C77347E2010C22C000026B0 /* BoxTests.swift in Sources */,
 				2C7734802010C22C000026B0 /* MutableBoxTests.swift in Sources */,
 				2C77347F2010C22C000026B0 /* BoxTypeTests.swift in Sources */,
