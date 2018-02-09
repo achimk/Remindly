@@ -7,15 +7,50 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C0075B0202CBD69000A0C9C /* ReminderForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0075AF202CBD69000A0C9C /* ReminderForm.swift */; };
+		2C0075BF202CBDE8000A0C9C /* CoreDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C0075B6202CBDE8000A0C9C /* CoreDomain.framework */; };
+		2C0075C4202CBDE8000A0C9C /* CoreDomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0075C3202CBDE8000A0C9C /* CoreDomainTests.swift */; };
+		2C0075C6202CBDE8000A0C9C /* CoreDomain.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C0075B8202CBDE8000A0C9C /* CoreDomain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C0075CF202CBE7D000A0C9C /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0075CE202CBE7D000A0C9C /* Identifiable.swift */; };
+		2C0075D1202CBE85000A0C9C /* Identity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0075D0202CBE85000A0C9C /* Identity.swift */; };
+		2C0075D3202CC012000A0C9C /* CoreDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C0075B6202CBDE8000A0C9C /* CoreDomain.framework */; };
+		2C0075D5202CC4F8000A0C9C /* ReminderFormValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0075D4202CC4F8000A0C9C /* ReminderFormValidator.swift */; };
+		2C0075DC202CD49E000A0C9C /* AggregateRootType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0075DB202CD49E000A0C9C /* AggregateRootType.swift */; };
+		2C0075DE202CD4CB000A0C9C /* DomainServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0075DD202CD4CB000A0C9C /* DomainServiceType.swift */; };
+		2C0075E0202CD4D5000A0C9C /* ValueObjectType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0075DF202CD4D5000A0C9C /* ValueObjectType.swift */; };
+		2C0075E2202CD4EC000A0C9C /* DomainRepositoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0075E1202CD4EC000A0C9C /* DomainRepositoryType.swift */; };
+		2C0075E4202CD51A000A0C9C /* EntityType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0075E3202CD51A000A0C9C /* EntityType.swift */; };
+		2C0075E8202CD740000A0C9C /* ReminderFormService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0075E7202CD740000A0C9C /* ReminderFormService.swift */; };
+		2C0075E9202CD9B4000A0C9C /* Gears.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C0075EA202CD9B4000A0C9C /* Gears.framework */; };
+		2C0075EB202CD9CF000A0C9C /* Functional.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C0075EC202CD9CF000A0C9C /* Functional.framework */; };
+		2C0075EE202CDA0D000A0C9C /* ReminderError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0075ED202CDA0D000A0C9C /* ReminderError.swift */; };
+		2C0075F3202CE3DA000A0C9C /* ReminderFormCreateUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0075F2202CE3DA000A0C9C /* ReminderFormCreateUseCase.swift */; };
+		2C0075F5202CE3F9000A0C9C /* ReminderFormConfirmUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0075F4202CE3F9000A0C9C /* ReminderFormConfirmUseCase.swift */; };
+		2C0075F7202CE449000A0C9C /* ReminderFormFillLabelUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0075F6202CE449000A0C9C /* ReminderFormFillLabelUseCase.swift */; };
+		2C0075F9202CE48D000A0C9C /* ReminderFormFillNotesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0075F8202CE48D000A0C9C /* ReminderFormFillNotesUseCase.swift */; };
+		2C0075FB202CE4A5000A0C9C /* ReminderFormFillPriorityUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0075FA202CE4A5000A0C9C /* ReminderFormFillPriorityUseCase.swift */; };
+		2C0075FD202CE4E4000A0C9C /* ReminderFormRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0075FC202CE4E4000A0C9C /* ReminderFormRepository.swift */; };
+		2C0075FF202CE501000A0C9C /* ReminderRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0075FE202CE501000A0C9C /* ReminderRepository.swift */; };
+		2C007601202CE9E4000A0C9C /* ReminderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C007600202CE9E4000A0C9C /* ReminderService.swift */; };
+		2C4826D3202CF0F40021B242 /* EntityBasedRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4826D2202CF0F40021B242 /* EntityBasedRepository.swift */; };
+		2C4826D5202CF4620021B242 /* InMemoryEntityBasedRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4826D4202CF4620021B242 /* InMemoryEntityBasedRepository.swift */; };
 		2C77343420109D87000026B0 /* Reminders.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C77342B20109D87000026B0 /* Reminders.framework */; };
 		2C77343920109D87000026B0 /* RemindersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C77343820109D87000026B0 /* RemindersTests.swift */; };
 		2C77343B20109D87000026B0 /* Reminders.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C77342D20109D87000026B0 /* Reminders.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2C77344520109DE3000026B0 /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C77344420109DE3000026B0 /* Reminder.swift */; };
 		2C77344720109E45000026B0 /* Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C77344620109E45000026B0 /* Priority.swift */; };
 		2C7734862010D90C000026B0 /* Checklist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7734852010D90C000026B0 /* Checklist.swift */; };
+		2CE6375A202CEC3600F5807C /* EntityRepositoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE63759202CEC3600F5807C /* EntityRepositoryType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		2C0075C0202CBDE8000A0C9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C7733DF20108FFA000026B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C0075B5202CBDE8000A0C9C;
+			remoteInfo = CoreDomain;
+		};
 		2C77343520109D87000026B0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2C7733DF20108FFA000026B0 /* Project object */;
@@ -26,6 +61,35 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C0075AF202CBD69000A0C9C /* ReminderForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderForm.swift; sourceTree = "<group>"; };
+		2C0075B6202CBDE8000A0C9C /* CoreDomain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoreDomain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C0075B8202CBDE8000A0C9C /* CoreDomain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreDomain.h; sourceTree = "<group>"; };
+		2C0075B9202CBDE8000A0C9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C0075BE202CBDE8000A0C9C /* CoreDomainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDomainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C0075C3202CBDE8000A0C9C /* CoreDomainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDomainTests.swift; sourceTree = "<group>"; };
+		2C0075C5202CBDE8000A0C9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C0075CE202CBE7D000A0C9C /* Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifiable.swift; sourceTree = "<group>"; };
+		2C0075D0202CBE85000A0C9C /* Identity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identity.swift; sourceTree = "<group>"; };
+		2C0075D4202CC4F8000A0C9C /* ReminderFormValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderFormValidator.swift; sourceTree = "<group>"; };
+		2C0075DB202CD49E000A0C9C /* AggregateRootType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AggregateRootType.swift; sourceTree = "<group>"; };
+		2C0075DD202CD4CB000A0C9C /* DomainServiceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainServiceType.swift; sourceTree = "<group>"; };
+		2C0075DF202CD4D5000A0C9C /* ValueObjectType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueObjectType.swift; sourceTree = "<group>"; };
+		2C0075E1202CD4EC000A0C9C /* DomainRepositoryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainRepositoryType.swift; sourceTree = "<group>"; };
+		2C0075E3202CD51A000A0C9C /* EntityType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityType.swift; sourceTree = "<group>"; };
+		2C0075E7202CD740000A0C9C /* ReminderFormService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderFormService.swift; sourceTree = "<group>"; };
+		2C0075EA202CD9B4000A0C9C /* Gears.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Gears.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C0075EC202CD9CF000A0C9C /* Functional.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Functional.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C0075ED202CDA0D000A0C9C /* ReminderError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderError.swift; sourceTree = "<group>"; };
+		2C0075F2202CE3DA000A0C9C /* ReminderFormCreateUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderFormCreateUseCase.swift; sourceTree = "<group>"; };
+		2C0075F4202CE3F9000A0C9C /* ReminderFormConfirmUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderFormConfirmUseCase.swift; sourceTree = "<group>"; };
+		2C0075F6202CE449000A0C9C /* ReminderFormFillLabelUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderFormFillLabelUseCase.swift; sourceTree = "<group>"; };
+		2C0075F8202CE48D000A0C9C /* ReminderFormFillNotesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderFormFillNotesUseCase.swift; sourceTree = "<group>"; };
+		2C0075FA202CE4A5000A0C9C /* ReminderFormFillPriorityUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderFormFillPriorityUseCase.swift; sourceTree = "<group>"; };
+		2C0075FC202CE4E4000A0C9C /* ReminderFormRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderFormRepository.swift; sourceTree = "<group>"; };
+		2C0075FE202CE501000A0C9C /* ReminderRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderRepository.swift; sourceTree = "<group>"; };
+		2C007600202CE9E4000A0C9C /* ReminderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderService.swift; sourceTree = "<group>"; };
+		2C4826D2202CF0F40021B242 /* EntityBasedRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityBasedRepository.swift; sourceTree = "<group>"; };
+		2C4826D4202CF4620021B242 /* InMemoryEntityBasedRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryEntityBasedRepository.swift; sourceTree = "<group>"; };
 		2C77342B20109D87000026B0 /* Reminders.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Reminders.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C77342D20109D87000026B0 /* Reminders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Reminders.h; sourceTree = "<group>"; };
 		2C77342E20109D87000026B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -35,13 +99,32 @@
 		2C77344420109DE3000026B0 /* Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
 		2C77344620109E45000026B0 /* Priority.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Priority.swift; sourceTree = "<group>"; };
 		2C7734852010D90C000026B0 /* Checklist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checklist.swift; sourceTree = "<group>"; };
+		2CE63759202CEC3600F5807C /* EntityRepositoryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityRepositoryType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2C0075B2202CBDE8000A0C9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C0075BB202CBDE8000A0C9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C0075BF202CBDE8000A0C9C /* CoreDomain.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2C77342720109D87000026B0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C0075EB202CD9CF000A0C9C /* Functional.framework in Frameworks */,
+				2C0075E9202CD9B4000A0C9C /* Gears.framework in Frameworks */,
+				2C0075D3202CC012000A0C9C /* CoreDomain.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +139,93 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C0075B7202CBDE8000A0C9C /* CoreDomain */ = {
+			isa = PBXGroup;
+			children = (
+				2C0075D6202CD424000A0C9C /* Annotations */,
+				2C0075CD202CBE4F000A0C9C /* Core */,
+				2C0075B8202CBDE8000A0C9C /* CoreDomain.h */,
+				2C0075B9202CBDE8000A0C9C /* Info.plist */,
+			);
+			path = CoreDomain;
+			sourceTree = "<group>";
+		};
+		2C0075C2202CBDE8000A0C9C /* CoreDomainTests */ = {
+			isa = PBXGroup;
+			children = (
+				2C0075C3202CBDE8000A0C9C /* CoreDomainTests.swift */,
+				2C0075C5202CBDE8000A0C9C /* Info.plist */,
+			);
+			path = CoreDomainTests;
+			sourceTree = "<group>";
+		};
+		2C0075CD202CBE4F000A0C9C /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				2C0075CE202CBE7D000A0C9C /* Identifiable.swift */,
+				2C0075D0202CBE85000A0C9C /* Identity.swift */,
+				2C4826D2202CF0F40021B242 /* EntityBasedRepository.swift */,
+				2C4826D4202CF4620021B242 /* InMemoryEntityBasedRepository.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		2C0075D2202CC012000A0C9C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C0075EC202CD9CF000A0C9C /* Functional.framework */,
+				2C0075EA202CD9B4000A0C9C /* Gears.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2C0075D6202CD424000A0C9C /* Annotations */ = {
+			isa = PBXGroup;
+			children = (
+				2C0075DB202CD49E000A0C9C /* AggregateRootType.swift */,
+				2C0075E1202CD4EC000A0C9C /* DomainRepositoryType.swift */,
+				2C0075DD202CD4CB000A0C9C /* DomainServiceType.swift */,
+				2CE63759202CEC3600F5807C /* EntityRepositoryType.swift */,
+				2C0075E3202CD51A000A0C9C /* EntityType.swift */,
+				2C0075DF202CD4D5000A0C9C /* ValueObjectType.swift */,
+			);
+			path = Annotations;
+			sourceTree = "<group>";
+		};
+		2C0075F0202CE1A8000A0C9C /* Form */ = {
+			isa = PBXGroup;
+			children = (
+				2C0075F1202CE1C7000A0C9C /* UseCases */,
+				2C0075AF202CBD69000A0C9C /* ReminderForm.swift */,
+				2C0075ED202CDA0D000A0C9C /* ReminderError.swift */,
+				2C0075D4202CC4F8000A0C9C /* ReminderFormValidator.swift */,
+				2C0075E7202CD740000A0C9C /* ReminderFormService.swift */,
+				2C0075FC202CE4E4000A0C9C /* ReminderFormRepository.swift */,
+			);
+			path = Form;
+			sourceTree = "<group>";
+		};
+		2C0075F1202CE1C7000A0C9C /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				2C0075F2202CE3DA000A0C9C /* ReminderFormCreateUseCase.swift */,
+				2C0075F4202CE3F9000A0C9C /* ReminderFormConfirmUseCase.swift */,
+				2C0075F6202CE449000A0C9C /* ReminderFormFillLabelUseCase.swift */,
+				2C0075F8202CE48D000A0C9C /* ReminderFormFillNotesUseCase.swift */,
+				2C0075FA202CE4A5000A0C9C /* ReminderFormFillPriorityUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
 		2C7733DE20108FFA000026B0 = {
 			isa = PBXGroup;
 			children = (
 				2C77342C20109D87000026B0 /* Reminders */,
 				2C77343720109D87000026B0 /* RemindersTests */,
+				2C0075B7202CBDE8000A0C9C /* CoreDomain */,
+				2C0075C2202CBDE8000A0C9C /* CoreDomainTests */,
 				2C7733E920108FFA000026B0 /* Products */,
+				2C0075D2202CC012000A0C9C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +234,8 @@
 			children = (
 				2C77342B20109D87000026B0 /* Reminders.framework */,
 				2C77343320109D87000026B0 /* RemindersTests.xctest */,
+				2C0075B6202CBDE8000A0C9C /* CoreDomain.framework */,
+				2C0075BE202CBDE8000A0C9C /* CoreDomainTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,8 +263,11 @@
 		2C77344320109D9E000026B0 /* Reminder */ = {
 			isa = PBXGroup;
 			children = (
+				2C0075F0202CE1A8000A0C9C /* Form */,
 				2C77344620109E45000026B0 /* Priority.swift */,
 				2C77344420109DE3000026B0 /* Reminder.swift */,
+				2C007600202CE9E4000A0C9C /* ReminderService.swift */,
+				2C0075FE202CE501000A0C9C /* ReminderRepository.swift */,
 			);
 			path = Reminder;
 			sourceTree = "<group>";
@@ -114,6 +283,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		2C0075B3202CBDE8000A0C9C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C0075C6202CBDE8000A0C9C /* CoreDomain.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2C77342820109D87000026B0 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -125,6 +302,42 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		2C0075B5202CBDE8000A0C9C /* CoreDomain */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C0075C7202CBDE8000A0C9C /* Build configuration list for PBXNativeTarget "CoreDomain" */;
+			buildPhases = (
+				2C0075B1202CBDE8000A0C9C /* Sources */,
+				2C0075B2202CBDE8000A0C9C /* Frameworks */,
+				2C0075B3202CBDE8000A0C9C /* Headers */,
+				2C0075B4202CBDE8000A0C9C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoreDomain;
+			productName = CoreDomain;
+			productReference = 2C0075B6202CBDE8000A0C9C /* CoreDomain.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2C0075BD202CBDE8000A0C9C /* CoreDomainTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C0075CA202CBDE8000A0C9C /* Build configuration list for PBXNativeTarget "CoreDomainTests" */;
+			buildPhases = (
+				2C0075BA202CBDE8000A0C9C /* Sources */,
+				2C0075BB202CBDE8000A0C9C /* Frameworks */,
+				2C0075BC202CBDE8000A0C9C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C0075C1202CBDE8000A0C9C /* PBXTargetDependency */,
+			);
+			name = CoreDomainTests;
+			productName = CoreDomainTests;
+			productReference = 2C0075BE202CBDE8000A0C9C /* CoreDomainTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		2C77342A20109D87000026B0 /* Reminders */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C77343C20109D87000026B0 /* Build configuration list for PBXNativeTarget "Reminders" */;
@@ -171,6 +384,15 @@
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = JK;
 				TargetAttributes = {
+					2C0075B5202CBDE8000A0C9C = {
+						CreatedOnToolsVersion = 9.0.1;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+					};
+					2C0075BD202CBDE8000A0C9C = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+					};
 					2C77342A20109D87000026B0 = {
 						CreatedOnToolsVersion = 9.0.1;
 						LastSwiftMigration = 0900;
@@ -196,11 +418,27 @@
 			targets = (
 				2C77342A20109D87000026B0 /* Reminders */,
 				2C77343220109D87000026B0 /* RemindersTests */,
+				2C0075B5202CBDE8000A0C9C /* CoreDomain */,
+				2C0075BD202CBDE8000A0C9C /* CoreDomainTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2C0075B4202CBDE8000A0C9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C0075BC202CBDE8000A0C9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2C77342920109D87000026B0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -218,13 +456,50 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2C0075B1202CBDE8000A0C9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C0075E0202CD4D5000A0C9C /* ValueObjectType.swift in Sources */,
+				2C0075E2202CD4EC000A0C9C /* DomainRepositoryType.swift in Sources */,
+				2C0075CF202CBE7D000A0C9C /* Identifiable.swift in Sources */,
+				2C0075DC202CD49E000A0C9C /* AggregateRootType.swift in Sources */,
+				2C4826D5202CF4620021B242 /* InMemoryEntityBasedRepository.swift in Sources */,
+				2CE6375A202CEC3600F5807C /* EntityRepositoryType.swift in Sources */,
+				2C0075E4202CD51A000A0C9C /* EntityType.swift in Sources */,
+				2C0075DE202CD4CB000A0C9C /* DomainServiceType.swift in Sources */,
+				2C0075D1202CBE85000A0C9C /* Identity.swift in Sources */,
+				2C4826D3202CF0F40021B242 /* EntityBasedRepository.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C0075BA202CBDE8000A0C9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C0075C4202CBDE8000A0C9C /* CoreDomainTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2C77342620109D87000026B0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				2C7734862010D90C000026B0 /* Checklist.swift in Sources */,
+				2C0075F3202CE3DA000A0C9C /* ReminderFormCreateUseCase.swift in Sources */,
 				2C77344520109DE3000026B0 /* Reminder.swift in Sources */,
+				2C0075F5202CE3F9000A0C9C /* ReminderFormConfirmUseCase.swift in Sources */,
+				2C0075FB202CE4A5000A0C9C /* ReminderFormFillPriorityUseCase.swift in Sources */,
+				2C0075EE202CDA0D000A0C9C /* ReminderError.swift in Sources */,
 				2C77344720109E45000026B0 /* Priority.swift in Sources */,
+				2C0075FD202CE4E4000A0C9C /* ReminderFormRepository.swift in Sources */,
+				2C0075D5202CC4F8000A0C9C /* ReminderFormValidator.swift in Sources */,
+				2C0075F9202CE48D000A0C9C /* ReminderFormFillNotesUseCase.swift in Sources */,
+				2C0075F7202CE449000A0C9C /* ReminderFormFillLabelUseCase.swift in Sources */,
+				2C007601202CE9E4000A0C9C /* ReminderService.swift in Sources */,
+				2C0075FF202CE501000A0C9C /* ReminderRepository.swift in Sources */,
+				2C0075B0202CBD69000A0C9C /* ReminderForm.swift in Sources */,
+				2C0075E8202CD740000A0C9C /* ReminderFormService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +514,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		2C0075C1202CBDE8000A0C9C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C0075B5202CBDE8000A0C9C /* CoreDomain */;
+			targetProxy = 2C0075C0202CBDE8000A0C9C /* PBXContainerItemProxy */;
+		};
 		2C77343620109D87000026B0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 2C77342A20109D87000026B0 /* Reminders */;
@@ -247,6 +527,77 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		2C0075C8202CBDE8000A0C9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = CoreDomain/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JK.CoreDomain;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2C0075C9202CBDE8000A0C9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = CoreDomain/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JK.CoreDomain;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2C0075CB202CBDE8000A0C9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CoreDomainTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JK.CoreDomainTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2C0075CC202CBDE8000A0C9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CoreDomainTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JK.CoreDomainTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		2C7733FA20108FFA000026B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -434,6 +785,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2C0075C7202CBDE8000A0C9C /* Build configuration list for PBXNativeTarget "CoreDomain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C0075C8202CBDE8000A0C9C /* Debug */,
+				2C0075C9202CBDE8000A0C9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C0075CA202CBDE8000A0C9C /* Build configuration list for PBXNativeTarget "CoreDomainTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C0075CB202CBDE8000A0C9C /* Debug */,
+				2C0075CC202CBDE8000A0C9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2C7733E220108FFA000026B0 /* Build configuration list for PBXProject "Domain" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

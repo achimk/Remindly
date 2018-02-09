@@ -7,8 +7,11 @@
 //
 
 import Foundation
+import CoreDomain
 
-public struct Reminder {
+public typealias ReminderID = Identity<Reminder.ID>
+
+public struct Reminder: EntityType {
     public let identifier: String
     public let label: String
     public let notes: String?

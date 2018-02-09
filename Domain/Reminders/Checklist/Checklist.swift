@@ -7,8 +7,9 @@
 //
 
 import Foundation
+import CoreDomain
 
-public struct Checklist {
+public struct Checklist: EntityType {
     public let identifier: String
     public let name: String
     public let timestamp: Date
