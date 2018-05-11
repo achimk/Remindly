@@ -8,14 +8,14 @@
 
 import Foundation
 
-public final class Identity<T: Equatable>: Identifiable {
+public final class Identity<T: Equatable> {
     public typealias ID = T
-    public let identifier: ID
-    public init(_ identifier: ID) { self.identifier = identifier }
+    public let rawValue: ID
+    public init(_ rawValue: ID) { self.rawValue = rawValue }
 }
 
 extension Identity: Equatable {
     public static func ==<T>(lhs: Identity<T>, rhs: Identity<T>) -> Bool {
-        return lhs.identifier == rhs.identifier
+        return lhs.rawValue == rhs.rawValue
     }
 }

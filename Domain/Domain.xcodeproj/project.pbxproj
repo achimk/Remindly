@@ -23,7 +23,7 @@
 		2C0075E8202CD740000A0C9C /* ReminderFormService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0075E7202CD740000A0C9C /* ReminderFormService.swift */; };
 		2C0075E9202CD9B4000A0C9C /* Gears.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C0075EA202CD9B4000A0C9C /* Gears.framework */; };
 		2C0075EB202CD9CF000A0C9C /* Functional.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C0075EC202CD9CF000A0C9C /* Functional.framework */; };
-		2C0075EE202CDA0D000A0C9C /* ReminderError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0075ED202CDA0D000A0C9C /* ReminderError.swift */; };
+		2C0075EE202CDA0D000A0C9C /* ReminderFormError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0075ED202CDA0D000A0C9C /* ReminderFormError.swift */; };
 		2C0075F3202CE3DA000A0C9C /* ReminderFormCreateUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0075F2202CE3DA000A0C9C /* ReminderFormCreateUseCase.swift */; };
 		2C0075F5202CE3F9000A0C9C /* ReminderFormConfirmUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0075F4202CE3F9000A0C9C /* ReminderFormConfirmUseCase.swift */; };
 		2C0075F7202CE449000A0C9C /* ReminderFormFillLabelUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0075F6202CE449000A0C9C /* ReminderFormFillLabelUseCase.swift */; };
@@ -32,6 +32,10 @@
 		2C0075FD202CE4E4000A0C9C /* ReminderFormRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0075FC202CE4E4000A0C9C /* ReminderFormRepository.swift */; };
 		2C0075FF202CE501000A0C9C /* ReminderRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0075FE202CE501000A0C9C /* ReminderRepository.swift */; };
 		2C007601202CE9E4000A0C9C /* ReminderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C007600202CE9E4000A0C9C /* ReminderService.swift */; };
+		2C12459A202D905900573ADB /* SatisfiableByCandidate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C124599202D905900573ADB /* SatisfiableByCandidate.swift */; };
+		2C12459C202D906C00573ADB /* Specification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C12459B202D906C00573ADB /* Specification.swift */; };
+		2C12459E202D90A500573ADB /* CoreDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C12459D202D90A500573ADB /* CoreDomain.swift */; };
+		2C1245A0202D90D800573ADB /* ConditionSpecification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C12459F202D90D800573ADB /* ConditionSpecification.swift */; };
 		2C4826D3202CF0F40021B242 /* EntityBasedRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4826D2202CF0F40021B242 /* EntityBasedRepository.swift */; };
 		2C4826D5202CF4620021B242 /* InMemoryEntityBasedRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4826D4202CF4620021B242 /* InMemoryEntityBasedRepository.swift */; };
 		2C77343420109D87000026B0 /* Reminders.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C77342B20109D87000026B0 /* Reminders.framework */; };
@@ -40,7 +44,6 @@
 		2C77344520109DE3000026B0 /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C77344420109DE3000026B0 /* Reminder.swift */; };
 		2C77344720109E45000026B0 /* Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C77344620109E45000026B0 /* Priority.swift */; };
 		2C7734862010D90C000026B0 /* Checklist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7734852010D90C000026B0 /* Checklist.swift */; };
-		2CE6375A202CEC3600F5807C /* EntityRepositoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE63759202CEC3600F5807C /* EntityRepositoryType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,7 +82,7 @@
 		2C0075E7202CD740000A0C9C /* ReminderFormService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderFormService.swift; sourceTree = "<group>"; };
 		2C0075EA202CD9B4000A0C9C /* Gears.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Gears.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C0075EC202CD9CF000A0C9C /* Functional.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Functional.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2C0075ED202CDA0D000A0C9C /* ReminderError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderError.swift; sourceTree = "<group>"; };
+		2C0075ED202CDA0D000A0C9C /* ReminderFormError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderFormError.swift; sourceTree = "<group>"; };
 		2C0075F2202CE3DA000A0C9C /* ReminderFormCreateUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderFormCreateUseCase.swift; sourceTree = "<group>"; };
 		2C0075F4202CE3F9000A0C9C /* ReminderFormConfirmUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderFormConfirmUseCase.swift; sourceTree = "<group>"; };
 		2C0075F6202CE449000A0C9C /* ReminderFormFillLabelUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderFormFillLabelUseCase.swift; sourceTree = "<group>"; };
@@ -88,6 +91,10 @@
 		2C0075FC202CE4E4000A0C9C /* ReminderFormRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderFormRepository.swift; sourceTree = "<group>"; };
 		2C0075FE202CE501000A0C9C /* ReminderRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderRepository.swift; sourceTree = "<group>"; };
 		2C007600202CE9E4000A0C9C /* ReminderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderService.swift; sourceTree = "<group>"; };
+		2C124599202D905900573ADB /* SatisfiableByCandidate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SatisfiableByCandidate.swift; sourceTree = "<group>"; };
+		2C12459B202D906C00573ADB /* Specification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Specification.swift; sourceTree = "<group>"; };
+		2C12459D202D90A500573ADB /* CoreDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDomain.swift; sourceTree = "<group>"; };
+		2C12459F202D90D800573ADB /* ConditionSpecification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionSpecification.swift; sourceTree = "<group>"; };
 		2C4826D2202CF0F40021B242 /* EntityBasedRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityBasedRepository.swift; sourceTree = "<group>"; };
 		2C4826D4202CF4620021B242 /* InMemoryEntityBasedRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryEntityBasedRepository.swift; sourceTree = "<group>"; };
 		2C77342B20109D87000026B0 /* Reminders.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Reminders.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,7 +106,6 @@
 		2C77344420109DE3000026B0 /* Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
 		2C77344620109E45000026B0 /* Priority.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Priority.swift; sourceTree = "<group>"; };
 		2C7734852010D90C000026B0 /* Checklist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checklist.swift; sourceTree = "<group>"; };
-		2CE63759202CEC3600F5807C /* EntityRepositoryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityRepositoryType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +150,7 @@
 			children = (
 				2C0075D6202CD424000A0C9C /* Annotations */,
 				2C0075CD202CBE4F000A0C9C /* Core */,
+				2C12459D202D90A500573ADB /* CoreDomain.swift */,
 				2C0075B8202CBDE8000A0C9C /* CoreDomain.h */,
 				2C0075B9202CBDE8000A0C9C /* Info.plist */,
 			);
@@ -162,10 +169,9 @@
 		2C0075CD202CBE4F000A0C9C /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				2C0075CE202CBE7D000A0C9C /* Identifiable.swift */,
-				2C0075D0202CBE85000A0C9C /* Identity.swift */,
-				2C4826D2202CF0F40021B242 /* EntityBasedRepository.swift */,
-				2C4826D4202CF4620021B242 /* InMemoryEntityBasedRepository.swift */,
+				2C124596202D901300573ADB /* Identity */,
+				2C124597202D902300573ADB /* Repository */,
+				2C124598202D903C00573ADB /* Specification */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -185,7 +191,6 @@
 				2C0075DB202CD49E000A0C9C /* AggregateRootType.swift */,
 				2C0075E1202CD4EC000A0C9C /* DomainRepositoryType.swift */,
 				2C0075DD202CD4CB000A0C9C /* DomainServiceType.swift */,
-				2CE63759202CEC3600F5807C /* EntityRepositoryType.swift */,
 				2C0075E3202CD51A000A0C9C /* EntityType.swift */,
 				2C0075DF202CD4D5000A0C9C /* ValueObjectType.swift */,
 			);
@@ -197,7 +202,7 @@
 			children = (
 				2C0075F1202CE1C7000A0C9C /* UseCases */,
 				2C0075AF202CBD69000A0C9C /* ReminderForm.swift */,
-				2C0075ED202CDA0D000A0C9C /* ReminderError.swift */,
+				2C0075ED202CDA0D000A0C9C /* ReminderFormError.swift */,
 				2C0075D4202CC4F8000A0C9C /* ReminderFormValidator.swift */,
 				2C0075E7202CD740000A0C9C /* ReminderFormService.swift */,
 				2C0075FC202CE4E4000A0C9C /* ReminderFormRepository.swift */,
@@ -215,6 +220,34 @@
 				2C0075FA202CE4A5000A0C9C /* ReminderFormFillPriorityUseCase.swift */,
 			);
 			path = UseCases;
+			sourceTree = "<group>";
+		};
+		2C124596202D901300573ADB /* Identity */ = {
+			isa = PBXGroup;
+			children = (
+				2C0075CE202CBE7D000A0C9C /* Identifiable.swift */,
+				2C0075D0202CBE85000A0C9C /* Identity.swift */,
+			);
+			path = Identity;
+			sourceTree = "<group>";
+		};
+		2C124597202D902300573ADB /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				2C4826D2202CF0F40021B242 /* EntityBasedRepository.swift */,
+				2C4826D4202CF4620021B242 /* InMemoryEntityBasedRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		2C124598202D903C00573ADB /* Specification */ = {
+			isa = PBXGroup;
+			children = (
+				2C124599202D905900573ADB /* SatisfiableByCandidate.swift */,
+				2C12459B202D906C00573ADB /* Specification.swift */,
+				2C12459F202D90D800573ADB /* ConditionSpecification.swift */,
+			);
+			path = Specification;
 			sourceTree = "<group>";
 		};
 		2C7733DE20108FFA000026B0 = {
@@ -461,15 +494,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C0075E0202CD4D5000A0C9C /* ValueObjectType.swift in Sources */,
+				2C1245A0202D90D800573ADB /* ConditionSpecification.swift in Sources */,
 				2C0075E2202CD4EC000A0C9C /* DomainRepositoryType.swift in Sources */,
 				2C0075CF202CBE7D000A0C9C /* Identifiable.swift in Sources */,
+				2C12459C202D906C00573ADB /* Specification.swift in Sources */,
 				2C0075DC202CD49E000A0C9C /* AggregateRootType.swift in Sources */,
 				2C4826D5202CF4620021B242 /* InMemoryEntityBasedRepository.swift in Sources */,
-				2CE6375A202CEC3600F5807C /* EntityRepositoryType.swift in Sources */,
 				2C0075E4202CD51A000A0C9C /* EntityType.swift in Sources */,
+				2C12459A202D905900573ADB /* SatisfiableByCandidate.swift in Sources */,
 				2C0075DE202CD4CB000A0C9C /* DomainServiceType.swift in Sources */,
 				2C0075D1202CBE85000A0C9C /* Identity.swift in Sources */,
 				2C4826D3202CF0F40021B242 /* EntityBasedRepository.swift in Sources */,
+				2C12459E202D90A500573ADB /* CoreDomain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,7 +526,7 @@
 				2C77344520109DE3000026B0 /* Reminder.swift in Sources */,
 				2C0075F5202CE3F9000A0C9C /* ReminderFormConfirmUseCase.swift in Sources */,
 				2C0075FB202CE4A5000A0C9C /* ReminderFormFillPriorityUseCase.swift in Sources */,
-				2C0075EE202CDA0D000A0C9C /* ReminderError.swift in Sources */,
+				2C0075EE202CDA0D000A0C9C /* ReminderFormError.swift in Sources */,
 				2C77344720109E45000026B0 /* Priority.swift in Sources */,
 				2C0075FD202CE4E4000A0C9C /* ReminderFormRepository.swift in Sources */,
 				2C0075D5202CC4F8000A0C9C /* ReminderFormValidator.swift in Sources */,

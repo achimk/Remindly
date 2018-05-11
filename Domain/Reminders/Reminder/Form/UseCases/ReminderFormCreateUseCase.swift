@@ -7,3 +7,18 @@
 //
 
 import Foundation
+
+final class ReminderFormCreateUseCase {
+    let identifier: ReminderFormID
+    let repository: ReminderFormRepository
+    
+    init(identifier: ReminderFormID, repository: ReminderFormRepository) {
+        self.identifier = identifier
+        self.repository = repository
+    }
+    
+    func execute() throws {
+        let form = ReminderForm(identifier: identifier.rawValue)
+        repository.save(id: identifier, entity: form)
+    }
+}

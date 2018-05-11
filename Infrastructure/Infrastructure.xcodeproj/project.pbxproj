@@ -27,6 +27,9 @@
 		2C9A82F22018D47A004B2709 /* PlainDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9A82F12018D47A004B2709 /* PlainDataSource.swift */; };
 		2C9A82F42018D49E004B2709 /* CombinedDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9A82F32018D49E004B2709 /* CombinedDataSource.swift */; };
 		2C9A82F62018D4BC004B2709 /* SectionedDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9A82F52018D4BC004B2709 /* SectionedDataSource.swift */; };
+		2CF36D25202DFA33002749F1 /* NoError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF36D24202DFA33002749F1 /* NoError.swift */; };
+		2CF36D27202DFA44002749F1 /* AnyError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF36D26202DFA44002749F1 /* AnyError.swift */; };
+		2CF36D29202DFA51002749F1 /* ErrorConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF36D28202DFA51002749F1 /* ErrorConvertible.swift */; };
 		2CF431F62019D91200F30C6B /* Functional.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CF431ED2019D91200F30C6B /* Functional.framework */; };
 		2CF431FD2019D91200F30C6B /* Functional.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CF431EF2019D91200F30C6B /* Functional.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2CF432052019D96600F30C6B /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF432042019D96600F30C6B /* Types.swift */; };
@@ -117,6 +120,9 @@
 		2C9A82F12018D47A004B2709 /* PlainDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlainDataSource.swift; sourceTree = "<group>"; };
 		2C9A82F32018D49E004B2709 /* CombinedDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinedDataSource.swift; sourceTree = "<group>"; };
 		2C9A82F52018D4BC004B2709 /* SectionedDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionedDataSource.swift; sourceTree = "<group>"; };
+		2CF36D24202DFA33002749F1 /* NoError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoError.swift; sourceTree = "<group>"; };
+		2CF36D26202DFA44002749F1 /* AnyError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyError.swift; sourceTree = "<group>"; };
+		2CF36D28202DFA51002749F1 /* ErrorConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorConvertible.swift; sourceTree = "<group>"; };
 		2CF431ED2019D91200F30C6B /* Functional.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Functional.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CF431EF2019D91200F30C6B /* Functional.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Functional.h; sourceTree = "<group>"; };
 		2CF431F02019D91200F30C6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -249,6 +255,7 @@
 			isa = PBXGroup;
 			children = (
 				2C77347A2010C22C000026B0 /* Box */,
+				2CF36D23202DFA10002749F1 /* Error */,
 				2C7734602010B832000026B0 /* Info.plist */,
 			);
 			path = GearsTests;
@@ -306,6 +313,16 @@
 				2C9A82F52018D4BC004B2709 /* SectionedDataSource.swift */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		2CF36D23202DFA10002749F1 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				2CF36D24202DFA33002749F1 /* NoError.swift */,
+				2CF36D26202DFA44002749F1 /* AnyError.swift */,
+				2CF36D28202DFA51002749F1 /* ErrorConvertible.swift */,
+			);
+			path = Error;
 			sourceTree = "<group>";
 		};
 		2CF431EE2019D91200F30C6B /* Functional */ = {
@@ -763,9 +780,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CF36D29202DFA51002749F1 /* ErrorConvertible.swift in Sources */,
+				2CF36D27202DFA44002749F1 /* AnyError.swift in Sources */,
 				2C77347E2010C22C000026B0 /* BoxTests.swift in Sources */,
 				2C7734802010C22C000026B0 /* MutableBoxTests.swift in Sources */,
 				2C77347F2010C22C000026B0 /* BoxTypeTests.swift in Sources */,
+				2CF36D25202DFA33002749F1 /* NoError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

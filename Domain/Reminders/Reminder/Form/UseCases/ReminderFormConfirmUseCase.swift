@@ -7,3 +7,24 @@
 //
 
 import Foundation
+
+final class ReminderFormConfirmUseCase {
+    let identifier: ReminderFormID
+    let repository: ReminderFormRepository
+    
+    init(identifier: ReminderFormID, repository: ReminderFormRepository) {
+        self.identifier = identifier
+        self.repository = repository
+    }
+    
+    func execute() throws {
+    
+        guard let form = repository.findBy(identifier) else {
+            throw ReminderFormError.formNotFound
+        }
+        
+        try form.confirm()
+        
+        repository.save(id: identifier, entity: form)
+    }
+}

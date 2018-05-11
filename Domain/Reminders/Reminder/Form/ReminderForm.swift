@@ -24,7 +24,7 @@ public final class ReminderForm: AggregateRootType {
     var label: String?
     var notes: String?
     var timestamp: Date = Date()
-    var isAchieved: Bool = false
+    let isAchieved: Bool = false
     var priority: Priority?
     var status: Status = .new
     
@@ -36,28 +36,36 @@ public final class ReminderForm: AggregateRootType {
     public init(identifier: String,
                 label: String,
                 notes: String?,
-                timestamp: Date,
-                isAchieved: Bool,
                 priority: Priority) {
         
         self.identifier = identifier
         self.label = label
         self.notes = notes
-        self.timestamp = timestamp
-        self.isAchieved = isAchieved
         self.priority = priority
         self.status = .modified
     }
     
     public func fill(label: String) throws {
-        self.label = label
+        try modifyFormField {
+            self.label = label
+        }
     }
     
     public func fill(notes: String) throws {
-        self.notes = notes
+        try modifyFormField {
+            self.notes = notes
+        }
+    }
+    
+    public func fill(priority: Priority) throws {
+        try modifyFormField {
+            self.priority = priority
+        }
     }
     
     public func confirm() throws {
+        
+        // TODO: Validate!
         
         self.timestamp = Date()
         self.status = .confirmed

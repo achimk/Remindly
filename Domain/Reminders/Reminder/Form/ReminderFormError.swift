@@ -1,5 +1,5 @@
 //
-//  ReminderError.swift
+//  ReminderFormError.swift
 //  Reminders
 //
 //  Created by Joachim Kret on 08.02.2018.
@@ -9,7 +9,8 @@
 import Foundation
 
 public enum ReminderFormError: Swift.Error {
+    case formNotFound
     case formNotCreated
-    case requiredField
-    case invalidLabel
+    case form(validation: Swift.Error)
+    case unknown(Swift.Error)
 }

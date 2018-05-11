@@ -11,7 +11,7 @@ import Foundation
 public final class InMemoryEntityBasedRepository<T: EntityType>: EntityBasedRepository<T> where T.ID: Hashable {
     private var cache: [Entity.ID : Entity] = [:]
     
-    public override func findById(_ id: Entity.ID) -> Entity? {
+    public override func findBy(_ id: Entity.ID) -> Entity? {
         return cache[id]
     }
     

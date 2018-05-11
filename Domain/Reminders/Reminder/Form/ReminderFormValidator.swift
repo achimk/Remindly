@@ -10,5 +10,21 @@ import Foundation
 
 struct ReminderFormValidator {
     
+    func isValid(label: String?) -> Bool {
+        fatalError()
+    }
+ 
+    func isValid(notes: String?) -> Bool {
+        fatalError()
+    }
     
+    func isValid(priority: Priority?) -> Bool {
+        fatalError()
+    }
+    
+    func isValid(form: ReminderForm) -> Bool {
+        return isValid(label: form.label)
+            && isValid(notes: form.notes)
+            && isValid(priority: form.priority)
+    }
 }

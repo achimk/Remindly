@@ -9,7 +9,4 @@
 import Foundation
 import CoreDomain
 
-public protocol ReminderFormRepository: DomainRepositoryType {
-    func load(_ id: ReminderFormID) -> ReminderForm?
-    func save(_ form: ReminderForm)
-}
+public typealias ReminderFormRepository = EntityBasedRepository<ReminderForm>
