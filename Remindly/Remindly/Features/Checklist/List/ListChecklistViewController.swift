@@ -11,7 +11,7 @@ import ChecklistsFeature
 import Reminders
 import DataSource
 import CoreApp
-import ReusableUI
+import UICommons
 
 final class ListChecklistNavigationBar: ListChecklistBarDisplaying {
     var eventListener: ListChecklistBarEventListening?
@@ -50,20 +50,23 @@ final class ListChecklistDataSource: ListChecklistDisplaying {
     func show(checklists components: [Component<ChecklistDisplaying>]) {
         self.components = components
         
-        let dataSource = DataSource.of(components).map { (component) -> TableViewCellHandlerType in
-            let handler = TableViewCellHandler { (tableView, indexPath) -> UITableViewCell in
+        let dataSource = DataSource.of(components).map { [tableView] (component) -> TableViewCellHandling in
+            
+            let handler = TableViewCellHandler { (indexPath) -> UITableViewCell in
                 let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ChecklistTableViewCell
                 component.attach(cell)
                 return cell
             }
             
-            handler.onDidEndDisplayCell = { (_, _) in component.detach() }
-            handler.onSelectCell = { (_, _) in print("-> selected component!") }
+            handler.onDidEndDisplayCell = { _ in component.detach() }
+            
+            handler.onSelectCell = { _ in print(" -> did select component!") }
             
             return handler
         }
         
-        adapter.dataSource = dataSource
+        adapter.dataSource = dataSource.asPlain()
+        
         tableView.reloadData()
     }
 }
