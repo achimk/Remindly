@@ -9,17 +9,16 @@
 /* Begin PBXBuildFile section */
 		2C0075B0202CBD69000A0C9C /* ReminderForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0075AF202CBD69000A0C9C /* ReminderForm.swift */; };
 		2C0075BF202CBDE8000A0C9C /* CoreDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C0075B6202CBDE8000A0C9C /* CoreDomain.framework */; };
-		2C0075C4202CBDE8000A0C9C /* CoreDomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0075C3202CBDE8000A0C9C /* CoreDomainTests.swift */; };
 		2C0075C6202CBDE8000A0C9C /* CoreDomain.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C0075B8202CBDE8000A0C9C /* CoreDomain.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2C0075CF202CBE7D000A0C9C /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0075CE202CBE7D000A0C9C /* Identifiable.swift */; };
 		2C0075D1202CBE85000A0C9C /* Identity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0075D0202CBE85000A0C9C /* Identity.swift */; };
 		2C0075D3202CC012000A0C9C /* CoreDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C0075B6202CBDE8000A0C9C /* CoreDomain.framework */; };
 		2C0075D5202CC4F8000A0C9C /* ReminderFormValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0075D4202CC4F8000A0C9C /* ReminderFormValidator.swift */; };
-		2C0075DC202CD49E000A0C9C /* AggregateRootType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0075DB202CD49E000A0C9C /* AggregateRootType.swift */; };
-		2C0075DE202CD4CB000A0C9C /* DomainServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0075DD202CD4CB000A0C9C /* DomainServiceType.swift */; };
-		2C0075E0202CD4D5000A0C9C /* ValueObjectType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0075DF202CD4D5000A0C9C /* ValueObjectType.swift */; };
-		2C0075E2202CD4EC000A0C9C /* DomainRepositoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0075E1202CD4EC000A0C9C /* DomainRepositoryType.swift */; };
-		2C0075E4202CD51A000A0C9C /* EntityType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0075E3202CD51A000A0C9C /* EntityType.swift */; };
+		2C0075DC202CD49E000A0C9C /* DomainAggregate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0075DB202CD49E000A0C9C /* DomainAggregate.swift */; };
+		2C0075DE202CD4CB000A0C9C /* DomainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0075DD202CD4CB000A0C9C /* DomainService.swift */; };
+		2C0075E0202CD4D5000A0C9C /* DomainValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0075DF202CD4D5000A0C9C /* DomainValue.swift */; };
+		2C0075E2202CD4EC000A0C9C /* DomainRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0075E1202CD4EC000A0C9C /* DomainRepository.swift */; };
+		2C0075E4202CD51A000A0C9C /* DomainEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0075E3202CD51A000A0C9C /* DomainEntity.swift */; };
 		2C0075E8202CD740000A0C9C /* ReminderFormService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0075E7202CD740000A0C9C /* ReminderFormService.swift */; };
 		2C0075E9202CD9B4000A0C9C /* Gears.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C0075EA202CD9B4000A0C9C /* Gears.framework */; };
 		2C0075EB202CD9CF000A0C9C /* Functional.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C0075EC202CD9CF000A0C9C /* Functional.framework */; };
@@ -35,7 +34,8 @@
 		2C12459A202D905900573ADB /* SatisfiableByCandidate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C124599202D905900573ADB /* SatisfiableByCandidate.swift */; };
 		2C12459C202D906C00573ADB /* Specification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C12459B202D906C00573ADB /* Specification.swift */; };
 		2C12459E202D90A500573ADB /* CoreDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C12459D202D90A500573ADB /* CoreDomain.swift */; };
-		2C1245A0202D90D800573ADB /* ConditionSpecification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C12459F202D90D800573ADB /* ConditionSpecification.swift */; };
+		2C1245A0202D90D800573ADB /* AnySpecification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C12459F202D90D800573ADB /* AnySpecification.swift */; };
+		2C47B96320EF8BD000EF63C4 /* Specification+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C47B96220EF8BD000EF63C4 /* Specification+Extensions.swift */; };
 		2C4826D3202CF0F40021B242 /* EntityBasedRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4826D2202CF0F40021B242 /* EntityBasedRepository.swift */; };
 		2C4826D5202CF4620021B242 /* InMemoryEntityBasedRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4826D4202CF4620021B242 /* InMemoryEntityBasedRepository.swift */; };
 		2C77343420109D87000026B0 /* Reminders.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C77342B20109D87000026B0 /* Reminders.framework */; };
@@ -69,16 +69,15 @@
 		2C0075B8202CBDE8000A0C9C /* CoreDomain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreDomain.h; sourceTree = "<group>"; };
 		2C0075B9202CBDE8000A0C9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C0075BE202CBDE8000A0C9C /* CoreDomainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDomainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2C0075C3202CBDE8000A0C9C /* CoreDomainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDomainTests.swift; sourceTree = "<group>"; };
 		2C0075C5202CBDE8000A0C9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C0075CE202CBE7D000A0C9C /* Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifiable.swift; sourceTree = "<group>"; };
 		2C0075D0202CBE85000A0C9C /* Identity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identity.swift; sourceTree = "<group>"; };
 		2C0075D4202CC4F8000A0C9C /* ReminderFormValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderFormValidator.swift; sourceTree = "<group>"; };
-		2C0075DB202CD49E000A0C9C /* AggregateRootType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AggregateRootType.swift; sourceTree = "<group>"; };
-		2C0075DD202CD4CB000A0C9C /* DomainServiceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainServiceType.swift; sourceTree = "<group>"; };
-		2C0075DF202CD4D5000A0C9C /* ValueObjectType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueObjectType.swift; sourceTree = "<group>"; };
-		2C0075E1202CD4EC000A0C9C /* DomainRepositoryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainRepositoryType.swift; sourceTree = "<group>"; };
-		2C0075E3202CD51A000A0C9C /* EntityType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityType.swift; sourceTree = "<group>"; };
+		2C0075DB202CD49E000A0C9C /* DomainAggregate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainAggregate.swift; sourceTree = "<group>"; };
+		2C0075DD202CD4CB000A0C9C /* DomainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainService.swift; sourceTree = "<group>"; };
+		2C0075DF202CD4D5000A0C9C /* DomainValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainValue.swift; sourceTree = "<group>"; };
+		2C0075E1202CD4EC000A0C9C /* DomainRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainRepository.swift; sourceTree = "<group>"; };
+		2C0075E3202CD51A000A0C9C /* DomainEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainEntity.swift; sourceTree = "<group>"; };
 		2C0075E7202CD740000A0C9C /* ReminderFormService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderFormService.swift; sourceTree = "<group>"; };
 		2C0075EA202CD9B4000A0C9C /* Gears.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Gears.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C0075EC202CD9CF000A0C9C /* Functional.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Functional.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,7 +93,8 @@
 		2C124599202D905900573ADB /* SatisfiableByCandidate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SatisfiableByCandidate.swift; sourceTree = "<group>"; };
 		2C12459B202D906C00573ADB /* Specification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Specification.swift; sourceTree = "<group>"; };
 		2C12459D202D90A500573ADB /* CoreDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDomain.swift; sourceTree = "<group>"; };
-		2C12459F202D90D800573ADB /* ConditionSpecification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionSpecification.swift; sourceTree = "<group>"; };
+		2C12459F202D90D800573ADB /* AnySpecification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnySpecification.swift; sourceTree = "<group>"; };
+		2C47B96220EF8BD000EF63C4 /* Specification+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Specification+Extensions.swift"; sourceTree = "<group>"; };
 		2C4826D2202CF0F40021B242 /* EntityBasedRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityBasedRepository.swift; sourceTree = "<group>"; };
 		2C4826D4202CF4620021B242 /* InMemoryEntityBasedRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryEntityBasedRepository.swift; sourceTree = "<group>"; };
 		2C77342B20109D87000026B0 /* Reminders.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Reminders.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -160,7 +160,6 @@
 		2C0075C2202CBDE8000A0C9C /* CoreDomainTests */ = {
 			isa = PBXGroup;
 			children = (
-				2C0075C3202CBDE8000A0C9C /* CoreDomainTests.swift */,
 				2C0075C5202CBDE8000A0C9C /* Info.plist */,
 			);
 			path = CoreDomainTests;
@@ -188,11 +187,11 @@
 		2C0075D6202CD424000A0C9C /* Annotations */ = {
 			isa = PBXGroup;
 			children = (
-				2C0075DB202CD49E000A0C9C /* AggregateRootType.swift */,
-				2C0075E1202CD4EC000A0C9C /* DomainRepositoryType.swift */,
-				2C0075DD202CD4CB000A0C9C /* DomainServiceType.swift */,
-				2C0075E3202CD51A000A0C9C /* EntityType.swift */,
-				2C0075DF202CD4D5000A0C9C /* ValueObjectType.swift */,
+				2C0075DB202CD49E000A0C9C /* DomainAggregate.swift */,
+				2C0075E1202CD4EC000A0C9C /* DomainRepository.swift */,
+				2C0075DD202CD4CB000A0C9C /* DomainService.swift */,
+				2C0075E3202CD51A000A0C9C /* DomainEntity.swift */,
+				2C0075DF202CD4D5000A0C9C /* DomainValue.swift */,
 			);
 			path = Annotations;
 			sourceTree = "<group>";
@@ -245,7 +244,8 @@
 			children = (
 				2C124599202D905900573ADB /* SatisfiableByCandidate.swift */,
 				2C12459B202D906C00573ADB /* Specification.swift */,
-				2C12459F202D90D800573ADB /* ConditionSpecification.swift */,
+				2C47B96220EF8BD000EF63C4 /* Specification+Extensions.swift */,
+				2C12459F202D90D800573ADB /* AnySpecification.swift */,
 			);
 			path = Specification;
 			sourceTree = "<group>";
@@ -493,16 +493,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C0075E0202CD4D5000A0C9C /* ValueObjectType.swift in Sources */,
-				2C1245A0202D90D800573ADB /* ConditionSpecification.swift in Sources */,
-				2C0075E2202CD4EC000A0C9C /* DomainRepositoryType.swift in Sources */,
+				2C0075E0202CD4D5000A0C9C /* DomainValue.swift in Sources */,
+				2C1245A0202D90D800573ADB /* AnySpecification.swift in Sources */,
+				2C0075E2202CD4EC000A0C9C /* DomainRepository.swift in Sources */,
 				2C0075CF202CBE7D000A0C9C /* Identifiable.swift in Sources */,
 				2C12459C202D906C00573ADB /* Specification.swift in Sources */,
-				2C0075DC202CD49E000A0C9C /* AggregateRootType.swift in Sources */,
+				2C47B96320EF8BD000EF63C4 /* Specification+Extensions.swift in Sources */,
+				2C0075DC202CD49E000A0C9C /* DomainAggregate.swift in Sources */,
 				2C4826D5202CF4620021B242 /* InMemoryEntityBasedRepository.swift in Sources */,
-				2C0075E4202CD51A000A0C9C /* EntityType.swift in Sources */,
+				2C0075E4202CD51A000A0C9C /* DomainEntity.swift in Sources */,
 				2C12459A202D905900573ADB /* SatisfiableByCandidate.swift in Sources */,
-				2C0075DE202CD4CB000A0C9C /* DomainServiceType.swift in Sources */,
+				2C0075DE202CD4CB000A0C9C /* DomainService.swift in Sources */,
 				2C0075D1202CBE85000A0C9C /* Identity.swift in Sources */,
 				2C4826D3202CF0F40021B242 /* EntityBasedRepository.swift in Sources */,
 				2C12459E202D90A500573ADB /* CoreDomain.swift in Sources */,
@@ -513,7 +514,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C0075C4202CBDE8000A0C9C /* CoreDomainTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

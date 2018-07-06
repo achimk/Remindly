@@ -12,7 +12,8 @@ import Functional
 
 public typealias ReminderFormResult = Functional.Result<ReminderFormID, ReminderFormError>
 
-public final class ReminderFormService: DomainServiceType {
+public final class ReminderFormService: DomainService {
+    
     let reminderFormRepository: ReminderFormRepository
     
     public init(reminderFormRepository: ReminderFormRepository) {

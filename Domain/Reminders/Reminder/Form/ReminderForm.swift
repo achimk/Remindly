@@ -11,7 +11,7 @@ import CoreDomain
 
 public typealias ReminderFormID = Identity<ReminderForm.ID>
 
-public final class ReminderForm: AggregateRootType {
+public final class ReminderForm: DomainAggregate {
     
     enum Status: Int {
         case new

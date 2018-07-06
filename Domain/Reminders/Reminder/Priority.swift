@@ -9,7 +9,7 @@
 import Foundation
 import CoreDomain
 
-public enum Priority: Int, ValueObjectType {
+public enum Priority: Int, DomainValue {
     case low
     case high
     case urgent

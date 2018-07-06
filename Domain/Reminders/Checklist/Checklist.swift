@@ -9,7 +9,8 @@
 import Foundation
 import CoreDomain
 
-public struct Checklist: EntityType {
+public struct Checklist: DomainEntity {
+    
     public let identifier: String
     public let name: String
     public let timestamp: Date

@@ -11,7 +11,8 @@ import CoreDomain
 
 public typealias ReminderID = Identity<Reminder.ID>
 
-public struct Reminder: EntityType {
+public struct Reminder: DomainEntity {
+    
     public let identifier: String
     public let label: String
     public let notes: String?

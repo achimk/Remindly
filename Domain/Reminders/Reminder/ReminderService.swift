@@ -9,8 +9,7 @@
 import Foundation
 import CoreDomain
 
-final class ReminderService: DomainServiceType {
-    let repo: ReminderRepository? = nil
+final class ReminderService: DomainService {
     
     struct Query { }
     
